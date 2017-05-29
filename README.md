@@ -1,7 +1,7 @@
 # Obsidian 2 green
 Green edition of Obsidian-2 theme.
 
-![alt tag](https://github.com/madmaxms/theme-obsidian-1/blob/green/screenshot.jpg)
+![alt tag](https://github.com/madmaxms/theme-obsidian-2/blob/green/screenshot.jpg)
 
 # Compatibility
 Compatible with Gtk 3.22. 
