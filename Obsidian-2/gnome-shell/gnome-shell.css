@@ -272,23 +272,28 @@ StEntry StIcon.capslock-warning{
 	padding:0 4px
 }
 .search-entry{
-	width:480px;
+	width:640px;
+        font-size:120%;
 	padding:15px;
-	color:rgba(255,255,255,0.75);
-	border-radius:3px
+	color:#909090;/*rgba(255,255,255,0.75);*/
+	border-radius:6px;
+        border: 1px solid #606060;
+        background-color: rgba(0, 0, 0, 0.15);
 }
 .search-entry .search-entry-icon{
 	icon-size:1em;
 	padding:0 4px;
-	color:rgba(255,255,255,0.75)
+	color:#909090;
 }
 .search-entry:focus{
 	padding:15px;
 	border-width:0;
-	color:#333
+	color:#33AAFF;
+        border: 1px solid #185179;
+        background-color: rgba(0, 0, 0, 0.15);
 }
 .search-entry:focus .search-entry-icon{
-	color:#333
+	color:#33AAFF
 }
 StScrollView.vfade{
 	-st-vfade-offset:68px
@@ -904,7 +909,8 @@ StScrollBar StButton#hhandle:active{
 #panel .panel-button:focus,
 #panel .panel-button:checked{
 	color:#fff;
-	box-shadow: inset 0 -3px #00aaee;
+        background-color:#0066cc;
+	box-shadow: inset 0 -1px #000066;
 }
 
 #panel .panel-button .system-status-icon{
