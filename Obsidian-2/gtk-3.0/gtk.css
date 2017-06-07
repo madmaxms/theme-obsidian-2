@@ -2122,7 +2122,7 @@ treeview.view {
     border: 1px solid #003361;
     border-radius: 4px;
     background-color: #215d9c;
-    background-image: linear-gradient(to bottom, #215d9c, #00541e);
+    background-image: linear-gradient(to bottom, #0061FF, #215d9c);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), 0 1px rgba(0, 0, 0, 0.1); }
     treeview.view.progressbar:selected:focus, treeview.view.progressbar:selected {
       border-radius: 4px;
@@ -2139,7 +2139,7 @@ treeview.view {
     background-color: rgba(238, 238, 236, 0.1);
     border-radius: 4px; }
     treeview.view.trough:selected:focus, treeview.view.trough:selected {
-      background-color: #00541e;
+      background-color: #004979;
       border-radius: 4px; }
   treeview.view header button {
     color: #898b8b;
@@ -4415,10 +4415,10 @@ paned.vertical > separator {
 infobar {
   border-style: none; }
   infobar.info, infobar.question, infobar.warning, infobar.error {
-    text-shadow: 0 1px #00541e; }
+    text-shadow: 0 1px #004979; }
     infobar.info:backdrop, infobar.info, infobar.question:backdrop, infobar.question, infobar.warning:backdrop, infobar.warning, infobar.error:backdrop, infobar.error {
       background-color: #215d9c;
-      border-color: #00541e; }
+      border-color: #004979; }
       infobar.info:backdrop label, infobar.info:backdrop, infobar.info label, infobar.info, infobar.question:backdrop label, infobar.question:backdrop, infobar.question label, infobar.question, infobar.warning:backdrop label, infobar.warning:backdrop, infobar.warning label, infobar.warning, infobar.error:backdrop label, infobar.error:backdrop, infobar.error label, infobar.error {
         color: #ffffff; }
     infobar.info:backdrop, infobar.question:backdrop, infobar.warning:backdrop, infobar.error:backdrop {
@@ -4476,7 +4476,7 @@ infobar {
           infobar.info button:backdrop:disabled label, infobar.info button:backdrop:disabled, infobar.question button:backdrop:disabled label, infobar.question button:backdrop:disabled, infobar.warning button:backdrop:disabled label, infobar.warning button:backdrop:disabled, infobar.error button:backdrop:disabled label, infobar.error button:backdrop:disabled {
             color: #215d9c; }
     infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
-      background-color: #00541e; }
+      background-color: #004979; }
 
 /************
  * Tooltips *
@@ -4724,6 +4724,10 @@ entry selection, modelbutton.flat:selected,
 
 .nautilus-window notebook > stack, .nautilus-window notebook > stack:not(:only-child) {
   background-color: #232729; }
+  
+.nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle,
+.nautilus-list-dim-label {
+  color: #666C6F; }
 
 
 /**********************
