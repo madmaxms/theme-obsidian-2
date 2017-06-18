@@ -760,7 +760,7 @@ StScrollBar StButton#hhandle:active{
   color: #eeeeec;
   border-radius: 6px;
   padding: 13px;
-  border: 1px solid #445260; 
+  border: 1px solid #607488; 
 }
 
 .system-menu-action:hover, .system-menu-action:focus {
@@ -1068,6 +1068,109 @@ StScrollBar StButton#hhandle:active{
 .pager-button:active{
     background-color:transparent;
 }
+
+
+#dashtodockContainer.top .app-well-app.running1 .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running1 .overview-icon {
+  background-image: url("assets/dot/running1-vert.svg"); }
+#dashtodockContainer.top .app-well-app.running1.focused .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running1.focused .overview-icon {
+  background-image: url("assets/dot/running1-vert-focused.svg"); }
+#dashtodockContainer.top .app-well-app.running2 .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running2 .overview-icon {
+  background-image: url("assets/dot/running2-vert.svg"); }
+#dashtodockContainer.top .app-well-app.running2.focused .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running2.focused .overview-icon {
+  background-image: url("assets/dot/running2-vert-focused.svg"); }
+#dashtodockContainer.top .app-well-app.running3 .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running3 .overview-icon {
+  background-image: url("assets/dot/running3-vert.svg"); }
+#dashtodockContainer.top .app-well-app.running3.focused .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running3.focused .overview-icon {
+  background-image: url("assets/dot/running3-vert-focused.svg"); }
+#dashtodockContainer.top .app-well-app.running4 .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running4 .overview-icon {
+  background-image: url("assets/dot/running4-vert.svg"); }
+#dashtodockContainer.top .app-well-app.running4.focused .overview-icon,
+#dashtodockContainer.extended.top .app-well-app.running4.focused .overview-icon {
+  background-image: url("assets/dot/running4-vert-focused.svg"); }
+
+#dashtodockContainer.bottom .app-well-app.running1 .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running1 .overview-icon {
+  background-image: url("assets/dot/running1-vert.svg"); }
+#dashtodockContainer.bottom .app-well-app.running1.focused .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running1.focused .overview-icon {
+  background-image: url("assets/dot/running1-vert-focused.svg"); }
+#dashtodockContainer.bottom .app-well-app.running2 .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running2 .overview-icon {
+  background-image: url("assets/dot/running2-vert.svg"); }
+#dashtodockContainer.bottom .app-well-app.running2.focused .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running2.focused .overview-icon {
+  background-image: url("assets/dot/running2-vert-focused.svg"); }
+#dashtodockContainer.bottom .app-well-app.running3 .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running3 .overview-icon {
+  background-image: url("assets/dot/running3-vert.svg"); }
+#dashtodockContainer.bottom .app-well-app.running3.focused .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running3.focused .overview-icon {
+  background-image: url("assets/dot/running3-vert-focused.svg"); }
+#dashtodockContainer.bottom .app-well-app.running4 .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running4 .overview-icon {
+  background-image: url("assets/dot/running4-vert.svg"); }
+#dashtodockContainer.bottom .app-well-app.running4.focused .overview-icon,
+#dashtodockContainer.extended.bottom .app-well-app.running4.focused .overview-icon {
+  background-image: url("assets/dot/running4-vert-focused.svg"); }
+
+#dashtodockContainer.left .app-well-app.running1 .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running1 .overview-icon {
+  background-image: url("assets/dot/running1.svg"); }
+#dashtodockContainer.left .app-well-app.running1.focused .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running1.focused .overview-icon {
+  background-image: url("assets/dot/running1-focused.svg"); }
+#dashtodockContainer.left .app-well-app.running2 .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running2 .overview-icon {
+  background-image: url("assets/dot/running2.svg"); }
+#dashtodockContainer.left .app-well-app.running2.focused .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running2.focused .overview-icon {
+  background-image: url("assets/dot/running2-focused.svg"); }
+#dashtodockContainer.left .app-well-app.running3 .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running3 .overview-icon {
+  background-image: url("assets/dot/running3.svg"); }
+#dashtodockContainer.left .app-well-app.running3.focused .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running3.focused .overview-icon {
+  background-image: url("assets/dot/running3-focused.svg"); }
+#dashtodockContainer.left .app-well-app.running4 .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running4 .overview-icon {
+  background-image: url("assets/dot/running4.svg"); }
+#dashtodockContainer.left .app-well-app.running4.focused .overview-icon,
+#dashtodockContainer.extended.left .app-well-app.running4.focused .overview-icon {
+  background-image: url("assets/dot/running4-focused.svg"); }
+
+#dashtodockContainer.right .app-well-app.running1 .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running1 .overview-icon {
+  background-image: url("assets/dot/running1-right.svg"); }
+#dashtodockContainer.right .app-well-app.running1.focused .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running1.focused .overview-icon {
+  background-image: url("assets/dot/running1-right-focused.svg"); }
+#dashtodockContainer.right .app-well-app.running2 .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running2 .overview-icon {
+  background-image: url("assets/dot/running2-right.svg"); }
+#dashtodockContainer.right .app-well-app.running2.focused .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running2.focused .overview-icon {
+  background-image: url("assets/dot/running2-right-focused.svg"); }
+#dashtodockContainer.right .app-well-app.running3 .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running3 .overview-icon {
+  background-image: url("assets/dot/running3-right.svg"); }
+#dashtodockContainer.right .app-well-app.running3.focused .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running3.focused .overview-icon {
+  background-image: url("assets/dot/running3-right-focused.svg"); }
+#dashtodockContainer.right .app-well-app.running4 .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running4 .overview-icon {
+  background-image: url("assets/dot/running4-right.svg"); }
+#dashtodockContainer.right .app-well-app.running4.focused .overview-icon,
+#dashtodockContainer.extended.right .app-well-app.running4.focused .overview-icon {
+  background-image: url("assets/dot/running4-right-focused.svg"); }
+
+
 .calendar-change-month-back{
     background-color:#2f3941;
 	background-image:url(resource:///org/gnome/shell/theme/calendar-arrow-left.svg)
@@ -1305,7 +1408,7 @@ StScrollBar StButton#hhandle:active{
 	font-size:9pt;
 	color:#fff;
 	background-color:#191f1f;
-	padding:5px;
+	padding:0px;
 	border:1px solid #33383A;
 	border-radius:0px 6px 6px 0px;
 	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.35)
@@ -1327,7 +1430,7 @@ StScrollBar StButton#hhandle:active{
 }
 .dash-label{
 	border-radius:2px;
-	padding:5px 0px;
+	padding:5px 5px;
 	color:#fff;
 	background-color:#0070cf;
 	text-align:center;
@@ -1415,7 +1518,7 @@ StScrollBar StButton#hhandle:active{
 .app-well-app-running-dot{
 	width:10px;
 	height:3px;
-	background-color:#215d9c;
+	background-color:transparent;
 	margin:0
 }
 .search-provider-icon,
@@ -1434,11 +1537,17 @@ StScrollBar StButton#hhandle:active{
 .app-well-app.app-folder>.overview-icon{
 	background-color:rgba(0,0,0,0.25)
 }
+
+.show-apps .show-apps-icon,
 .show-apps:checked .show-apps-icon,
-.show-apps:focus .show-apps-icon{
-	color:#fff;
-	transition-duration:100ms
+.show-apps:focus .show-apps-icon {
+  border: none;
+  background-image: url("assets/show-apps.svg");
+  background-size: contain;
+  color: transparent;
+  -st-background-image-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.14); 
 }
+
 .app-folder-popup{
 	-arrow-border-radius:6px;
 	-arrow-background-color:rgba(0,0,0,0.5);
