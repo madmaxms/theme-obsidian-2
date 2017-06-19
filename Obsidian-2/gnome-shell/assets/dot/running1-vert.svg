@@ -44,9 +44,14 @@
   <g
      transform="translate(0,-952.3622)"
      id="layer1">
-    <path
-       id="rect4484"
-       d="m 45,1044.3622 5,-7.5 v 0 l 5,7.5 z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    <g
+       transform="rotate(90,50,1002.3622)"
+       style="fill:#ffffff;fill-opacity:1"
+       id="g4487">
+      <path
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 98,1008.3622 -9,-6 v 0 l 9,-6 z"
+         id="rect4484-3" />
+    </g>
   </g>
 </svg>

@@ -45,21 +45,30 @@
      id="layer1"
      transform="translate(0,-952.3622)">
     <g
-       id="g4487"
-       transform="rotate(-90,50,1002.3622)"
-       style="fill:#ffb6ff;fill-opacity:1">
-      <path
-         id="rect4484"
-         d="m 8,991.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-36"
-         d="m 8,1003.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-36-3-3"
-         d="m 91.5,997.3622 -7.5,5 v 0 l 7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+       id="g4488"
+       transform="matrix(1.1818182,0,0,1.1818182,-7.4545456,-182.24769)">
+      <g
+         style="fill:#ffffff;fill-opacity:1"
+         transform="rotate(180,48.615382,1002.3622)"
+         id="g4489">
+        <g
+           style="fill:#ffffff;fill-opacity:1"
+           transform="rotate(90,48.615382,1002.3622)"
+           id="g4551">
+          <path
+             id="rect4484"
+             d="m 8,991.3622 7.615384,5.07693 v 0 L 8,1001.516 Z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+          <path
+             id="rect4484-36"
+             d="m 8,1003.2084 7.615384,5.0769 v 0 L 8,1013.3622 Z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+          <path
+             id="rect4484-3"
+             d="m 89.230765,1007.4391 -7.61538,-5.077 v 0 l 7.61538,-5.07678 z"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>

@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="100"
-   height="100"
-   viewBox="0 0 100 100"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   viewBox="0 0 100 100"
+   height="100"
+   width="100">
   <defs
      id="defs4" />
   <metadata
@@ -42,32 +42,36 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
-     transform="translate(0,-952.3622)">
+     transform="translate(0,-952.3622)"
+     id="layer1">
     <g
-       id="g4487"
-       transform="rotate(-90,50,1002.3622)"
-       style="fill:#ffb6ff;fill-opacity:1">
-      <path
-         id="rect4484"
-         d="m 8,991.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-36"
-         d="m 8,1003.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-36-3"
-         d="m 8,1015.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-6"
-         d="m 8,979.3622 7.5,5 v 0 l -7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-      <path
-         id="rect4484-36-3-3"
-         d="m 91.5,997.3622 -7.5,5 v 0 l 7.5,5 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+       transform="matrix(1.1818182,0,0,1.1818182,-7.4545456,-182.24769)"
+       id="g4488">
+      <g
+         transform="rotate(-90,48.615383,1002.3622)"
+         style="fill:#ffffff;fill-opacity:1"
+         id="g4493">
+        <path
+           id="rect4484"
+           d="m 8,991.3622 7.615384,5.07693 v 0 L 8,1001.516 Z"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           id="rect4484-36"
+           d="m 8,1003.2084 7.615384,5.0769 v 0 L 8,1013.3622 Z"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           id="rect4484-3"
+           d="m 89.230765,1007.4391 -7.61538,-5.077 v 0 l 7.61538,-5.07678 z"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           id="rect4484-36-3"
+           d="m 8,1015.0546 7.615384,5.0769 v 0 L 8,1025.2084 Z"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+        <path
+           id="rect4484-6"
+           d="m 8,979.51609 7.615384,5.07693 v 0 L 8,989.66988 Z"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      </g>
     </g>
   </g>
 </svg>

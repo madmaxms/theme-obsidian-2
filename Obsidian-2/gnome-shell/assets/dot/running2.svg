@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.4041668"
-     inkscape:cx="80.115722"
-     inkscape:cy="-2.2399013"
+     inkscape:zoom="4.8142189"
+     inkscape:cx="43.040607"
+     inkscape:cy="46.120002"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4488"
      showgrid="true"
      units="px"
      width="60px"
@@ -76,17 +76,21 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-952.3622)">
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       d="m 8,991.3622 7.5,5 v 0 l -7.5,5 z"
-       id="rect4484"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       d="m 8,1003.3622 7.5,5 v 0 l -7.5,5 z"
-       id="rect4484-36"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+    <g
+       id="g4488"
+       transform="matrix(1.1818182,0,0,1.1818182,-7.4545456,-182.24769)">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect4484"
+         d="m 8,991.3622 7.615384,5.07693 v 0 L 8,1001.516 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect4484-36"
+         d="m 8,1003.2084 7.615384,5.0769 v 0 L 8,1013.3622 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+    </g>
   </g>
 </svg>

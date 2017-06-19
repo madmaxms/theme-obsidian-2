@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg2"
-   viewBox="0 0 100 100"
+   width="100"
    height="100"
-   width="100">
+   viewBox="0 0 100 100"
+   id="svg2"
+   version="1.1">
   <defs
      id="defs4" />
   <metadata
@@ -42,23 +42,28 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-952.3622)"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-952.3622)">
     <g
-       transform="rotate(180,49.75,1002.3622)"
-       id="g4489">
-      <path
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         d="m 8,991.3622 7.5,5 v 0 l -7.5,5 z"
-         id="rect4484" />
-      <path
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         d="m 91.5,997.3622 -7.5,5 v 0 l 7.5,5 z"
-         id="rect4484-3" />
-      <path
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         d="m 8,1003.3622 7.5,5 v 0 l -7.5,5 z"
-         id="rect4484-36" />
+       id="g4488"
+       transform="matrix(1.1818182,0,0,1.1818182,-7.4545456,-182.24769)">
+      <g
+         style="fill:#ffffff;fill-opacity:1"
+         transform="rotate(180,48.615382,1002.3622)"
+         id="g4489">
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 8,991.3622 7.615384,5.07693 v 0 L 8,1001.516 Z"
+           id="rect4484" />
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 8,1003.2084 7.615384,5.0769 v 0 L 8,1013.3622 Z"
+           id="rect4484-36" />
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.53846145;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 89.230765,1007.4391 -7.61538,-5.077 v 0 l 7.61538,-5.07678 z"
+           id="rect4484-3" />
+      </g>
     </g>
   </g>
 </svg>
