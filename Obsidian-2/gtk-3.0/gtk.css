@@ -2212,8 +2212,9 @@ menubar,
     padding: 4px 8px; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      box-shadow: inset 0 -3px #215d9c;
-      color: #009cff; }
+      border-radius:2px;
+      background-color:#0066cc;
+      color: #FFFFFF; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
       color: #919494;
@@ -2224,7 +2225,7 @@ menu,
 .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background-color: #393f3f;
+  background-color: #2b3032;
   border: 1px solid #1b1f20; }
   .csd menu, .csd
   .menu, .csd
@@ -2233,7 +2234,7 @@ menu,
   menu:backdrop,
   .menu:backdrop,
   .context-menu:backdrop {
-    background-color: #393f3f; }
+    background-color: #2b3032; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {

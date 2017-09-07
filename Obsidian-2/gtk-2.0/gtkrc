@@ -1,6 +1,4 @@
-# Adwaita-X: GTK2 Theme for GNOME 3
-
-# 2012 KEIII (kacenkov7@gmail.com)
+# Obsidian-2: GTK2 Theme for GNOME 3
 
 # This program is free software: you can redistribute it and/or m odify
 # it under the terms of the GNU General Public License as published by
@@ -100,7 +98,7 @@ style "murrine-default" {
 
  bg[NORMAL]    = @bg_color
  bg[PRELIGHT]   = shade (1.02, @bg_color)
- bg[SELECTED]   = @selected_bg_color
+ bg[SELECTED]   = mix (1.0, "#0056cb", "#0045b4")
  bg[INSENSITIVE]  = @bg_color
  bg[ACTIVE]    = shade (.9, @bg_color)
 
@@ -195,7 +193,7 @@ style "murrine-entry" = "murrine-wider" {
  xthickness = 3
  ythickness = 3
  
- bg[SELECTED] = mix (1.0, @selected_bg_color, @bg_color)
+ bg[SELECTED] = mix (1.0, "#0056cb", "#0045b4")
  fg[SELECTED] = @text_color
 
  engine "murrine" {
@@ -221,10 +219,10 @@ style "murrine-menubar" {
 
 style "murrine-menubar-menuitem" = "murrine-wider" {
   
-  fg[PRELIGHT]  = "#0099FF"
+  fg[PRELIGHT]  = "#FFFFFF"
   text[PRELIGHT] = @fg_color
-  bg[PRELIGHT]  = shade (.9, @bg_color)
-  bg[SELECTED]  = shade (.9, @bg_color)
+  bg[PRELIGHT]  = shade (.9, "#0066cc")
+  bg[SELECTED]  = shade (.9, "#0066cc")
   
 
  engine "murrine" {
@@ -234,7 +232,7 @@ style "murrine-menubar-menuitem" = "murrine-wider" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = @bg_color # menu background
+ bg[NORMAL] = "#2b3032" # menu background
  fg[PRELIGHT] = "#FFFFFF"
  text[ACTIVE] = "#FFFFFF"
  GtkMenuItem::arrow-scaling = .5 # small arrow
