@@ -59,8 +59,8 @@ stage{
 }
 .end-session-dialog .modal-dialog-linked-button:hover {
 	border:1px solid #080808;
-	background-gradient-start:#0056cb;
-	background-gradient-end:#0045b4;
+	background-gradient-start:#00A250;
+	background-gradient-end:#009044;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child {
@@ -675,7 +675,7 @@ StScrollBar StButton#hhandle:active{
 	spacing:0
 }
 .popup-menu .popup-sub-menu{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 -1px 0px #282c2c; 
 }
 
@@ -683,7 +683,8 @@ StScrollBar StButton#hhandle:active{
 	padding:20px 0
 }
 .popup-menu .popup-menu-item{
-	spacing:10px
+	spacing:10px;
+	color:#CDE;
 }
 .popup-menu .popup-menu-item:ltr{
 	padding:8px 28px 8px 0
@@ -691,22 +692,25 @@ StScrollBar StButton#hhandle:active{
 .popup-menu .popup-menu-item:rtl{
 	padding:8px 0 8px 28px
 }
-.popup-menu .popup-menu-item:checked,
-.popup-menu .popup-menu-item:checked:hover{
-	background-color: rgba(35, 70, 52, 1);
+.popup-menu .popup-menu-item:checked{
+	background-color: rgba(40, 62, 50, 1);
 	box-shadow:none;
 	font-weight:bold
 }
+.popup-menu .popup-menu-item:checked:hover{
+	background-color:#009160;
+	color:#FFF;
+}
 .popup-menu .popup-menu-item.selected,
 .popup-menu .popup-menu-item:active{
-	background-color:#009957;
-	color:#fff
+	background-color:#009160;
+	color:#FFF;
 }
 .popup-menu .popup-menu-item:insensitive{
-	color:gray
+	color:#666
 }
 .popup-menu .popup-inactive-menu-item{
-	color:#fff
+	color:#CDE
 }
 .popup-menu .popup-inactive-menu-item:insensitive{
 	color:#595959
@@ -723,7 +727,7 @@ StScrollBar StButton#hhandle:active{
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
 	-arrow-border-radius:6px;
-	-arrow-background-color: rgba(30,36,40,0.92);
+	-arrow-background-color: rgba(21,25,28,0.87);
 	-arrow-border-width:1px;
 	-arrow-border-color:#1c1f1f;
 	-arrow-base:24px;
@@ -762,14 +766,14 @@ StScrollBar StButton#hhandle:active{
   color: #eeeeec;
   border-radius: 6px;
   padding: 13px;
-  border: 1px solid #608874; 
+  border: 1px solid #9AB; 
 }
 
 .system-menu-action:hover, .system-menu-action:focus {
     background-color: rgba(0, 142, 85, 1);
     color: #eeeeec;
-    border: none;
-    padding: 14px; 
+    border: 1px solid #00CC99;
+    padding: 13px; 
 }
 
 .system-menu-action:active {
@@ -928,7 +932,7 @@ StScrollBar StButton#hhandle:active{
 #panel .panel-button:focus,
 #panel .panel-button:checked{
 	color:#fff;
-        background-color:#009955;
+        background-color:#009160;
 	box-shadow: inset 0 -1px #000066;
 }
 
@@ -1030,13 +1034,13 @@ StScrollBar StButton#hhandle:active{
 .world-clocks-button:focus,
 .message-list-section-title:hover,
 .message-list-section-title:focus{
-	background-color:#2f3941
+	background-color:#1c844f;
 }
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .message-list-section-title:active{
 	color:#fff;
-	background-color:#2f3941
+	background-color:#1c844f;
 }
 .datemenu-today-button .date-label{
 	font-size:1.5em
@@ -1065,7 +1069,7 @@ StScrollBar StButton#hhandle:active{
 }
 .pager-button:hover,
 .pager-button:focus{
-	background-color:#2f3941
+	background-color:#2f3941;
 }
 .pager-button:active{
     background-color:transparent;
@@ -1312,11 +1316,12 @@ StScrollBar StButton#hhandle:active{
 	padding:3px;
 	margin:1px;
 	border-radius:0px;
+	color:#ccc;
 }
 .calendar-day-base:hover,
 .calendar-day-base:focus
 {
-	background-color:#2f3941;
+	background-color:rgba(0,160,80,0.6);
 }
 .calendar-day-base:active{
 	color:#fff;
@@ -1331,7 +1336,7 @@ StScrollBar StButton#hhandle:active{
 .calendar-day{
     height:2.4em;
 	border-width:0;
-	background-color:#181B1C;/*#252c2c;*/
+	background-color:#0c0f0f;/*#252c2c;*/
 	font-weight:bold;
 }
 .calendar-day-top{
@@ -1341,7 +1346,7 @@ StScrollBar StButton#hhandle:active{
 	border-left-width:1px
 }
 .calendar-nonwork-day{
-    background-color:#0c0f0f;
+    background-color:#222525;
 	color:gray
 }
 .calendar-today{
@@ -1380,13 +1385,14 @@ StScrollBar StButton#hhandle:active{
 	background-color:rgba(0,0,0,0.15)
 }
 .message{
-	background-color:#2f3941;
-	border-radius:3px;
+	background-color:rgba(0,0,0,0.57);
+	border-radius:5px;
+	border:1px solid #506070;
 	transition-duration:200ms
 }
 .message:hover,
 .message:focus{
-	background-color:#4a5151
+	border:1px solid #00b26d;
 }
 .message-icon-bin{
 	padding:10px 0px 10px 10px

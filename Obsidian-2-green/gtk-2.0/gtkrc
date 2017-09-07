@@ -100,7 +100,7 @@ style "murrine-default" {
 
  bg[NORMAL]    = @bg_color
  bg[PRELIGHT]   = shade (1.02, @bg_color)
- bg[SELECTED]   = @selected_bg_color
+ bg[SELECTED]   = mix (1.0, "#009b58", "#00844b")
  bg[INSENSITIVE]  = @bg_color
  bg[ACTIVE]    = shade (.9, @bg_color)
 
@@ -195,7 +195,7 @@ style "murrine-entry" = "murrine-wider" {
  xthickness = 3
  ythickness = 3
  
- bg[SELECTED] = mix (1.0, @selected_bg_color, @bg_color)
+ bg[SELECTED] = mix (1.0, "#009b58", "#00844b")
  fg[SELECTED] = @text_color
 
  engine "murrine" {
@@ -221,10 +221,10 @@ style "murrine-menubar" {
 
 style "murrine-menubar-menuitem" = "murrine-wider" {
   
-  fg[PRELIGHT]  = "#00FF99"
+  fg[PRELIGHT]  = "#FFFFFF"
   text[PRELIGHT] = @fg_color
-  bg[PRELIGHT]  = shade (.9, @bg_color)
-  bg[SELECTED]  = shade (.9, @bg_color)
+  bg[PRELIGHT]  = shade (.9, "#029354")
+  bg[SELECTED]  = shade (.9, "#029354")
   
 
  engine "murrine" {
@@ -234,7 +234,7 @@ style "murrine-menubar-menuitem" = "murrine-wider" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = @bg_color # menu background
+ bg[NORMAL] = "#2b3032" # menu background
  fg[PRELIGHT] = "#FFFFFF"
  text[ACTIVE] = "#FFFFFF"
  GtkMenuItem::arrow-scaling = .5 # small arrow
