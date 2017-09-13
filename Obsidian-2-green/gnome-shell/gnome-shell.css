@@ -335,8 +335,8 @@ StScrollBar StButton#hhandle:active{
 .slider{
 	height:1em;
 	-slider-height:0.3em;
-	-slider-background-color:#181919;
-	-slider-border-color:#212223;
+	-slider-background-color:#000000;
+	-slider-border-color:#000000;
 	-slider-active-background-color:#00b263;
 	-slider-active-border-color:#212223;
 	-slider-border-width:1px;
@@ -1321,7 +1321,7 @@ StScrollBar StButton#hhandle:active{
 .calendar-change-month-back:hover,
 .calendar-change-month-back:active,
 .calendar-change-month-back:selected {
-    background-color:#004fba;
+    background-color:#00ba4f;
 	background-image:url(resource:///org/gnome/shell/theme/calendar-arrow-left.svg)
 }
 .calendar-change-month-forward{
@@ -1335,7 +1335,7 @@ StScrollBar StButton#hhandle:active{
 .calendar-change-month-forward:hover,
 .calendar-change-month-forward:active,
 .calendar-change-month-forward:selected {
-    background-color:#004fba;
+    background-color:#00ba4f;
 	background-image:url(resource:///org/gnome/shell/theme/calendar-arrow-right.svg)
 }
 .calendar-day-base{

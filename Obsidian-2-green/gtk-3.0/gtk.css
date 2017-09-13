@@ -90,7 +90,7 @@
 iconview text,
 textview text {
   color: white;
-  background-color: #232729; }
+  background-color: #262A2C; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
   iconview text:backdrop,
@@ -201,8 +201,8 @@ entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: white;
   border-color: #1b1f20;
-  background-color: #232729;
-  box-shadow: inset 0 0 0 1px rgba(22, 110, 160, 0); }
+  background-image: linear-gradient(to bottom, #202426, #232729 40%, #262A2C);
+  box-shadow: inset 0 0 0 1px rgba(22, 160, 110, 0); }
   spinbutton:not(.vertical) image.left,
   entry image.left {
     margin-right: 6px; }
@@ -883,7 +883,7 @@ button.suggested-action {
         button.suggested-action:backdrop:disabled:checked label,
         button.suggested-action.flat:backdrop:disabled:active label,
         button.suggested-action.flat:backdrop:disabled:checked label {
-          color: #015793; }
+          color: #019357; }
   .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode button.titlebutton:backdrop:disabled,
   button.suggested-action.flat:backdrop,
   button.suggested-action.flat:disabled,
@@ -894,7 +894,7 @@ button.suggested-action {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: rgba(22, 110, 160, 0.8); }
+    color: rgba(22, 160, 110, 0.8); }
   button.suggested-action:disabled {
     border-color: #1b1f20;
     background-image: image(#323636);
@@ -919,7 +919,7 @@ button.suggested-action {
     color: #eeeeec;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
-    background-image: image(rgba(22, 110, 160, 0.5));
+    background-image: image(rgba(22, 160, 110, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -930,7 +930,7 @@ button.suggested-action {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(22, 110, 160, 0.7));
+      background-image: image(rgba(22, 160, 110, 0.7));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -966,7 +966,7 @@ button.suggested-action {
       color: #eeeeec;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(22, 110, 160, 0.5));
+      background-image: image(rgba(22, 160, 110, 0.5));
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1222,7 +1222,7 @@ button.needs-attention > label,
 .stack-switcher >
 button.needs-attention > image, stacksidebar row.needs-attention > label {
   animation: needs_attention 150ms ease-in;
-  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#015793), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.82745)), to(transparent));
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#019357), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.82745)), to(transparent));
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
   background-position: right 3px, right 2px; }
@@ -1782,12 +1782,12 @@ headerbar {
     border-color: #005249;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
     background: #1c8952 linear-gradient(to top, #1c8952, #1c8952 2px, #24ab66 3px);
-    box-shadow: inset 0 1px rgba(22, 110, 160, 0.535); }
+    box-shadow: inset 0 1px rgba(22, 160, 110, 0.535); }
     .selection-mode.titlebar:backdrop:not(headerbar),
     headerbar.selection-mode:backdrop {
       background-color: #1c8952;
       background-image: none;
-      box-shadow: inset 0 1px rgba(22, 110, 160, 0.442); }
+      box-shadow: inset 0 1px rgba(22, 160, 110, 0.442); }
     .selection-mode.titlebar:not(headerbar) button,
     headerbar.selection-mode button {
       color: #ffffff;
@@ -1890,7 +1890,7 @@ headerbar {
             headerbar.selection-mode button:backdrop.flat:disabled:checked label,
             headerbar.selection-mode button:backdrop:disabled:active label,
             headerbar.selection-mode button:backdrop:disabled:checked label {
-              color: #015793; }
+              color: #019357; }
       .selection-mode.titlebar:not(headerbar) button.flat:backdrop, .selection-mode.titlebar:not(headerbar) button.flat:disabled, .selection-mode.titlebar:not(headerbar) button.flat:backdrop:disabled,
       headerbar.selection-mode button.flat:backdrop,
       headerbar.selection-mode button.flat:disabled,
@@ -1995,8 +1995,8 @@ headerbar {
     .selection-mode.titlebar:not(headerbar) .selection-menu:backdrop, .selection-mode.titlebar:not(headerbar) .selection-menu,
     headerbar.selection-mode .selection-menu:backdrop,
     headerbar.selection-mode .selection-menu {
-      border-color: rgba(22, 110, 160, 0);
-      background-color: rgba(22, 110, 160, 0);
+      border-color: rgba(22, 160, 110, 0);
+      background-color: rgba(22, 160, 110, 0);
       background-image: none;
       box-shadow: none;
       padding-left: 10px;
@@ -2862,7 +2862,7 @@ menuitem check:checked:hover,
 treeview.check:checked:selected,
 row:selected check:checked,
 infobar check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 .check:checked:disabled,
 check:checked:disabled,
@@ -2892,7 +2892,7 @@ menuitem radio:hover,
 treeview.radio:selected,
 row:selected radio,
 infobar radio {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
 .radio:disabled,
 radio:disabled,
@@ -2952,7 +2952,7 @@ menuitem radio:checked:hover,
 treeview.radio:checked:selected,
 row:selected radio:checked,
 infobar radio:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 .radio:checked:disabled,
 radio:checked:disabled,
@@ -2998,6 +2998,7 @@ radio {
   menu menuitem
   radio {
     margin: 0; }
+
 
 
 /*.view.content-view.check:not(list), iconview.content-view.check:not(list) {
@@ -3946,7 +3947,7 @@ levelbar trough {
   color: white;
   border-color: #1b1f20;
   background-color: #232729;
-  box-shadow: inset 0 0 0 1px rgba(22, 110, 160, 0); }
+  box-shadow: inset 0 0 0 1px rgba(22, 160, 110, 0); }
   levelbar trough:backdrop {
     color: #d3d4d5;
     border-color: #202425;
