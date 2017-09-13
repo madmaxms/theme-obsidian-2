@@ -29,7 +29,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # *************************************************************************
-gtk-color-scheme = "base_color:#292929\nfg_color:#eeeeec\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#215D9C\nselected_fg_color:#FFFFFF\ntext_color:#FFFFFF\nbg_color:#393F3F\ntooltip_bg_color:#000000"
+gtk-color-scheme = "base_color:#232729\nfg_color:#eeeeec\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#215D9C\nselected_fg_color:#FFFFFF\ntext_color:#FFFFFF\nbg_color:#393F3F\ntooltip_bg_color:#000000"
 
 gtk-icon-sizes = "gtk-button=16,16:\ngtk-dnd=16,16:\npanel=16,16:\ngtk-small-toolbar=16,16:\ngtk-large-toolbar=24,24:"
 
