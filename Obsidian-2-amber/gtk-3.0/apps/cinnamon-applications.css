@@ -15,6 +15,11 @@ NemoWindow .sidebar .view {
     color: @nemo_sidebar_fg;
     text-shadow: none;
     icon-shadow: none;
+    padding: 2px;
+}
+
+NemoWindow .sidebar .view:hover {
+    background-color: rgba(150,150,150,0.1);
 }
 
 NemoWindow .sidebar .view:selected {
