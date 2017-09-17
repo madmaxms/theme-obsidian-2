@@ -15,12 +15,17 @@ NemoWindow .sidebar .view {
     color: @nemo_sidebar_fg;
     text-shadow: none;
     icon-shadow: none;
+    padding: 2px;
+}
+
+NemoWindow .sidebar .view:hover {
+    background-color: rgba(150,150,150,0.1);
 }
 
 NemoWindow .sidebar .view:selected {
     border-color: @nemo_sidebar_bg;
     color: @nemo_sidebar_selected_fg;
-    background-color: #a12623;
+    background-color: #be2b27;
     text-shadow: 1px 1px alpha(black, 0.2);
     icon-shadow: 1px 1px alpha(black, 0.2);
 }
