@@ -5,7 +5,7 @@ Comment=A Gnome theme, based upon Adwaita-Maia dark skin, modified by madmaxms
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Obsidian-2-Red
-MetacityTheme=Obsidian-2-Red
-IconTheme=Obsidian
+GtkTheme=Obsidian-2-red
+MetacityTheme=Obsidian-2-red
+IconTheme=Obsidian-Red
 CursorTheme=Obsidian
