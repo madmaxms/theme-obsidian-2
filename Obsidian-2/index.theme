@@ -7,5 +7,5 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Obsidian-2
 MetacityTheme=Obsidian-2
-IconTheme=Obsidian-2
-CursorTheme=Obsidian-1
+IconTheme=Obsidian
+CursorTheme=Obsidian
