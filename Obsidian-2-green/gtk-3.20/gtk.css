@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v1.7 (15.09.2017)
+                            v2.0 (15.09.2017)
                                 
                                 GREEN
                               "Bug Eyes"
@@ -30,6 +30,7 @@
 
 ************************************************************************** */
 @import url("apps/cinnamon-applications.css");
+@import url("apps/mate-applications.css");
 
 * {
   padding: 0;
@@ -491,7 +492,7 @@ button {
   button:backdrop.flat,
   button:backdrop {
     border-color: #202425;
-    background-image: linear-gradient(to bottom, #393f3f);/*image(#393f3f);*/
+    background-color: #393f3f;/*image(#393f3f);*/
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -509,7 +510,7 @@ button {
     button:backdrop:active,
     button:backdrop:checked {
       border-color: #202425;
-      background-image: linear-gradient(to bottom, #2f3434);/*image(#272c2d);*/
+      background-color: #2f3434;/*image(#272c2d);*/
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
       notebook > header > tabs > arrow:backdrop:active label, button.sidebar-button:backdrop:active label, button.titlebutton:backdrop:active label, notebook > header > tabs > arrow:backdrop:active, button.sidebar-button:backdrop:active, button.titlebutton:backdrop:active, notebook > header > tabs > arrow:backdrop:checked label, button.sidebar-button:backdrop:checked label, button.titlebutton:backdrop:checked label, notebook > header > tabs > arrow:backdrop:checked, button.sidebar-button:backdrop:checked, button.titlebutton:backdrop:checked, notebook > header > tabs > arrow:backdrop:active label, button.titlebutton:backdrop:active label, notebook > header > tabs > arrow:backdrop:active, button.titlebutton:backdrop:active, notebook > header > tabs > arrow:backdrop:checked label, button.titlebutton:backdrop:checked label, notebook > header > tabs > arrow:backdrop:checked, button.titlebutton:backdrop:checked,
       button:backdrop.flat:active label,
@@ -525,7 +526,7 @@ button {
     button:backdrop.flat:disabled,
     button:backdrop:disabled {
       border-color: #202425;
-      background-image: linear-gradient(to bottom, #323636);/*image(#323636);*/
+      background-color: #323636;/*image(#323636);*/
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -541,7 +542,7 @@ button {
       button:backdrop:disabled:active,
       button:backdrop:disabled:checked {
         border-color: #202425;
-        background-image: linear-gradient(to bottom, #262929);/*image(#272c2d);*/
+        background-color: #262929;/*image(#272c2d);*/
         box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
         notebook > header > tabs > arrow:backdrop:disabled:active label, button.sidebar-button:backdrop:disabled:active label, button.titlebutton:backdrop:disabled:active label, notebook > header > tabs > arrow:backdrop:disabled:checked label, button.sidebar-button:backdrop:disabled:checked label, button.titlebutton:backdrop:disabled:checked label, notebook > header > tabs > arrow:backdrop:disabled:active label, button.titlebutton:backdrop:disabled:active label, notebook > header > tabs > arrow:backdrop:disabled:checked label, button.titlebutton:backdrop:disabled:checked label,
         button:backdrop.flat:disabled:active label,
@@ -562,7 +563,7 @@ button {
   notebook > header > tabs > arrow:disabled, button.titlebutton:disabled,
   button:disabled {
     border-color: #1b1f20;
-    background-image: linear-gradient(to bottom, #323636);/*image(#323636);*/
+    background-color: #323636;/*image(#323636);*/
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
