@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v1.7 (15.09.2017)
+                            v2.0 (15.09.2017)
                                 
                                 AMBER
                            "Fields Of Gold"
@@ -31,6 +31,7 @@
 ************************************************************************** */
 @import url("apps/gnome-applications.css");
 @import url("apps/cinnamon-applications.css");
+@import url("apps/mate-applications.css");
 
 * {
   padding: 0;
