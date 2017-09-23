@@ -2591,169 +2591,175 @@ GtkSwitch {
       background-position: left center; }
 
 GtkSwitch.trough {
-  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off.svg")); }
 
 .list-row:selected GtkSwitch.trough,
 GtkInfoBar GtkSwitch.trough {
-  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off.svg")); }
 
 .header-bar GtkSwitch.trough,
 .primary-toolbar GtkSwitch.trough,
 .primary-toolbar .toolbar GtkSwitch.trough,
 .primary-toolbar .inline-toolbar GtkSwitch.trough {
-  background-image: -gtk-scaled(url("assets/switch.png"), url("assets/switch@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off.svg")); }
+  
+GtkSwitch.trough:hover {
+  background-image: -gtk-scaled(url("../assets/switch-off-hover.svg")); }
+
+.list-row:selected GtkSwitch.trough:hover,
+GtkInfoBar GtkSwitch.trough:hover {
+  background-image: -gtk-scaled(url("../assets/switch-off-hover.svg")); }
+
+.header-bar GtkSwitch.trough:hover,
+.primary-toolbar GtkSwitch.trough:hover,
+.primary-toolbar .toolbar GtkSwitch.trough:hover,
+.primary-toolbar .inline-toolbar GtkSwitch.trough:hover {
+  background-image: -gtk-scaled(url("../assets/switch-off-hover.svg")); }
 
 GtkSwitch.trough:active {
-  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on.svg")); }
 
 .list-row:selected GtkSwitch.trough:active,
 GtkInfoBar GtkSwitch.trough:active {
-  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on.svg")); }
 
 .header-bar GtkSwitch.trough:active,
 .primary-toolbar GtkSwitch.trough:active,
 .primary-toolbar .toolbar GtkSwitch.trough:active,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:active {
-  background-image: -gtk-scaled(url("assets/switch-active.png"), url("assets/switch-active@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on.svg")); }
+  
+GtkSwitch.trough:active:hover {
+  background-image: -gtk-scaled(url("../assets/switch-on-hover.svg")); }
+
+.list-row:selected GtkSwitch.trough:active:hover,
+GtkInfoBar GtkSwitch.trough:active:hover {
+  background-image: -gtk-scaled(url("../assets/switch-on-hover.svg")); }
+
+.header-bar GtkSwitch.trough:active:hover,
+.primary-toolbar GtkSwitch.trough:active:hover,
+.primary-toolbar .toolbar GtkSwitch.trough:active:hover,
+.primary-toolbar .inline-toolbar GtkSwitch.trough:active:hover {
+  background-image: -gtk-scaled(url("../assets/switch-on-hover.svg")); }
 
 GtkSwitch.trough:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-disabled.png"), url("assets/switch-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg")); }
 
 .list-row:selected GtkSwitch.trough:insensitive,
 GtkInfoBar GtkSwitch.trough:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-disabled.png"), url("assets/switch-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg")); }
 
 .header-bar GtkSwitch.trough:insensitive,
 .primary-toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-disabled.png"), url("assets/switch-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg")); }
 
 GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-disabled.png"), url("assets/switch-active-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on-disabled.png")); }
 
 .list-row:selected GtkSwitch.trough:active:insensitive,
 GtkInfoBar GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-disabled.png"), url("assets/switch-active-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on-disabled.png")); }
 
 .header-bar GtkSwitch.trough:active:insensitive,
 .primary-toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:active:insensitive {
-  background-image: -gtk-scaled(url("assets/switch-active-disabled.png"), url("assets/switch-active-disabled@2.png")); }
+  background-image: -gtk-scaled(url("../assets/switch-on-disabled.svg")); }
 
 /*************************
  * Check and Radio items *
  *************************/
 .check,
 .menu .menuitem.check {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), 
-  url("assets/checkbox-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
 }
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check,
 GtkFileChooserDialog .dialog-vbox > .frame .check {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), 
-  url("assets/checkbox-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
 }
 
 .check:hover,
 .menu .menuitem.check:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-dark.png"), 
-  url("assets/checkbox-unchecked-hover-dark@2.png")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
 }
 
 .check:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-active-dark.png"), 
-  url("assets/checkbox-unchecked-active-dark@2.png")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
 }
 
 .check:insensitive,
 .menu .menuitem.check:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), 
-  url("assets/checkbox-unchecked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedInsensitive.svg"));
 }
 
 .check:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-backdrop-dark.png"), 
-  url("assets/checkbox-unchecked-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedInsensitive.svg"));
 }
 
 .check:backdrop:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-backdrop-insensitive-dark.png"), 
-  url("assets/checkbox-unchecked-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedInsensitive.svg"));
 }
 
 .check:inconsistent {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), 
-  url("assets/checkbox-mixed-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixed.svg"));
 }
 
 .check:inconsistent:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-hover-dark.png"), 
-  url("assets/checkbox-mixed-hover-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixed.svg"));
 }
 
 .check:inconsistent:selected {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-active-dark.png"), 
-  url("assets/checkbox-mixed-active-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixed.svg"));
 }
 
 .check:inconsistent:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-backdrop-dark.png"), 
-  url("assets/checkbox-mixed-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixed.svg"));
 }
 
 .check:inconsistent:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), 
-  url("assets/checkbox-mixed-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixedInsensitive.svg"));
 }
 
 .check:inconsistent:insensitive:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-backdrop-insensitive-dark.png"), 
-  url("assets/checkbox-mixed-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxMixedInsensitive.svg"));
 }
 
 .check:checked,
 .menu .menuitem.check:active,
 .menu .menuitem.check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), 
-  url("assets/checkbox-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
 }
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked,
 GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), 
-  url("assets/checkbox-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
 }
 
 .check:checked:insensitive,
 .menu .menuitem.check:active:insensitive,
 .menu .menuitem.check:checked:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), 
-  url("assets/checkbox-checked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxCheckedInsensitive.svg"));
 }
 
 .check:checked:hover,
 .menu .menuitem.check:active:hover,
 .menu .menuitem.check:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-hover-dark.png"), 
-  url("assets/checkbox-checked-hover-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
 }
 
 .check:checked:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-active-dark.png"), 
-  url("assets/checkbox-checked-active-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
 }
 
 .check:backdrop:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-backdrop-dark.png"), 
-  url("assets/checkbox-checked-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkboxChecked.svg"));
 }
 
 .check:backdrop:checked:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-backdrop-insensitive-dark.png"), 
-  url("assets/checkbox-checked-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxCheckedInsensitive.svg"));
 }
 
 .menu .menuitem.check {
@@ -2765,93 +2771,75 @@ GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
     color: #666a6a; }
 
 .radio {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), 
-  url("assets/radio-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUnchecked.svg"));
 }
 
 .radio:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-dark.png"), 
-  url("assets/radio-unchecked-hover-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUnchecked.svg"));
 }
 
 .radio:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-active-dark.png"), 
-  url("assets/radio-unchecked-active-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUnchecked.svg"));
 }
 
 .radio:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), 
-  url("assets/radio-unchecked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUncheckedInsensitive.svg"));
 }
 
 .radio:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-backdrop-dark.png"), 
-  url("assets/radio-unchecked-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUnchecked.svg"));
 }
 
 .radio:backdrop:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-backdrop-insensitive-dark.png"), 
-  url("assets/radio-unchecked-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioUncheckedInsensitive.svg"));
 }
 
 .radio:inconsistent {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), 
-  url("assets/radio-mixed-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixed.svg"));
 }
 
 .radio:inconsistent:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-hover-dark.png"), 
-  url("assets/radio-mixed-hover-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixed.svg"));
 }
 
 .radio:inconsistent:selected {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active-dark.png"), 
-  url("assets/radio-mixed-active-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixed.svg"));
 }
 
 .radio:inconsistent:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-backdrop-dark.png"), 
-  url("assets/radio-mixed-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixed.svg"));
 }
 
 .radio:inconsistent:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), 
-  url("assets/radio-mixed-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixedInsensitive.svg"));
 }
 
 .radio:inconsistent:insensitive:backdrop {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-backdrop-insensitive-dark.png"), 
-  url("assets/radio-mixed-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioMixedInsensitive.svg"));
 }
 
 .radio:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), 
-  url("assets/radio-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioChecked.svg"));
 }
 
 .radio:checked:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), 
-  url("assets/radio-checked-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioCheckedInsensitive.svg"));
 }
 
 .radio:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-hover-dark.png"), 
-  url("assets/radio-checked-hover-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioChecked.svg"));
 }
 
 .radio:checked:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-active-dark.png"), 
-  url("assets/radio-checked-active-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioChecked.svg"));
 }
 
 .radio:backdrop:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-backdrop-dark.png"), 
-  url("assets/radio-checked-backdrop-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioChecked.svg"));
 }
 
 .radio:backdrop:checked:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-backdrop-insensitive-dark.png"), 
-  url("assets/radio-checked-backdrop-insensitive-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/radioCheckedInsensitive.svg"));
 }
 
 .menu .menuitem.radio {
@@ -2870,57 +2858,49 @@ GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
 
 .view.content-view.check {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-selectionmode.png"), 
-  url("assets/checkbox-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:hover {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-hover-selectionmode.png"), 
-  url("assets/checkbox-hover-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:active {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-active-selectionmode.png"), 
-  url("assets/checkbox-active-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:backdrop {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-backdrop-selectionmode.png"), 
-  url("assets/checkbox-backdrop-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:checked {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selectionmode.png"), 
-  url("assets/checkbox-checked-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:checked:hover {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-hover-selectionmode.png"), 
-  url("assets/checkbox-checked-hover-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:checked:active {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-active-selectionmode.png"), 
-  url("assets/checkbox-checked-active-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
   background-color: transparent; 
 }
 
 .view.content-view.check:backdrop:checked {
   icon-shadow: none;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-backdrop-selectionmode.png"), 
-  url("assets/checkbox-checked-backdrop-selectionmode@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxChecked.svg"));
   background-color: transparent; 
 }
 
@@ -4498,6 +4478,139 @@ GtkVolumeButton.button, .header-bar GtkVolumeButton.button.titlebutton,
   background-origin: content-box;
   background-position: right center; }
 
+/******************
+ * window actions *
+ ******************/
+
+/* minimize */
+.titlebar .titlebutton.minimize {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/min.svg"));
+}
+
+.titlebar .titlebutton.minimize:backdrop {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/minUnfocused.svg"));
+}
+
+.titlebar .titlebutton.minimize:hover,
+.titlebar .titlebutton.minimize:checked {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/minPrelight.svg"));
+}
+
+.titlebar .titlebutton.minimize:active {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/minPress.svg"));
+}
+
+/* maximize */
+.titlebar .titlebutton.maximize {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/max.svg"));
+}
+
+.titlebar .titlebutton.maximize:backdrop {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/maxUnfocused.svg"));
+}
+
+
+.titlebar .titlebutton.maximize:hover,
+.titlebar .titlebutton.maximize:checked  {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/maxPrelight.svg"));
+}
+
+.titlebar .titlebutton.maximize:active  {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/maxPress.svg"));
+}
+
+/* close */
+.titlebar .titlebutton.close {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/close.svg"));
+}
+
+.titlebar .titlebutton.close:backdrop {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/closeUnfocused.svg"));
+}
+
+
+.titlebar .titlebutton.close:hover,
+.titlebar .titlebutton.close:checked  {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/closePrelight.svg"));
+}
+
+.titlebar .titlebutton.close:active  {
+    color: transparent;
+    border-image: none;
+    border-width: 0px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("../assets/closePress.svg"));
+}
+
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
@@ -4575,136 +4688,4 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_c shade(#393f3f, 0.9);
 @define-color content_view_bg #292929;
 
-
-/******************
- * window actions *
- ******************/
-
-/* minimize */
-.titlebar .titlebutton.minimize {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/min.png"));
-}
-
-.titlebar .titlebutton.minimize:backdrop {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/min_unfocused.png"));
-}
-
-.titlebar .titlebutton.minimize:hover,
-.titlebar .titlebutton.minimize:checked {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/min_prelight.png"));
-}
-
-.titlebar .titlebutton.minimize:active {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/minPress.png"));
-}
-
-/* maximize */
-.titlebar .titlebutton.maximize {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/max.png"));
-}
-
-.titlebar .titlebutton.maximize:backdrop {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/max_unfocused.png"));
-}
-
-
-.titlebar .titlebutton.maximize:hover,
-.titlebar .titlebutton.maximize:checked  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/max_prelight.png"));
-}
-
-.titlebar .titlebutton.maximize:active  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/maxPress.png"));
-}
-
-/* close */
-.titlebar .titlebutton.close {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/close.png"));
-}
-
-.titlebar .titlebutton.close:backdrop {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/close_unfocused.png"));
-}
-
-
-.titlebar .titlebutton.close:hover,
-.titlebar .titlebutton.close:checked  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/close_prelight.png"));
-}
-
-.titlebar .titlebutton.close:active  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    border-width: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("assets/closePress.png"));
-}
 
