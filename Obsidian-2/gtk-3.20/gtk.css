@@ -31,6 +31,7 @@
 ************************************************************************** */
 @import url("apps/cinnamon-applications.css");
 @import url("apps/mate-applications.css");
+@import url("apps/firefox.css");
 
 * {
   padding: 0;
@@ -106,6 +107,23 @@ textview text {
   iconview text:selected,
   textview text:selected {
     border-radius: 3px; }
+    
+/* **************************************** */
+/* START: Workaround for Firefox Textfields */   
+/* **************************************** */
+* .view text {
+    background-color: #cccccc;
+    color: #000000;
+}
+box .view text,
+frame .view text {
+    background-color: #262A2C;
+    color: white;
+}
+/* **************************************** */
+/* END: Workaround for Firefox Textfields   */   
+/* **************************************** */
+
 
 textview border {
   background-color: #2b3032; }
