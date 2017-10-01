@@ -7,82 +7,71 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="24"
-   height="24"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   height="24"
+   width="24">
   <defs
      id="defs4">
     <linearGradient
-       id="linearGradient4161">
+       id="linearGradient837">
       <stop
-         id="stop4163"
+         id="stop833"
          offset="0"
-         style="stop-color:#1c1c1f;stop-opacity:1" />
+         style="stop-color:#858b8d;stop-opacity:1;" />
       <stop
-         id="stop4165"
+         id="stop835"
          offset="1"
-         style="stop-color:#4b5151;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4153">
-      <stop
-         id="stop4155"
-         offset="0"
-         style="stop-color:#444a4a;stop-opacity:1" />
-      <stop
-         id="stop4157"
-         offset="1"
-         style="stop-color:#1c1c1f;stop-opacity:1" />
+         style="stop-color:#2a2e32;stop-opacity:1" />
     </linearGradient>
     <linearGradient
        id="linearGradient4217">
       <stop
-         style="stop-color:#1c1c1f;stop-opacity:1"
+         id="stop4219"
          offset="0"
-         id="stop4219" />
+         style="stop-color:#002b4f;stop-opacity:1" />
       <stop
-         style="stop-color:#1c1c1f;stop-opacity:1"
+         id="stop4221"
          offset="1"
-         id="stop4221" />
+         style="stop-color:#001141;stop-opacity:1" />
     </linearGradient>
     <linearGradient
-       id="linearGradient4175-7"
-       osb:paint="gradient">
+       osb:paint="gradient"
+       id="linearGradient4175-7">
       <stop
-         id="stop4185"
+         style="stop-color:#5b6164;stop-opacity:1"
          offset="0"
-         style="stop-color:#444a4a;stop-opacity:1" />
+         id="stop4185" />
       <stop
-         id="stop4187"
+         style="stop-color:#3c4449;stop-opacity:1"
          offset="1"
-         style="stop-color:#2d3232;stop-opacity:1" />
+         id="stop4187" />
     </linearGradient>
     <linearGradient
-       xlink:href="#linearGradient4175-7"
-       id="linearGradient4211"
-       x1="1.9000006"
-       y1="-1041.3621"
-       x2="19.112719"
+       gradientTransform="translate(1029.3621,1053.3621)"
+       gradientUnits="userSpaceOnUse"
        y2="-1041.3621"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1029.3621,1053.3621)" />
+       x2="19.112719"
+       y1="-1041.3621"
+       x1="1.9000006"
+       id="linearGradient4211"
+       xlink:href="#linearGradient4175-7" />
     <linearGradient
-       xlink:href="#linearGradient4217"
-       id="linearGradient4223"
-       x1="1031.2622"
-       y1="12"
-       x2="1051.4622"
+       gradientUnits="userSpaceOnUse"
        y2="12"
-       gradientUnits="userSpaceOnUse" />
+       x2="1051.4622"
+       y1="12"
+       x1="1031.2622"
+       id="linearGradient4223"
+       xlink:href="#linearGradient4217" />
     <linearGradient
        gradientUnits="userSpaceOnUse"
-       y2="1041.3622"
-       x2="22.100012"
-       y1="1041.3622"
-       x1="1.8999891"
-       id="linearGradient4149"
-       xlink:href="#linearGradient4161" />
+       y2="12"
+       x2="1051.4622"
+       y1="12"
+       x1="1031.2622"
+       id="linearGradient839"
+       xlink:href="#linearGradient837" />
   </defs>
   <metadata
      id="metadata7">
@@ -97,18 +86,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     style="stroke:url(#linearGradient4149)"
-     id="layer1"
-     transform="translate(0,-1028.3622)">
+     transform="translate(0,-1028.3622)"
+     id="layer1">
     <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient4211);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4149);stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
-       id="rect3890"
-       width="19.199999"
-       height="19.200022"
-       x="1031.7622"
-       y="2.3999891"
-       rx="1.2884727"
+       transform="matrix(0,1,1,0,0,0)"
        ry="1.6000017"
-       transform="matrix(0,1,1,0,0,0)" />
+       rx="1.2884727"
+       y="2.3999891"
+       x="1031.7622"
+       height="19.200022"
+       width="19.199999"
+       id="rect3890"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient4211);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient839);stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
   </g>
 </svg>

@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.0 (15.09.2017)
+                            v2.2 (01.10.2017)
                                 
                                  BLUE
                             "Leap Of Faith"
@@ -99,14 +99,45 @@
     background-color: #215d9c;
     color: #ffffff; }
 
-.view {
+.view, iconview,
+.view text,
+iconview text,
+textview text {
   color: white;
-  background-color: #292929; }
-  .view:backdrop {
-    color: #d4d4d4;
-    background-color: #2c2c2c; }
-  .view:selected, GtkCalendar:selected {
+  background-color: #262A2C; }
+  .view:backdrop, iconview:backdrop,
+  .view text:backdrop,
+  iconview text:backdrop,
+  textview text:backdrop {
+    color: #d3d4d5;
+    background-color: #252a2c; }
+  .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
+  .view text:selected:focus,
+  iconview text:selected:focus,
+  textview text:selected:focus,
+  .view text:selected,
+  iconview text:selected,
+  textview text:selected {
     border-radius: 3px; }
+
+
+/* **************************************** */
+/* START: Workaround for Firefox Textfields */   
+/* **************************************** */
+* .view text {
+    background-color: #cccccc;
+    color: #000000;
+}
+box .view text,
+frame .view text {
+    background-color: #262A2C;
+    color: white;
+}
+/* **************************************** */
+/* END: Workaround for Firefox Textfields   */   
+/* **************************************** */
+
+
 
 .rubberband {
   border: 1px solid #215d9c;

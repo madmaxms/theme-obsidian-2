@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.0 (15.09.2017)
+                            v2.2 (01.10.2017)
                                 
                                  BLUE
                             "Leap Of Faith"
@@ -31,7 +31,6 @@
 ************************************************************************** */
 @import url("apps/cinnamon-applications.css");
 @import url("apps/mate-applications.css");
-@import url("apps/firefox.css");
 
 * {
   padding: 0;
@@ -111,12 +110,16 @@ textview text {
 /* **************************************** */
 /* START: Workaround for Firefox Textfields */   
 /* **************************************** */
-* .view text {
+window .view text 
+{
     background-color: #cccccc;
     color: #000000;
 }
+
 box .view text,
-frame .view text {
+frame .view text,
+window .view text *
+{
     background-color: #262A2C;
     color: white;
 }
