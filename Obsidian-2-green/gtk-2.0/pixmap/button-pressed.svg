@@ -7,52 +7,52 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
+   width="24"
    height="24"
-   width="24">
+   id="svg2"
+   version="1.1">
   <defs
      id="defs4">
     <linearGradient
        id="linearGradient4217">
       <stop
-         id="stop4219"
+         style="stop-color:#002b4f;stop-opacity:1"
          offset="0"
-         style="stop-color:#1c1c1f;stop-opacity:1" />
+         id="stop4219" />
       <stop
-         id="stop4221"
+         style="stop-color:#001141;stop-opacity:1"
          offset="1"
-         style="stop-color:#1c1c1f;stop-opacity:1" />
+         id="stop4221" />
     </linearGradient>
     <linearGradient
-       osb:paint="gradient"
-       id="linearGradient4175-7">
+       id="linearGradient4175-7"
+       osb:paint="gradient">
       <stop
-         style="stop-color:#1c1c1f;stop-opacity:1"
+         id="stop4185"
          offset="0"
-         id="stop4185" />
+         style="stop-color:#00572c;stop-opacity:1" />
       <stop
-         style="stop-color:#2d3232;stop-opacity:1"
+         id="stop4187"
          offset="1"
-         id="stop4187" />
+         style="stop-color:#028d45;stop-opacity:1" />
     </linearGradient>
     <linearGradient
-       gradientTransform="translate(1029.3621,1053.3621)"
-       gradientUnits="userSpaceOnUse"
-       y2="-1041.3621"
-       x2="19.112719"
-       y1="-1041.3621"
-       x1="1.9000006"
+       xlink:href="#linearGradient4175-7"
        id="linearGradient4211"
-       xlink:href="#linearGradient4175-7" />
-    <linearGradient
+       x1="1.9000006"
+       y1="-1041.3621"
+       x2="19.112719"
+       y2="-1041.3621"
        gradientUnits="userSpaceOnUse"
-       y2="12"
-       x2="1051.4622"
-       y1="12"
-       x1="1031.2622"
+       gradientTransform="translate(1029.3621,1053.3621)" />
+    <linearGradient
+       xlink:href="#linearGradient4217"
        id="linearGradient4223"
-       xlink:href="#linearGradient4217" />
+       x1="1031.2622"
+       y1="12"
+       x2="1051.4622"
+       y2="12"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata7">
@@ -67,17 +67,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-1028.3622)"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-1028.3622)">
     <rect
-       transform="matrix(0,1,1,0,0,0)"
-       ry="1.6000017"
-       rx="1.2884727"
-       y="2.3999891"
-       x="1031.7622"
-       height="19.200022"
-       width="19.199999"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient4211);fill-opacity:1;fill-rule:evenodd;stroke:#00b268;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
        id="rect3890"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient4211);fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient4223);stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
+       width="19.199999"
+       height="19.200022"
+       x="1031.7622"
+       y="2.3999891"
+       rx="1.2884727"
+       ry="1.6000017"
+       transform="matrix(0,1,1,0,0,0)" />
   </g>
 </svg>
