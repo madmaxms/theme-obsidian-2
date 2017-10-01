@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.0 (15.09.2017)
+                            v2.2 (01.10.2017)
                                 
                                 AMBER
                            "Fields Of Gold"
@@ -2683,11 +2683,11 @@ GtkFileChooserDialog .dialog-vbox > .frame .check {
 
 .check:hover,
 .menu .menuitem.check:hover {
-  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg")); 
 }
 
 .check:active {
-  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg")); 
 }
 
 .check:insensitive,
