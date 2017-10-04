@@ -309,13 +309,11 @@ StScrollBar StButton#hhandle:active {
 }
 
 .modal-dialog { 
-    border: none; 
-    border-radius: 4px; 
-    color: #CCDDEE; 
-    padding: 0px;
+    padding: 10px;
     background-color: rgba(34, 45, 50, 0.9); 
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.34); 
-    
+    border-radius: 6px; 
+    border: 1px solid #445566;
+    color: #FFFFFF;
 }
 
 .modal-dialog-content-box { 
@@ -3559,7 +3557,7 @@ StScrollBar StButton#hhandle:active {
     padding: 0.3em 0.5em 0.3em 0.5em; 
     border-radius: 2px; 
     color: rgba(207, 216, 220, 0.87); 
-    transition-duration: 0s; 
+    transition-duration: 0s;  
 }
 
 .candidate-box:hover, 
@@ -3582,18 +3580,31 @@ StScrollBar StButton#hhandle:active {
 }
 
 .candidate-page-button { 
-    padding: 4px; 
-    color: #BBCCDD; 
+	border-radius:4px;
+	border:1px solid #080808;
+	padding:6px 10px;
+	color:#fff;
+	background:none;
+	background-color:none;
+	background-gradient-direction:vertical;
+	background-gradient-start:#283032;
+	background-gradient-end:#22282A;
+	box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
+	text-shadow:1px 1px rgba(0,0,0,0.15);
+	icon-shadow:1px 1px rgba(0,0,0,0.15);
+	transition-duration:200ms 
 }
 
 .candidate-page-button:hover { 
-    background-color: rgba(207, 216, 220, 0.12); 
-    color: #BBCCDD; 
+	border:1px solid #080808;
+	background-gradient-start:#0056cb; /* coloraccent */
+	background-gradient-end:#0045b4; /* coloraccent */
 }
 
 .candidate-page-button:active { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #BBCCDD; 
+	border:1px solid #080808;
+	background-gradient-start:#0056cb; /* coloraccent */
+	background-gradient-end:#0045b4; /* coloraccent */ 
 }
 
 .candidate-page-button-previous { 
