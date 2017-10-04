@@ -82,7 +82,8 @@ stage {
     background-color: transparent; 
     box-shadow: 0 0 transparent; 
     text-shadow: none; 
-    icon-shadow: none; 
+    icon-shadow: none;
+    color: #667788;  
 }
 
 .button:focus { 
@@ -133,9 +134,10 @@ stage {
 }
 
 .modal-dialog-linked-button:insensitive { 
+    color: #667788;
 	border:1px solid #080808;
-	background-gradient-start:#202122;
-	background-gradient-end:#181819;
+	background-gradient-start:#283032;
+	background-gradient-end:#283032;
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -2059,6 +2061,10 @@ StScrollBar StButton#hhandle:active {
     max-height: 34em; 
     min-height: 28em; 
     min-width: 34em; 
+    padding: 16px; 
+    border-radius: 6px; 
+    border: 1px solid #445566;
+    color: #FFFFFF; 
 }
 
 .nm-dialog-content { 
@@ -2069,7 +2075,6 @@ StScrollBar StButton#hhandle:active {
 .nm-dialog-header-hbox { 
     spacing: 10px; 
     color: #CCDDEE;
-    color: rgba(207, 216, 220, 0.54);
 }
 
 .nm-dialog-header { 
@@ -2104,21 +2109,28 @@ StScrollBar StButton#hhandle:active {
 }
 
 .nm-dialog-airplane-box .button:hover { 
-    color: #BBCCDD; 
-    background-color: rgba(207, 216, 220, 0.12); 
+	border:1px solid #080808;
+	background-gradient-start:#00A250; /* coloraccent */
+	background-gradient-end:#009044; /* coloraccent */
 }
 
 .nm-dialog-airplane-box .button:active { 
-    color: #BBCCDD; 
-    background-color: rgba(207, 216, 220, 0.25); 
-    box-shadow: 0 0 transparent; 
+	border:1px solid #080808;
+	background-gradient-start:#00A250; /* coloraccent */
+	background-gradient-end:#009044; /* coloraccent */
+}
+
+.nm-dialog-airplane-box .button:focus { 
+	border:1px solid #080808;
+	background-gradient-start:#00A250; /* coloraccent */
+	background-gradient-end:#009044; /* coloraccent */
 }
 
 .nm-dialog-airplane-box .button:insensitive { 
-    border-color: transparent; 
-    color: rgba(207, 216, 220, 0.2436); 
-    background-color: transparent; 
-    box-shadow: 0 0 transparent; 
+	color: #667788; 
+	border:1px solid #080808;
+	background-gradient-start:#283032;
+	background-gradient-end:#283032;
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -2133,19 +2145,21 @@ StScrollBar StButton#hhandle:active {
 }
 
 .nm-dialog-scroll-view { 
-    border: 1px solid rgba(0, 0, 0, 0.09); 
+    border: 1px solid rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 0px; 
 }
 
 .nm-dialog-item { 
-    font-size: 10pt; 
+    font-size: 11pt; 
     spacing: 20px; 
     padding: 12px; 
     color: #CCDDEE; 
 }
 
 .nm-dialog-item:selected { 
-    background-color: #CCDDEE; 
-    color: #FFFFFF; 
+	background-color:#009160; /* coloraccent */
+	color:#88FFEE; /* coloraccent */
 }
 
 .nm-dialog-icons { 
@@ -3683,9 +3697,10 @@ StScrollBar StButton#hhandle:active {
 }
 
 .login-dialog .modal-dialog-button:insensitive { 
+    color: #667788;
 	border:1px solid #080808;
-	background-gradient-start:#202122;
-	background-gradient-end:#181819;
+	background-gradient-start:#283032;
+	background-gradient-end:#283032;
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -3719,10 +3734,11 @@ StScrollBar StButton#hhandle:active {
 	background-gradient-end:#009044; /* coloraccent */
 }
 
-.login-dialog .modal-dialog-button:default:insensitive { 
+.login-dialog .modal-dialog-button:default:insensitive {
+    color: #667788; 
 	border:1px solid #080808;
-	background-gradient-start:#202122;
-	background-gradient-end:#181819;
+	background-gradient-start:#283032;
+	background-gradient-end:#283032;
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -4160,10 +4176,11 @@ StScrollBar StButton#hhandle:active {
 	background-gradient-end:#009044; /* coloraccent */
 }
 
-.lg-obj-inspector-button:insensitive { 
+.lg-obj-inspector-button:insensitive {
+    color: #667788; 
 	border:1px solid #080808;
-	background-gradient-start:#202122;
-	background-gradient-end:#181819;
+	background-gradient-start:#283032;
+	background-gradient-end:#283032;
     text-shadow: none; 
     icon-shadow: none; 
 }
