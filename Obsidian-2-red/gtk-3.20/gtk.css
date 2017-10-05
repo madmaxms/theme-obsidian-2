@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.2 (01.10.2017)
+                            v2.3 (03.10.2017)
                                 
                                   RED
                            "The Last Stand"
@@ -106,22 +106,7 @@ textview text {
   iconview text:selected,
   textview text:selected {
     border-radius: 3px; }
-    
-/* **************************************** */
-/* START: Workaround for Firefox Textfields */   
-/* **************************************** */
-* .view text {
-    background-color: #cccccc;
-    color: #000000;
-}
-box .view text,
-frame .view text {
-    background-color: #262A2C;
-    color: white;
-}
-/* **************************************** */
-/* END: Workaround for Firefox Textfields   */   
-/* **************************************** */
+
 
 textview border {
   background-color: #2b3032; }
