@@ -121,24 +121,6 @@ textview text {
     border-radius: 3px; }
 
 
-/* **************************************** */
-/* START: Workaround for Firefox Textfields */   
-/* **************************************** */
-* .view text {
-    background-color: #cccccc;
-    color: #000000;
-}
-box .view text,
-frame .view text {
-    background-color: #262A2C;
-    color: white;
-}
-/* **************************************** */
-/* END: Workaround for Firefox Textfields   */   
-/* **************************************** */
-
-
-
 .rubberband {
   border: 1px solid #215d9c;
   background-color: rgba(33, 93, 156, 0.2); }

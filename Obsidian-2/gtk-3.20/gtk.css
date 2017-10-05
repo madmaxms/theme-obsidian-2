@@ -106,26 +106,6 @@ textview text {
   iconview text:selected,
   textview text:selected {
     border-radius: 3px; }
-    
-/* **************************************** */
-/* START: Workaround for Firefox Textfields */   
-/* **************************************** */
-window .view text 
-{
-    background-color: #cccccc;
-    color: #000000;
-}
-
-box .view text,
-frame .view text,
-window .view text *
-{
-    background-color: #262A2C;
-    color: white;
-}
-/* **************************************** */
-/* END: Workaround for Firefox Textfields   */   
-/* **************************************** */
 
 
 textview border {
