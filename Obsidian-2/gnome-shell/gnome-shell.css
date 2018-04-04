@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.3 (03.10.2017)
+                            v2.4 (03.04.2018)
                                 
                                  BLUE
                             "Leap Of Faith"
@@ -624,7 +624,7 @@ StScrollBar StButton#hhandle:active {
 
 .access-dialog-main-layout { 
     padding: 1em 1.6em 0; 
-    spacing: 1em; 
+    spacing: 1em;  
 }
 
 .access-dialog-content { 
@@ -679,8 +679,11 @@ StScrollBar StButton#hhandle:active {
 
 .network-dialog-secret-table, 
 .keyring-dialog-control-table { 
-    spacing-rows: 15px; 
-    spacing-columns: 1em; 
+    spacing: 1em; 
+    padding: 2px 2px 2px 12px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0, 0.3);
+    border: 1px solid #445566; 
 }
 
 .popup-menu { 
@@ -841,7 +844,7 @@ StScrollBar StButton#hhandle:active {
     -arrow-background-color: rgba(21,25,28,0.91); 
     -arrow-border-width: 0; 
     -arrow-border-color: transparent; 
-    -arrow-base: 24px; 
+    -arrow-base: 14px; 
     -arrow-rise: 11px; 
     -arrow-box-shadow: 0px 0px transparent; 
     border-top-width: 0px;
@@ -1728,33 +1731,33 @@ StScrollBar StButton#hhandle:active {
 .popup-menu .message:focus .message-secondary-bin, 
 .popup-menu .message:focus .message-secondary-bin > 
 .event-time { 
-    color: #778899;
+    color: #BBCCDD;
 }
 
 .popup-menu .message:active { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899; 
+    background-color:rgba(0,51,85,0.8); /* coloraccent */
+    color: #00CCFF;  /* coloraccent */
 }
 
 .popup-menu .message:active:ltr { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899; 
+    background-color:rgba(0,51,85,0.8); /* coloraccent */
+    color: #00CCFF; /* coloraccent */
 }
 
 .popup-menu .message:active:rtl { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899;  
+    background-color:rgba(0,51,85,0.8); /* coloraccent */
+    color: #00CCFF;  /* coloraccent */
 }
 
 .popup-menu .message:active .message-icon-bin > StIcon, 
 .popup-menu .message:active .message-title, 
 .popup-menu .message:active .message-content { 
-    color: #778899; 
+    color: #00CCFF; /* coloraccent */
 }
 
 .popup-menu .message:active .message-secondary-bin, 
 .popup-menu .message:active .message-secondary-bin > .event-time { 
-    color: #778899; 
+    color: #00CCFF; /* coloraccent */
 }
 
 .message-icon-bin { 
@@ -2142,7 +2145,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .nm-dialog-airplane-text { 
-    color: #CCDDEE; 
+    color: #CCDDEE;  
 }
 
 .nm-dialog-scroll-view { 
@@ -2680,15 +2683,14 @@ StScrollBar StButton#hhandle:active {
 
 .app-view-control { 
     padding: 7px 32px 8px; 
-    border-radius: 0px 6px 6px 0px; 
+    border-radius: 6px; 
     font-weight: bold; 
     color: rgba(207, 216, 220, 0.87); 
     background-color: rgba(0, 0, 0, 0.01) !important;
     border: 1px solid #AABBCC; 
 }
 .app-view-control:first-child {
-    border-right: 0px solid transparent; 
-    border-radius: 6px 0px 0px 6px;
+    margin-right: 8px;
 }
 
 .app-view-control:hover { 
@@ -2706,8 +2708,7 @@ StScrollBar StButton#hhandle:active {
 .app-view-control:first-child:active,
 .app-view-control:first-child:hover,
 .app-view-control:first-child:hover:checked {
-    border-right: 0px solid transparent; 
-    border-radius: 6px 0px 0px 6px;
+    margin-right: 8px;
 }
 .app-view-control:checked { 
     color: #FFFFFF; 
@@ -2821,8 +2822,7 @@ StScrollBar StButton#hhandle:active {
 .grid-search-result .overview-icon { 
     padding: 9px; 
     border: none; 
-    border-radius: 6
-    px; 
+    border-radius: 6px; 
     color: #CCDDEE; 
     transition-duration: 0.15s; 
     text-align: center; 
@@ -2884,15 +2884,14 @@ StScrollBar StButton#hhandle:active {
 }
 
 .app-folder-popup {
-
+  -arrow-border-radius: 6px;
+  -arrow-background-color: rgba(0,0,0,0.5);
+  -arrow-base: 24px;
+  -arrow-rise: 12px;
 }
 
 .app-folder-popup-bin { 
-    padding: 5px; 
-    border-top-width: 0px;
-    border-radius: 6px; 
-    background-color: rgba(0,0,0,0.5); 
-    border: 1px solid #223344; 
+
 }
 
 .app-folder-icon { 
