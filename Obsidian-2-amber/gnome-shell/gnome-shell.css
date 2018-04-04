@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.3 (03.10.2017)
+                            v2.4 (03.04.2018)
                                 
                                 AMBER
                            "Fields Of Gold"
@@ -321,11 +321,8 @@ StScrollBar StButton#hhandle:active {
 }
 
 .modal-dialog .run-dialog-entry { 
-    spacing: 1em; 
-    padding: 2px 2px 2px 12px;
-    border-radius: 4px;
-    background-color: rgba(0,0,0, 0.3);
-    border: 1px solid #445566;   
+    width: 20em; 
+    margin-bottom: 6px; 
  }
 
 .modal-dialog .run-dialog-error-box { 
@@ -648,12 +645,12 @@ StScrollBar StButton#hhandle:active {
 }
 
 .geolocation-dialog { 
+    border: none; 
+    border-radius: 4px; 
+    color: #CCDDEE; 
+    padding: 0px;
     background-color: rgba(34, 45, 50, 0.9); 
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.34); 
-    padding: 16px; 
-    border-radius: 6px; 
-    border: 1px solid #445566;
-    color: #FFFFFF; 
 }
 
 .geolocation-dialog-main-layout { 
@@ -679,8 +676,11 @@ StScrollBar StButton#hhandle:active {
 
 .network-dialog-secret-table, 
 .keyring-dialog-control-table { 
-    spacing-rows: 15px; 
-    spacing-columns: 1em; 
+    spacing: 1em; 
+    padding: 2px 2px 2px 12px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0, 0.3);
+    border: 1px solid #445566; 
 }
 
 .popup-menu { 
@@ -1732,29 +1732,29 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .message:active { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899; 
+    background-color:rgba(85,34,0,0.8); /* coloraccent */
+    color: #FF9900; 
 }
 
 .popup-menu .message:active:ltr { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899; 
+    background-color:rgba(85,34,0,0.8); /* coloraccent */ 
+    color: #FF9900; 
 }
 
 .popup-menu .message:active:rtl { 
-    background-color: rgba(207, 216, 220, 0.25); 
-    color: #778899;  
+    background-color:rgba(85,34,0,0.8); /* coloraccent */
+    color: #FF9900;  
 }
 
 .popup-menu .message:active .message-icon-bin > StIcon, 
 .popup-menu .message:active .message-title, 
 .popup-menu .message:active .message-content { 
-    color: #778899; 
+    color: #FF9900; 
 }
 
 .popup-menu .message:active .message-secondary-bin, 
 .popup-menu .message:active .message-secondary-bin > .event-time { 
-    color: #778899; 
+    color: #FF9900; 
 }
 
 .message-icon-bin { 
@@ -2262,16 +2262,16 @@ StScrollBar StButton#hhandle:active {
 }
 
 #searchResultsContent { 
-    spacing: 16px; 
-    padding: 16px; 
+    spacing: 6px; 
+    padding: 6px; 
 }
 
 .search-section { 
-    spacing: 16px; 
+    spacing: 6px; 
 }
 
 .search-section-content { 
-    spacing: 16px; 
+    spacing: 6px; 
 }
 
 .search-section-separator { 
@@ -2680,15 +2680,14 @@ StScrollBar StButton#hhandle:active {
 
 .app-view-control { 
     padding: 7px 32px 8px; 
-    border-radius: 0px 6px 6px 0px; 
+    border-radius: 6px; 
     font-weight: bold; 
     color: rgba(207, 216, 220, 0.87); 
     background-color: rgba(0, 0, 0, 0.01) !important;
     border: 1px solid #AABBCC; 
 }
 .app-view-control:first-child {
-    border-right: 0px solid transparent; 
-    border-radius: 6px 0px 0px 6px;
+    margin-right: 8px;
 }
 
 .app-view-control:hover { 
@@ -2706,8 +2705,7 @@ StScrollBar StButton#hhandle:active {
 .app-view-control:first-child:active,
 .app-view-control:first-child:hover,
 .app-view-control:first-child:hover:checked {
-    border-right: 0px solid transparent; 
-    border-radius: 6px 0px 0px 6px;
+    margin-right: 8px;
 }
 .app-view-control:checked { 
     color: #FFFFFF; 
@@ -2884,16 +2882,16 @@ StScrollBar StButton#hhandle:active {
 }
 
 .app-folder-popup {
-
+  -arrow-border-radius: 6px;
+  -arrow-background-color: rgba(0,0,0,0.5);
+  -arrow-base: 24px;
+  -arrow-rise: 12px;
 }
 
 .app-folder-popup-bin { 
-    padding: 5px; 
-    border-top-width: 0px;
-    border-radius: 6px; 
-    background-color: rgba(0,0,0,0.5); 
-    border: 1px solid #223344; 
+
 }
+
 
 .app-folder-icon { 
     padding: 5px; 
@@ -3162,10 +3160,13 @@ StScrollBar StButton#hhandle:active {
     border-right-width: 2px; 
 }
 
-.search-display > StBoxLayout, 
 .all-apps, 
 .frequent-apps > StBoxLayout { 
     padding: 0 88px 10px 88px; 
+}
+
+.search-display > StBoxLayout { 
+    padding: 0 32px 10px 32px; 
 }
 
 .search-statustext, 
