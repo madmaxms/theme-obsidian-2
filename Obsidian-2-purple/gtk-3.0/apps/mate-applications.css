@@ -1,0 +1,11 @@
+
+/* selected WnckPager */
+PanelApplet.wnck-applet .wnck-pager:selected {
+    background-color: #670099;
+}
+
+/* hover of WnckPager */
+PanelApplet.wnck-applet .wnck-pager:hover {
+    background-color: #7800cc;
+}
+
