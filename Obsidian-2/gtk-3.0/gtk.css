@@ -118,7 +118,7 @@ textview text {
   .view text:selected,
   iconview text:selected,
   textview text:selected {
-    border-radius: 3px; }
+    border-radius: 0px; }
 
 
 /* **************************************** */
@@ -181,7 +181,7 @@ GtkTextView {
 
 .grid-child {
   padding: 3px;
-  border-radius: 3px; }
+  border-radius: 0px; }
   .grid-child:selected {
     outline-offset: -2px; }
 
@@ -221,7 +221,7 @@ GtkTextView {
 .entry {
   border: 1px solid;
   padding: 5px 8px 6px;
-  border-radius: 3px;
+  border-radius: 0px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background-color: transparent;
   background-image: linear-gradient(to bottom, #212121, #292929 90%);
@@ -2703,6 +2703,13 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
 /*************************
  * Check and Radio items *
  *************************/
+
+.check,
+.radio {
+  min-height: 18px;
+  min-width: 18px;
+}
+
 .check,
 .menu .menuitem.check {
   -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
@@ -2715,11 +2722,11 @@ GtkFileChooserDialog .dialog-vbox > .frame .check {
 
 .check:hover,
 .menu .menuitem.check:hover {
-  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg")); 
 }
 
 .check:active {
-  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUncheckedHover.svg")); 
+  -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg")); 
 }
 
 .check:insensitive,
