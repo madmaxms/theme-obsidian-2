@@ -2824,6 +2824,12 @@ headerbar switch:checked:disabled,
  * Check and Radio items *
  *************************/
 
+check,
+radio {
+  min-height: 18px;
+  min-width: 18px;
+}
+
 .check,
 check,
 treeview.check {
@@ -4151,9 +4157,9 @@ placessidebar row {
     background-image: image(#75069a);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
-    color: #9b10dc; }
+    color: #CC66FF; }
   placessidebar row:drop(active):not(:disabled) {
-    color: #75069a;
+    color: #CC66FF;
     box-shadow: inset 0 1px #75069a, inset 0 -1px #75069a; }
     placessidebar row:drop(active):not(:disabled):selected {
       color: #ffffff;
