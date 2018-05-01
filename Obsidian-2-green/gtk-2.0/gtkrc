@@ -246,7 +246,7 @@ style "murrine-menubar-menuitem" = "murrine-wider" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = "#2b3032" # menu background
+ bg[NORMAL] = "#393f3f" # menu background
  fg[PRELIGHT] = "#FFFFFF"
  text[ACTIVE] = "#FFFFFF"
  GtkMenuItem::arrow-scaling = .5 # small arrow

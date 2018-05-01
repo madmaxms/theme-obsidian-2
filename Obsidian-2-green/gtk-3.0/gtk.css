@@ -2685,6 +2685,12 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
  * Check and Radio items *
  *************************/
 .check,
+.radio {
+  min-height: 18px;
+  min-width: 18px;
+}
+
+.check,
 .menu .menuitem.check {
   -gtk-icon-source: -gtk-scaled(url("../assets/checkboxUnchecked.svg"));
 }
