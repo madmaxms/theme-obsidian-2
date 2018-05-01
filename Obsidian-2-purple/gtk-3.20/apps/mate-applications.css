@@ -9,3 +9,10 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: #0033CC;
 }
 
+.caja-side-pane text,
+.caja-side-pane treeview,
+.caja-side-pane:backdrop text,
+.caja-side-pane:backdrop treeview {
+  color: #ffffff;
+  background-color: #451854; 
+}

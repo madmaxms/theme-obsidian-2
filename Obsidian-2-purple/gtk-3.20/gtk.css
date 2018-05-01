@@ -1724,7 +1724,7 @@ toolbar {
   toolbar:not(.inline-toolbar):not(.osd) entry,
   toolbar:not(.inline-toolbar):not(.osd) spinbutton,
   toolbar:not(.inline-toolbar):not(.osd) button {
-    margin-right: 1px;
+    margin-right: 0px;
     margin-bottom: 1px; }
 
 .inline-toolbar {
@@ -2259,7 +2259,7 @@ menu,
 .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background-color: #2b3032;
+  background-color: #393f3f;
   border: 1px solid #1b1f20; }
   .csd menu, .csd
   .menu, .csd
@@ -2268,7 +2268,7 @@ menu,
   menu:backdrop,
   .menu:backdrop,
   .context-menu:backdrop {
-    background-color: #2b3032; }
+    background-color: #393f3f; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
