@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.6 (02.05.2018)
+                            v2.6 (15.06.2018)
                                 
                                 AMBER
 
@@ -840,8 +840,8 @@ StScrollBar StButton#hhandle:active {
     -arrow-background-color: rgba(21,25,28,0.91); 
     -arrow-border-width: 0; 
     -arrow-border-color: transparent; 
-    -arrow-base: 24px; 
-    -arrow-rise: 11px; 
+    -arrow-base: 22px; 
+    -arrow-rise: 14px; 
     -arrow-box-shadow: 0px 0px transparent; 
     border-top-width: 0px;
     border-radius: 4px; 
@@ -2212,11 +2212,12 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(207, 216, 220, 0.12); 
     -shell-caption-spacing: 12px; 
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22); 
+    margin-top: 20px;
 }
 
 .window-caption:hover { 
     color: #FFFFFF; 
-    background-color: rgba(220, 230, 240, 0.40); 
+    background-color: rgba(220, 230, 240, 0.50); 
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.28); 
 }
 
