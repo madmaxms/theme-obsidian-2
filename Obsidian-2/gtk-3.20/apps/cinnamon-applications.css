@@ -41,13 +41,18 @@ NemoWindow .sidebar .view,
   border-width: 0; }
 
 .nemo-window notebook {
-  background-color: #ffffff; }
+  background-color: #393f3f; }
 
 .nemo-window .nemo-window-pane widget.entry {
-  border: 1px solid;
+  border: 1px solid #696969;
   border-radius: 3px;
-  color: #5c616c;
-  background-color: #ffffff; }
+  color: #cccccc;
+  background-color: #212324; 
+}
+.nemo-window .nemo-window-pane widget.entry:selected {
+  color: #dedede;
+  background-color: #414346; 
+}
 
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   color: rgba(207, 218, 231, 0.8);
