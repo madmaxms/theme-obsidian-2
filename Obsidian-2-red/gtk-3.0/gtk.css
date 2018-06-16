@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.6 (02.05.2018)
+                            v2.6 (15.06.2018)
                                 
                                   RED
 
@@ -204,7 +204,7 @@ GtkTextView {
   border-radius: 0px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #212121, #292929 90%);
+  background-image: linear-gradient(to bottom, #555758, #606566 90%);
   color: white;
   border-color: #0a0a0a;
   box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0), 0 1px rgba(238, 238, 236, 0.1); }
@@ -215,7 +215,7 @@ GtkTextView {
   .entry.flat, .entry.flat:focus {
     padding: 2px;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: white;
     border-color: #0a0a0a;
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0);
@@ -223,26 +223,26 @@ GtkTextView {
     border-radius: 0; }
   .entry:focus {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0.7), 0 1px rgba(238, 238, 236, 0.1);
-    border-color: #5b1313; }
+    border-color: #611010; }
   .entry:insensitive {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: #939695;
     border-color: #0a0a0a;
     background-color: #323636;
     box-shadow: inset 0 3px transparent, inset 0 2px transparent, inset 0 1px transparent, 0 1px rgba(238, 238, 236, 0.1); }
   .entry:backdrop {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: #d4d4d4;
     border-color: #1e2222;
     background-color: #2c2c2c;
     box-shadow: inset 0 3px transparent, inset 0 2px transparent, inset 0 1px transparent, 0 1px rgba(238, 238, 236, 0); }
   .entry:backdrop:insensitive {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: #5d6767;
     border-color: #1e2222;
     background-color: #323636;
@@ -276,7 +276,7 @@ GtkTextView {
     border-color: #cc0000; }
     .entry.error:focus {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(204, 0, 0, 0.7), 0 1px rgba(238, 238, 236, 0.1);
       border-color: #1a0000; }
     .entry.error:selected, .entry.error:selected:focus {
@@ -286,7 +286,7 @@ GtkTextView {
     border-color: #f57900; }
     .entry.warning:focus {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(245, 121, 0, 0.7), 0 1px rgba(238, 238, 236, 0.1);
       border-color: #432100; }
     .entry.warning:selected, .entry.warning:selected:focus {
@@ -301,7 +301,7 @@ GtkTextView {
       color: #7e8080; }
   .linked.vertical > .entry {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: white;
     border-color: #0a0a0a;
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0);
@@ -313,7 +313,7 @@ GtkTextView {
       box-shadow: inset 0 0 0 1px rgba(192, 26, 26, 0.7), 0 -1px 0 0 #5b1313; }
     .linked.vertical > .entry:insensitive {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: #939695;
       border-color: #0a0a0a;
       background-color: #323636;
@@ -321,7 +321,7 @@ GtkTextView {
       border-bottom-color: #252626; }
       .linked.vertical > .entry:insensitive:backdrop {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         color: #5d6767;
         border-color: #1e2222;
         background-color: #323636;
@@ -329,7 +329,7 @@ GtkTextView {
         border-bottom-color: #272929; }
     .linked.vertical > .entry:backdrop {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: #d4d4d4;
       border-color: #1e2222;
       background-color: #2c2c2c;
@@ -337,19 +337,19 @@ GtkTextView {
       border-bottom-color: #272929; }
     .linked.vertical > .entry:first-child {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: white;
       border-color: #0a0a0a;
       box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0);
       border-bottom-color: #252626; }
       .linked.vertical > .entry:first-child:focus {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0.7);
         border-color: #5b1313; }
       .linked.vertical > .entry:first-child:insensitive {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         color: #939695;
         border-color: #0a0a0a;
         background-color: #323636;
@@ -357,7 +357,7 @@ GtkTextView {
         border-bottom-color: #272929; }
         .linked.vertical > .entry:first-child:insensitive:backdrop {
           background-color: transparent;
-          background-image: linear-gradient(to bottom, #212121, #292929 90%);
+          background-image: linear-gradient(to bottom, #555758, #606566 90%);
           color: #5d6767;
           border-color: #1e2222;
           background-color: #323636;
@@ -366,7 +366,7 @@ GtkTextView {
           border-top-style: solid; }
       .linked.vertical > .entry:first-child:backdrop {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         color: #d4d4d4;
         border-color: #1e2222;
         background-color: #2c2c2c;
@@ -374,7 +374,7 @@ GtkTextView {
         border-bottom-color: #272929; }
     .linked.vertical > .entry:last-child {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: white;
       border-color: #0a0a0a;
       box-shadow: inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.03), inset 0 1px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(192, 26, 26, 0), 0 1px rgba(238, 238, 236, 0.1);
@@ -385,28 +385,28 @@ GtkTextView {
         box-shadow: inset 0 0 0 1px rgba(192, 26, 26, 0.7), 0 -1px 0 0 #5b1313, 0 1px rgba(238, 238, 236, 0.1); }
       .linked.vertical > .entry:last-child:insensitive {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         color: #939695;
         border-color: #0a0a0a;
         background-color: #323636;
         box-shadow: inset 0 3px transparent, inset 0 2px transparent, inset 0 1px transparent, 0 1px rgba(238, 238, 236, 0.1); }
         .linked.vertical > .entry:last-child:insensitive:backdrop {
           background-color: transparent;
-          background-image: linear-gradient(to bottom, #212121, #292929 90%);
+          background-image: linear-gradient(to bottom, #555758, #606566 90%);
           color: #5d6767;
           border-color: #1e2222;
           background-color: #323636;
           box-shadow: inset 0 3px transparent, inset 0 2px transparent, inset 0 1px transparent, 0 1px rgba(238, 238, 236, 0); }
       .linked.vertical > .entry:last-child:backdrop {
         background-color: transparent;
-        background-image: linear-gradient(to bottom, #212121, #292929 90%);
+        background-image: linear-gradient(to bottom, #555758, #606566 90%);
         color: #d4d4d4;
         border-color: #1e2222;
         background-color: #2c2c2c;
         box-shadow: inset 0 3px transparent, inset 0 2px transparent, inset 0 1px transparent, 0 1px rgba(238, 238, 236, 0); }
   .osd .entry {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #212121, #292929 90%);
+    background-image: linear-gradient(to bottom, #555758, #606566 90%);
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
@@ -416,7 +416,7 @@ GtkTextView {
     icon-shadow: 0 1px black; }
     .osd .entry:focus {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: white;
       border-color: #be2b27;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
@@ -426,7 +426,7 @@ GtkTextView {
       icon-shadow: 0 1px black; }
     .osd .entry:backdrop {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
@@ -436,7 +436,7 @@ GtkTextView {
       icon-shadow: none; }
     .osd .entry:insensitive {
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #212121, #292929 90%);
+      background-image: linear-gradient(to bottom, #555758, #606566 90%);
       color: #878989;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(52, 57, 57, 0.5));
