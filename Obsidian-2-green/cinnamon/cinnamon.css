@@ -1,31 +1,29 @@
-/* *********************************************************************** 
-                           O B S I D I A N  2
-              
-                            v2.6 (15.06.2018)
-                                
-                                GREEN
-
- ------------------------------------------------------------------------
- A dark gray theme with green accents, created by MadMaxMS, based 
- upon Adwaita-Maia. 
+/* ***********************************************************************  
+                               J A D E   1
+               
+                            v3.1 (02.05.2018)
  
- Code available at Github:
- https://github.com/madmaxms/theme-obsidian-2
+  ------------------------------------------------------------------------
+  Mixed light-dark gtk theme with green color accents developed for 
+  Linux Mint based upon Obsidian 2.
+ 
+  Code available at Github:
+  https://github.com/madmaxms/theme-jade-1
  
  ------------------------------------------------------------------------
 
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+  This program is free software: you can whiteistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version. 
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************** */
 stage {
@@ -1812,10 +1810,12 @@ StScrollBar StButton#vhandle:hover
 }
 .window-list-item-box {
 	color: #dbdbdb;
-    border: 1px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     text-shadow: rgba(0,0,0,0.65) 0px 0px 2px;
 	border-top: 0px;
-	border-right: 0px;
+	border-bottom: 0px;
+    border-right: 1px;
+    border-left: 0px;
     background-color: rgba(255,255,255,0.1);
 	font-weight: normal;
 	font-size: 0.93em;
@@ -1850,13 +1850,8 @@ StScrollBar StButton#vhandle:hover
 }
 
 .window-list-item-box:first-child {
-	border-right: 0px;
-	}
-
-.window-list-item-box:last-child {
-	border-left: 1px;
-	border-right: 1px;
-	}
+    border-left: 1px;
+}
 
 .window-list-item-demands-attention {
 	color: white;
@@ -2108,10 +2103,13 @@ StScrollBar StButton#vhandle:hover
 }
 
 .applet-box {
+    spacing: 4px;
     padding-left: 3px;
     padding-right: 3px;
+    padding-top: 1px;
     color: #ccc;
     text-shadow: black 0px 0px 2px;
+    font-weight: bold;
 }
 
 .applet-box.horizontal {
@@ -2119,7 +2117,9 @@ StScrollBar StButton#vhandle:hover
 }
 
 .applet-box.vertical {
-    padding: 3px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .applet-box:checked,

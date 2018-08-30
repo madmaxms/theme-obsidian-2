@@ -596,6 +596,64 @@ style "ooo_stepper_hack" {
 
 }
 
+# Menubar
+style "murrine-menubar" {
+    bg[NORMAL]          = "#393f3f"
+    bg[INSENSITIVE]     = "#181818"
+    base[NORMAL]        = "#393f3f"
+    base[INSENSITIVE]   = "#181818"
+    fg[NORMAL]          = "#ffffff"
+    fg[INSENSITIVE]     = "#484848"
+    fg[SELECTED]        = "#FFFFFF"
+    text[NORMAL]        = "#ffffff"
+    text[INSENSITIVE]   = "#484848"
+
+  engine "murrine" {
+    roundness	 = 3
+    menubaritemstyle    = 1   # 0 = menuitem look, 1 = button look
+    menubarstyle        = 0   # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+  }
+}
+
+style "murrine-menubar-menuitem" = "murrine-wider" {
+  
+  fg[PRELIGHT]  = "#FFFFFF"
+  text[PRELIGHT] = @fg_color
+  bg[PRELIGHT]  = @selected_bg_color
+  bg[SELECTED]  = @selected_bg_color
+  
+
+ engine "murrine" {
+  contrast = .0
+ }
+}
+
+style "murrine-nogap" {
+ xthickness  = 0
+ ythickness  = 0
+}
+
+# Menu
+style "murrine-menu" = "murrine-nogap" {
+ bg[NORMAL] = "#393f3f" # menu background
+ fg[PRELIGHT] = "#FFFFFF"
+ text[ACTIVE] = "#FFFFFF"
+ GtkMenuItem::arrow-scaling = .5 # small arrow
+
+ engine "murrine" {
+  border_shades = { 1.0, 1.0 }
+  contrast   = .7
+  roundness = 0 # Radius of the menu items (inside menus)
+  menustyle = 0   # 0 = no vertical menu stripe, 1 = display
+ }
+}
+
+style "murrine-menuitem-separator" = "murrine-wide" {
+ engine "murrine" {
+  contrast  = 3.0
+ }
+}
+
 style "scrollbar" {
 
   engine "pixmap" {
@@ -817,7 +875,7 @@ style "menu_item"
       recolorable = TRUE
       state = NORMAL
       shadow = OUT
-      overlay_file = "assets/checkbox-unchecked.png"
+      overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -826,7 +884,7 @@ style "menu_item"
       recolorable = TRUE
       state = PRELIGHT
       shadow = OUT
-      overlay_file = "assets/checkbox-unchecked.png"
+      overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -835,7 +893,7 @@ style "menu_item"
       recolorable = TRUE
       state = ACTIVE
       shadow = OUT
-      overlay_file = "assets/checkbox-unchecked.png"
+      overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -844,7 +902,7 @@ style "menu_item"
       recolorable = TRUE
       state = INSENSITIVE
       shadow = OUT
-      overlay_file = "assets/checkbox-unchecked-insensitive.png"
+      overlay_file = "assets/checkbox-unchecked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -853,7 +911,7 @@ style "menu_item"
       recolorable = TRUE
       state = NORMAL
       shadow = IN
-      overlay_file = "assets/checkbox-checked.png"
+      overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -862,7 +920,7 @@ style "menu_item"
       recolorable = TRUE
       state = PRELIGHT
       shadow = IN
-      overlay_file = "assets/checkbox-checked.png"
+      overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -871,7 +929,7 @@ style "menu_item"
       recolorable = TRUE
       state = ACTIVE
       shadow = IN
-      overlay_file = "assets/checkbox-checked.png"
+      overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -880,7 +938,7 @@ style "menu_item"
       recolorable = TRUE
       state = INSENSITIVE
       shadow = IN
-      overlay_file = "assets/checkbox-checked-insensitive.png"
+      overlay_file = "assets/checkbox-checked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -2358,8 +2416,7 @@ class "GtkTreeView"                                                 style "treev
 class "GtkToolbar"                                                  style "toolbar"
 class "*HandleBox"                                                  style "toolbar"
 
-widget_class "*<GtkMenu>*"                                          style "menu"
-widget_class "*<GtkMenu>*"                                          style "menu_framed_box"
+widget_class "*<GtkMenu>*"           style "murrine-menu"
 widget_class "*<GtkMenuItem>*"                                      style "menu_item"
 widget_class "*<GtkCheckButton>*"                                   style "checkbutton"
 widget_class "*<GtkComboBox>"                                       style "combobox"
@@ -2371,6 +2428,9 @@ widget_class "*<GtkComboBoxEntry>*<GtkEntry>"                       style "combo
 widget_class "*<GtkComboBoxEntry>*<GtkButton>"                      style "combobox_entry_button"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"     style "notebook_viewport"
 widget_class "*HandleBox"                                           style "toolbar"
+widget_class "*<GtkMenuBar>*"         style "murrine-menubar"
+widget_class "*<GtkMenuBar>*<GtkMenuItem>*"  style "murrine-menubar-menuitem"
+widget_class "*<GtkSeparatorMenuItem>*"    style "murrine-menuitem-separator"
 
 # Entries in notebooks draw with notebook's base color, but not if there's
 # something else in the middle that draws gray again
@@ -2429,4 +2489,3 @@ widget_class "*<GtkNotebook>*<GtkCellLayout>"                       style "text"
 include "apps.rc"
 include "panel.rc"
 include "xfce-notify.rc"
-include "menubar-toolbar/menubar.rc"
