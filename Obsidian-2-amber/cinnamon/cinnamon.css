@@ -1814,10 +1814,12 @@ StScrollBar StButton#vhandle:hover
 }
 .window-list-item-box {
 	color: #dbdbdb;
-    border: 1px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     text-shadow: rgba(0,0,0,0.65) 0px 0px 2px;
 	border-top: 0px;
-	border-right: 0px;
+	border-bottom: 0px;
+    border-right: 1px;
+    border-left: 0px;
     background-color: rgba(255,255,255,0.1);
 	font-weight: normal;
 	font-size: 0.93em;
@@ -1852,13 +1854,8 @@ StScrollBar StButton#vhandle:hover
 }
 
 .window-list-item-box:first-child {
-	border-right: 0px;
-	}
-
-.window-list-item-box:last-child {
-	border-left: 1px;
-	border-right: 1px;
-	}
+    border-left: 1px;
+}
 
 .window-list-item-demands-attention {
 	color: white;
@@ -2110,10 +2107,13 @@ StScrollBar StButton#vhandle:hover
 }
 
 .applet-box {
+    spacing: 4px;
     padding-left: 3px;
     padding-right: 3px;
+    padding-top: 1px;
     color: #ccc;
     text-shadow: black 0px 0px 2px;
+    font-weight: bold;
 }
 
 .applet-box.horizontal {
@@ -2121,7 +2121,9 @@ StScrollBar StButton#vhandle:hover
 }
 
 .applet-box.vertical {
-    padding: 3px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .applet-box:checked,
