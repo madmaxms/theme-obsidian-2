@@ -2707,6 +2707,8 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
 .radio {
   min-height: 18px;
   min-width: 18px;
+  margin: -6px;
+  padding: 6px; 
 }
 
 .check,
