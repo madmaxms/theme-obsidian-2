@@ -2106,6 +2106,8 @@ window.csd > .titlebar:not(headerbar) {
   padding-left: 0;
   padding-right: 0; }
 
+
+
 /**************
  * Tree Views *
  **************/
@@ -3059,7 +3061,8 @@ radio {
   radio:only-child,
   menu menuitem
   radio {
-    margin: 0; }
+    margin: 0;
+    padding: 2px; }
 
 
 
