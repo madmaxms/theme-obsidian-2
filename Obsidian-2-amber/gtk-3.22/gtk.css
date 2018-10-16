@@ -3057,7 +3057,8 @@ radio {
   radio:only-child,
   menu menuitem
   radio {
-    margin: 0; }
+    margin: 0;
+    padding: 2px; }
 
 
 
