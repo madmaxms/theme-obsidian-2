@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.6 (15.06.2018)
+                            v2.8 (15.11.2018)
                                 
                                 PURPLE
 
@@ -220,11 +220,13 @@ StScrollBar StButton#hhandle:active {
 	height:1em;
 	-slider-height:0.3em;
 	-slider-background-color:#000000;
-	-slider-border-color:rgba(100,120,130, 0.4);
+	-slider-border-color:rgba(100,100,100, 0.3);
 	-slider-active-background-color:#b800ff; /* coloraccent */
 	-slider-active-border-color:transparent;
 	-slider-border-width:1px;
 	-slider-handle-radius:6px;
+    -barlevel-active-background-color: #b800ff;/* coloraccent */
+    -barlevel-background-color:#000000;
 	border: 0px solid transparent;
 	border-right-width: 5px;
 	border-left-width: 5px;
@@ -867,11 +869,13 @@ StScrollBar StButton#hhandle:active {
 }
 
 .system-switch-user-submenu-icon.user-icon { 
-    icon-size: 20px; 
-    padding: 0 3.25px; 
+    icon-size: 48px; 
+    padding: 0px; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
-.system-switch-user-submenu-icon.default-icon { 
+.system-switch-user-submenu-icon .default-icon { 
     icon-size: 16px; 
     padding: 0 5.25px; 
 }
@@ -1039,11 +1043,12 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(150, 160, 170, 0.2); 
 }
 
+/* Workspace Switcher */
 .workspace-switcher { 
     padding: 0px; 
     spacing: 8px; 
     border: 0px; 
-    border-radius: 0px; 
+    border-radius: 5px; 
     background: transparent; 
 }
 
@@ -2297,9 +2302,10 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result { 
-    padding: 0px; 
     transition-duration: 0s;
     border-radius: 6px; 
+    margin: 0px;
+    padding: 0px;
 }
 
 .list-search-result:ltr { 
@@ -2360,9 +2366,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result-content { 
-    spacing: 16px; 
-    padding: 16px; 
-    min-height: 64px; 
+    spacing: 12px; 
+    padding: 0px 12px 0px 12px; 
+    min-height: 48px; 
 }
 
 .list-search-result-title { 
@@ -3122,11 +3128,14 @@ StScrollBar StButton#hhandle:active {
     visible-width: 32px; 
     spacing: 12px; 
     margin-bottom: 32px; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 0; 
+    padding: 16px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; 
     background-color: rgba(19, 25, 28, 0.8); 
     color: #CCDDEE; 
+    box-shadow: none;
+    border-right: 0px;
+    box-shadow: none;
 }
 .workspace-thumbnail-indicator { 
     border: 2px solid #CCDDEE;
@@ -3143,16 +3152,6 @@ StScrollBar StButton#hhandle:active {
 .workspace-thumbnail-indicator:rtl { 
     padding: 6px 10px 6px 6px;
     margin: 0px 4px 0px 4px; 
-}
-
-.workspace-thumbnails, 
-.workspace-thumbnails-left:rtl { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
-}
-
-.workspace-thumbnails:rtl, 
-.workspace-thumbnails-left { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
 }
 
 .workspace-thumbnails:rtl .workspace-thumbnail-indicator, 
