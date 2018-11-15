@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.6 (15.06.2018)
+                            v2.8 (15.11.2018)
                                 
                                  BLUE
 
@@ -217,18 +217,19 @@ StScrollBar StButton#hhandle:active {
 }
 
 .slider { 
-	height:1em;
-	-slider-height:0.3em;
-	-slider-background-color:#000000;
-	-slider-border-color:rgba(100,120,130, 0.4);
-	-slider-active-background-color:#0077ff; /* coloraccent */
-	-slider-active-border-color:transparent;
-	-slider-border-width:1px;
-	-slider-handle-radius:6px;
-	border: 0px solid transparent;
-	border-right-width: 5px;
-	border-left-width: 5px;
-	color: #0077ff;  /* coloraccent */
+    height:1em;
+    -slider-height:0.3em;
+    -slider-background-color:#000000;
+	-slider-border-color:rgba(100,100,100, 0.3);
+    -slider-active-background-color:#0077ff; /* coloraccent */
+    -slider-active-border-color:transparent;
+    -slider-border-width:1px;
+    -slider-handle-radius:6px;
+    -barlevel-active-background-color: #0077ff;/* coloraccent */
+    -barlevel-background-color:#000000;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    color: #0077ff;  /* coloraccent */
 }
 
 .check-box StBoxLayout { 
@@ -867,11 +868,13 @@ StScrollBar StButton#hhandle:active {
 }
 
 .system-switch-user-submenu-icon.user-icon { 
-    icon-size: 20px; 
-    padding: 0 3.25px; 
+    icon-size: 48px; 
+    padding: 0px; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
-.system-switch-user-submenu-icon.default-icon { 
+.system-switch-user-submenu-icon .default-icon { 
     icon-size: 16px; 
     padding: 0 5.25px; 
 }
@@ -1039,11 +1042,12 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(150, 160, 170, 0.2); 
 }
 
+/* Workspace Switcher */
 .workspace-switcher { 
     padding: 0px; 
     spacing: 8px; 
     border: 0px; 
-    border-radius: 0px; 
+    border-radius: 5px; 
     background: transparent; 
 }
 
@@ -1108,7 +1112,7 @@ StScrollBar StButton#hhandle:active {
     background-color: #414747;
     color: #ffffff;
 	background-image:url("assets/traybg.png");
-	background-repeat:repeat-x; 
+	background-repeat:repeat; 
     font-weight: bold; 
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
     transition-duration: 0.4s; 
@@ -2087,7 +2091,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .nm-dialog-header-icon { 
-    icon-size: 32px; 
+    icon-size: 48px; 
     color: #CCDDEE; 
 }
 
@@ -2244,7 +2248,7 @@ StScrollBar StButton#hhandle:active {
 
 .search-entry:hover, 
 .search-entry:focus { 
-	color:#CCCCCC;
+	color:#ffffff;
     border: 1px solid #CCCCCC;
     background-color: rgba(220, 230, 240, 0.1);
 }
@@ -2269,14 +2273,6 @@ StScrollBar StButton#hhandle:active {
     padding: 16px; 
 }
 
-.search-section { 
-    spacing: 16px; 
-}
-
-.search-section-content { 
-    spacing: 16px; 
-}
-
 .search-section-separator { 
     height: 1px; 
     -gradient-height: 1px; 
@@ -2297,17 +2293,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result { 
-    padding: 0px; 
-    transition-duration: 0s;
+    transition-duration: 100ms;
     border-radius: 6px; 
-}
-
-.list-search-result:ltr { 
-    margin-right: 16px; 
-}
-
-.list-search-result:rtl { 
-    margin-left: 16px; 
+    padding: 0px;
 }
 
 .list-search-result:focus, 
@@ -2323,7 +2311,7 @@ StScrollBar StButton#hhandle:active {
 .list-search-result-title, 
 .list-search-result:hover 
 .list-search-result-title { 
-    color: #CCDDEE; 
+    color: #ffffff; 
 }
 
 .list-search-result:focus .list-search-result-description, 
@@ -2338,7 +2326,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result:active .list-search-result-title { 
-    color: #CCDDEE; 
+    color: #ffffff; 
 }
 
 .list-search-result:active .list-search-result-description { 
@@ -2352,7 +2340,7 @@ StScrollBar StButton#hhandle:active {
 
 .list-search-result:checked 
 .list-search-result-title { 
-    color: #CCDDEE; 
+    color: #ffffff; 
 }
 
 .list-search-result:checked .list-search-result-description { 
@@ -2360,9 +2348,9 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result-content { 
-    spacing: 16px; 
-    padding: 16px; 
-    min-height: 64px; 
+    spacing: 12px; 
+    padding: 0px 12px 0px 12px; 
+    min-height: 48px; 
 }
 
 .list-search-result-title { 
@@ -3122,11 +3110,14 @@ StScrollBar StButton#hhandle:active {
     visible-width: 32px; 
     spacing: 12px; 
     margin-bottom: 32px; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 0; 
+    padding: 16px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; 
     background-color: rgba(19, 25, 28, 0.8); 
     color: #CCDDEE; 
+    box-shadow: none;
+    border-right: 0px;
+    box-shadow: none;
 }
 .workspace-thumbnail-indicator { 
     border: 2px solid #CCDDEE;
@@ -3136,23 +3127,13 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-thumbnail-indicator:ltr { 
-    padding: 6px 6px 6px 10px;
+    padding: 6px 6px 6px 6px;
     margin: 0px 4px 0px 4px; 
 }
 
 .workspace-thumbnail-indicator:rtl { 
-    padding: 6px 10px 6px 6px;
+    padding: 6px 6px 6px 6px;
     margin: 0px 4px 0px 4px; 
-}
-
-.workspace-thumbnails, 
-.workspace-thumbnails-left:rtl { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
-}
-
-.workspace-thumbnails:rtl, 
-.workspace-thumbnails-left { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
 }
 
 .workspace-thumbnails:rtl .workspace-thumbnail-indicator, 
