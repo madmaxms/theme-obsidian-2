@@ -1,7 +1,7 @@
 # *********************************************************************** 
 #                          O B S I D I A N  2
 #             
-#                           v2.6 (02.05.2018)
+#                           v2.8 (15.11.2018)
 #                               
 #                                AMBER
 #
@@ -43,7 +43,7 @@ gtk-color-scheme = "insensitive_fg_color: #a9acb2"
 gtk-color-scheme = "notebook_bg: #34393b"
 gtk-color-scheme = "dark_sidebar_bg: #353945"
 gtk-color-scheme = "link_color: #e29452"
-gtk-color-scheme = "menu_bg: #393F3F"
+gtk-color-scheme = "menu_bg: #414747"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -112,7 +112,7 @@ style "default" {
   GtkTreeView::vertical-separator = 4
   GtkTreeView::horizontal-separator = 4
   GtkTreeView::allow-rules = 1
-  GtkTreeView::odd_row_color = shade(0.98, @base_color)
+  GtkTreeView::odd_row_color = shade(1.0, @base_color)
 
   GtkExpander::expander-size = 11
 
@@ -512,12 +512,12 @@ style "default" {
 
     # Focuslines
 
-    image {
-      function = FOCUS
-      file = "assets/focus-line.png"
-      border = { 8, 8, 8, 8 }
-      stretch = TRUE
-    }
+    #image {
+    #  function = FOCUS
+    #  file = "assets/focus-line.png"
+    #  border = { 8, 8, 8, 8 }
+    #  stretch = TRUE
+    #}
 
     # Handles
 
@@ -598,7 +598,7 @@ style "ooo_stepper_hack" {
 
 # Menubar
 style "murrine-menubar" {
-    bg[NORMAL]          = "#393f3f"
+    bg[NORMAL]          = "#414747"
     bg[INSENSITIVE]     = "#181818"
     base[NORMAL]        = "#393f3f"
     base[INSENSITIVE]   = "#181818"
@@ -608,10 +608,14 @@ style "murrine-menubar" {
     text[NORMAL]        = "#ffffff"
     text[INSENSITIVE]   = "#484848"
 
-  engine "murrine" {
-    roundness	 = 3
-    menubaritemstyle    = 1   # 0 = menuitem look, 1 = button look
-    menubarstyle        = 0   # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+  engine "pixmap" {
+
+    image {
+      function = BOX
+      file  = "assets/menubar_border.png"
+      stretch  = TRUE
+      border = { 1, 1, 1, 1 }
+    }
   }
 }
 
@@ -622,10 +626,21 @@ style "murrine-menubar-menuitem" = "murrine-wider" {
   bg[PRELIGHT]  = @selected_bg_color
   bg[SELECTED]  = @selected_bg_color
   
+  xthickness = 2
+  ythickness = 4
 
- engine "murrine" {
-  contrast = .0
- }
+  fg[PRELIGHT] = @selected_fg_color
+
+  engine "pixmap" {
+
+    image {
+      function = BOX
+      state = PRELIGHT
+      file = "assets/menubar_button.png"
+      border = { 2, 2, 2, 2 }
+      stretch = TRUE
+    }
+  }
 }
 
 style "murrine-nogap" {
@@ -635,13 +650,13 @@ style "murrine-nogap" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = "#393f3f" # menu background
+ bg[NORMAL] = "#414747" # menu background
  fg[PRELIGHT] = "#FFFFFF"
  text[ACTIVE] = "#FFFFFF"
  GtkMenuItem::arrow-scaling = .5 # small arrow
 
  engine "murrine" {
-  border_shades = { 1.0, 1.0 }
+  border_shades = { 0.0, 0.0 }
   contrast   = .7
   roundness = 0 # Radius of the menu items (inside menus)
   menustyle = 0   # 0 = no vertical menu stripe, 1 = display

@@ -1,7 +1,7 @@
 /* *********************************************************************** 
                            O B S I D I A N  2
               
-                            v2.6 (15.06.2018)
+                            v2.8 (15.11.2018)
                                 
                                 AMBER
 
@@ -1636,6 +1636,7 @@ GtkComboBox {
 .toolbar, .inline-toolbar, .search-bar, .location-bar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
+  border-top: 1px solid #1b1f20;
   background-color: #393f3f; }
   .osd .toolbar, .osd .inline-toolbar, .osd .search-bar, .osd .location-bar, .toolbar.osd, .osd.inline-toolbar, .osd.search-bar, .osd.location-bar {
     padding: 13px;
@@ -1674,7 +1675,7 @@ GtkComboBox {
   border-color: #0a0a0a;
   border-radius: 7px 7px 0 0;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #434a4a, #393f3f);
+  background-image: linear-gradient(to bottom, #4b5252, #414747);
   box-shadow: inset 0 -1px #2d3232, inset 0 1px rgba(238, 238, 236, 0.1); }
   .titlebar:backdrop,
   .header-bar:backdrop {
@@ -2125,10 +2126,10 @@ column-header .titlebar .button.titlebutton,
 .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0px;
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1); 
+  background-color: #414747; 
 }
 .menubar:backdrop {
-  background-color: #393f3f; 
+  background-color: #414747; 
 }
 .menubar > .menuitem {
   padding: 4px 6px;
@@ -2149,7 +2150,7 @@ column-header .titlebar .button.titlebutton,
 .menu {
   margin: 4px;
   padding: 0px;
-  background-color: #2b3032;
+  background-color: #414747;
   border: 1px solid #1c1f1f; }
   .csd .menu {
     border: none; }
