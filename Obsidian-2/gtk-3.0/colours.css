@@ -1,0 +1,107 @@
+/* *************************************************************************************************
+   GTK NAMED COLORS
+   ----------------
+   use responsibly! 
+************************************************************************************************* */
+
+
+/* ****************************** C O M M O N   C O L O U R S *********************************** */
+
+/* widget text/foreground color */
+@define-color    theme_fg_color                        #eeeeec;
+
+/* text color for entries, views and content in general */
+@define-color    theme_text_color                      #ffffff;
+
+/* widget background color */
+@define-color    theme_bg_color                        #2c3133;
+
+/* text widgets and the like base background color */
+@define-color    theme_base_color                      #2c3031;
+
+/* text/foreground color of selections */
+@define-color    theme_selected_fg_color               #ffffff;
+
+/* base background color of insensitive widgets */
+@define-color    insensitive_bg_color                  #323636;
+
+/* text foreground color of insensitive widgets */
+@define-color    insensitive_fg_color                  #919494;
+
+/* insensitive text widgets and the like base background color */
+@define-color    insensitive_base_color                #2c3031;
+
+/* widget text/foreground color on backdrop windows */
+@define-color    theme_unfocused_fg_color              #919494;
+
+/* text color for entries, views and content in general on backdrop windows */
+@define-color    theme_unfocused_text_color            #ffffff;
+
+/* widget base background color on backdrop windows */
+@define-color    theme_unfocused_bg_color              #2c3031;
+
+/* text widgets and the like base background color on backdrop windows */
+@define-color    theme_unfocused_base_color            #252a2c;
+
+/* text/foreground color of selections on backdrop windows */
+@define-color    theme_unfocused_selected_fg_color     #ffffff;
+
+/* insensitive color on backdrop windows*/
+@define-color    unfocused_insensitive_color           #566164;
+
+/* widgets main borders color */
+@define-color    borders                               #1b1f20;
+
+/* widgets main borders color on backdrop windows */
+@define-color    unfocused_borders                     #202425;
+
+/* Cinnamon specific colours */
+@define-color    nemo_sidebar_fg                       #ffffff;
+@define-color    nemo_sidebar_selected_fg              #ffffff;
+
+
+/* ************************** N O T I F I C A T I O N   C O L O U R S *************************** */
+
+@define-color    error_text_color                      #cc0000;
+@define-color    error_border_color                    #cc0000;
+@define-color    error_background_color                #cc0000;
+
+@define-color    warning_text_color                    #f57900;
+@define-color    warning_border_color                  #f57900;
+@define-color    warning_background_color              #f57900;
+
+@define-color    success_text_color                    #73d216;
+@define-color    success_border_color                  #73d216;
+@define-color    success_background_color              #73d216;
+
+
+/* ****************************** A C C E N T   C O L O U R S *********************************** */
+
+/* base background color of selections */
+@define-color    theme_selected_bg_color               #0066CC;
+
+/* base background color of selections on backdrop windows */
+@define-color    theme_unfocused_selected_bg_color     #0066CC;
+
+/* sidebar colours */
+@define-color    nemo_sidebar_bg                       #183F53;
+
+/* ********************************************************************************************** */
+/* these colors are exported for the window manager and shouldn't be used in applications,
+read if you used those and something break with a version upgrade you're on your own... */
+@define-color    wm_title                              shade(#2e3436, 1.8);
+@define-color    wm_unfocused_title                    #8d9091;
+@define-color    wm_highlight                          transparent;
+@define-color    wm_borders_edge                       rgba(238, 238, 236, 0.07);
+@define-color    wm_bg_a                               shade(#2c3133, 1.2);
+@define-color    wm_bg_b                               #2c3133;
+@define-color    wm_shadow                             alpha(black, 0.35);
+@define-color    wm_border                             alpha(black, 0.18);
+@define-color    wm_button_hover_color_a               shade(#393f3f, 1.3);
+@define-color    wm_button_hover_color_b               #393f3f;
+@define-color    wm_button_active_color_a              shade(#393f3f, 0.85);
+@define-color    wm_button_active_color_b              shade(#393f3f, 0.89);
+@define-color    wm_button_active_color_c              shade(#393f3f, 0.9);
+@define-color    content_view_bg                       #2c3031;
+
+
