@@ -4035,7 +4035,8 @@ progressbar .osd trough:disabled {
     background-color: rgba(49, 52, 52, 0.5); 
 }
 
-scale highlight, progressbar progress {
+scale highlight, 
+progressbar progress {
     border: 1px solid #003361;
     border-radius: 3px;
     background-color: #0066cc; 
@@ -4044,11 +4045,6 @@ scale highlight:disabled,
 progressbar progress:disabled {
     background-color: transparent;
     border-color: transparent; 
-}
-scale highlight:backdrop, 
-progressbar progress:backdrop, 
-progressbar:backdrop progress {
-    border-color: #003361; 
 }
 scale highlight:backdrop:disabled, 
 progressbar progress:backdrop:disabled, 
@@ -4089,9 +4085,10 @@ scale highlight {
     margin: -1px; 
 }
 scale slider {
-    min-height: 18px;
-    min-width: 18px;
-    margin: -9px; }
+    min-height: 8px;
+    min-width: 8px;
+    margin: -6px; 
+}
 scale.fine-tune.horizontal {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -4113,11 +4110,14 @@ scale.fine-tune trough {
 }
 scale trough {
     outline-offset: 2px;
-    -gtk-outline-radius: 5px; }
-scale fill:backdrop, scale fill {
+    -gtk-outline-radius: 5px; 
+}
+scale fill:backdrop, 
+scale fill {
     background-color: #1b1f20; 
 }
-scale fill:disabled:backdrop, scale fill:disabled {
+scale fill:disabled:backdrop, 
+scale fill:disabled {
     border-color: transparent;
     background-color: transparent; 
 }
@@ -4130,37 +4130,36 @@ scale fill:disabled:backdrop, scale fill:disabled {
     background-color: transparent; 
 }
 scale slider {
+    min-height: 8px;
+    min-width: 8px;
+    margin: -4px; 
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
-    border-color: #0b0c0c;
+    border-color: transparent;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.82745);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.82745);
-    background-image: linear-gradient(to bottom, #2c3133 20%, #25292b 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 
-                inset 0 -2px #2a2e30, 
-                inset 0 -1px #1e2122, 
-                0 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #040404;
+    background-image: linear-gradient(to bottom, #0066cc 20%, #0066cc 90%); 
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    border: 2px solid #0066cc;
     border-radius: 100%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-property: background, border, box-shadow; 
 }
 scale slider:hover {
-    color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);
-    border-color: #0b0c0c;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 
-                inset 0 -2px #2c3133, 
-                inset 0 -1px #25292b, 
-                0 1px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, #393f3f 20%, #2a2e30 90%); 
+    background-image: linear-gradient(to bottom, #0099FF 20%, #0099FF 90%); 
+    border-color: #0099FF;
+    box-shadow: none;
+    min-height: 10px;
+    min-width: 10px;
+    margin: -5px; 
 }
 scale slider:active {
-    border-color: #003361; 
+    border-color: #0099FF; 
 }
 scale slider:disabled {
-    border-color: #0a0a0a;
-    background-image: image(#323636);
+    border-color: transparent;
+    background-image: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); 
@@ -4170,27 +4169,15 @@ scale slider:disabled {
     color: #919494; 
 }
 scale slider:backdrop {
-    transition: 200ms ease-out;
-    border-color: #202425;
-    background-image: image(#393f3f);
+    background-image: none; 
+    border: 2px solid transparent;
+}
+scale slider:backdrop:disabled {
+    border-color: transparent;
+    background-image: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); 
-}
-scale slider:backdrop label, 
-scale slider:backdrop {
-    color: #919494; 
-}
-scale slider:backdrop:disabled {
-    border-color: #202425;
-    background-image: image(#323636);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0); 
-}
-scale slider:backdrop:disabled label, 
-scale slider:backdrop:disabled {
-    color: #566164; 
 }
 row:selected scale slider:disabled, 
 row:selected scale slider {
