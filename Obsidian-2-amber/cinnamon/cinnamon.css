@@ -891,11 +891,9 @@ StScrollBar StButton#vhandle:hover
 
 #notification {
     font-size: 8.5pt;
-    border-radius: 10px 10px 10px 10px;
-    border: 2px solid rgba(214,214,214,0.5);
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(66,66,66,0.9);
-    background-gradient-end: rgba(55,55,55,0.9);
+    border-radius: 5px;
+    border: 1px solid rgba(114, 114, 114, 0.9);
+    background-color: rgba(47, 53, 53, 0.9)
     padding: 8px 8px 8px 8px;
     spacing-rows: 10px;
     spacing-columns: 10px;
@@ -1814,13 +1812,13 @@ StScrollBar StButton#vhandle:hover
 }
 .window-list-item-box {
 	color: #dbdbdb;
-    border: 1px solid rgba(0,0,0,0.5);
-    text-shadow: rgba(0,0,0,0.65) 0px 0px 2px;
+        border: 1px solid rgba(0,0,0,0.5);
+        text-shadow: rgba(0,0,0,0.65) 0px 0px 2px;
 	border-top: 0px;
 	border-bottom: 0px;
-    border-right: 1px;
-    border-left: 0px;
-    background-color: rgba(255,255,255,0.1);
+        border-right: 1px;
+        border-left: 0px;
+        background-color: rgba(255,255,255,0.1);
 	font-weight: normal;
 	font-size: 0.93em;
 	padding-left: 5px;
@@ -1862,6 +1860,135 @@ StScrollBar StButton#vhandle:hover
 	font-weight: normal;
     background-color: rgba(125,1,38,0.45);
 }
+
+
+/* Window List Cinnamon 4.0 */
+
+.grouped-window-list-item-label {
+    font-weight: bold;
+   width: 15em;
+    min-width: 5px; 
+}
+
+.grouped-window-list-item-box {
+    font-weight: bold;
+    background-image: none;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition-duration: 100;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px; 
+    border: 1px solid transparent;
+}
+
+.grouped-window-list-item-box.top StLabel, 
+.grouped-window-list-item-box.bottom StLabel {
+    padding-left: 2px; 
+}
+
+.grouped-window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.grouped-window-list-item-box.right StBin {
+    padding-right: 0; 
+}
+
+.grouped-window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.grouped-window-list-item-box.left StBin {
+    padding-left: 1px; 
+}
+
+.grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.grouped-window-list-item-box:active, 
+.grouped-window-list-item-box:checked {
+    color: #ffffff;
+    border-color: #999; 
+}
+
+.grouped-window-list-item-box .progress {
+    background-color: rgba(0, 191, 255, 0.8);
+    border-radius: 3px;
+}
+
+.grouped-window-list-item-demands-attention {
+    background-gradient-direction: vertical;
+    background-gradient-start: #F04A50;
+    background-gradient-end: #F04A50; 
+}
+.grouped-window-list-thumbnail-label {
+    padding-left: 4px; 
+}
+.grouped-window-list-number-label {
+    z-index: 99;
+    color: #d0d0d0; 
+}
+
+.grouped-window-list-badge {
+    border-radius: 256px;
+    background-color: #4a4a4a; 
+}
+
+.grouped-window-list-button-label {
+    padding-left: 4px; 
+}
+
+.grouped-window-list-thumbnail-alert {
+    background: rgba(255, 52, 52, 0.3); 
+}
+.grouped-window-list-thumbnail-menu {
+    color: #F0F0F0;
+    border: 0px solid #646969;
+    background-color: #343939;
+    border-radius: 3px;
+    padding: 5px; 
+
+}
+
+.grouped-window-list-thumbnail-menu > StBoxLayout {
+    padding: 4px; 
+}
+
+.grouped-window-list-thumbnail-menu .item-box {
+    padding: 10px;
+    border-radius: 3px;
+    spacing: 4px; 
+    border: 1px solid #646969;
+    margin: 5px;
+}
+
+.grouped-window-list-thumbnail-menu .item-box:outlined {
+    padding: 8px;
+    border: 1px solid #3a9e59;  
+}
+.grouped-window-list-thumbnail-menu .item-box:selected {
+    color: #ffffff;
+    background-color: #646972;
+    border: 0px solid #646972; 
+}
+
+.grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px; 
+}
+
+.grouped-window-list-thumbnail-menu .separator {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+
+
+
 
 /* ===================================================================
  * Sound Applet (status/volume.js)
@@ -2099,7 +2226,7 @@ StScrollBar StButton#vhandle:hover
  * Applets (applet.js)
  * ===================================================================*/
 .applet-separator {
-    padding: 0px 2px;
+    padding: 1px 4px;
 }
 .applet-separator-line {
     width: 1px;
@@ -2108,8 +2235,8 @@ StScrollBar StButton#vhandle:hover
 
 .applet-box {
     spacing: 4px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     padding-top: 1px;
     color: #ccc;
     text-shadow: black 0px 0px 2px;
