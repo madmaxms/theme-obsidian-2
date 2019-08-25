@@ -14,18 +14,18 @@
 
 /* sidebar colours */
 @define-color    sidebar_bg                            #704100;
-@define-color    sidebar_bg_sel                        #7a3c12;
+@define-color    sidebar_bg_sel                        #76490b;
 
 @define-color    theme_fg_color_sel                    #dc6800;
 
 /* view */
 @define-color    view_fg_sel                           #683307;
 @define-color    view_border_sel                       #dc6800;
-@define-color    view_bg_acceleditor                   #df6311;
+@define-color    view_bg_acceleditor                   #b56400;
 
 /* entry */
 @define-color    entry_border_act                      #683307;
-@define-color    entry_border_act_shad                 #df6311;
+@define-color    entry_border_act_shad                 #b56400;
 @define-color    entry_tag_a                           #b95C00;
 @define-color    entry_tag_b                           #b65700;
 @define-color    entry_tag_c                           #b35500;

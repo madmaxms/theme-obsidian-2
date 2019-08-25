@@ -36,7 +36,7 @@ gtk-color-scheme = "bg_color: #393F3F"
 gtk-color-scheme = "fg_color: #eeeeec"
 gtk-color-scheme = "tooltip_bg_color: #000000"
 gtk-color-scheme = "tooltip_fg_color: #FFFFFF"
-gtk-color-scheme = "selected_bg_color: #c05f00"
+gtk-color-scheme = "selected_bg_color: #b56400"
 gtk-color-scheme = "selected_fg_color: #FFFFFF"
 gtk-color-scheme = "insensitive_bg_color: #393F3F"
 gtk-color-scheme = "insensitive_fg_color: #a9acb2"
@@ -811,7 +811,7 @@ style "menu" {
   bg[NORMAL] = @menu_bg
   fg[NORMAL] = @text_color
   bg[INSENSITIVE] = @menu_bg
-  bg[PRELIGHT] = @menu_bg
+  bg[PRELIGHT] = @selected_bg_color
 
   engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
 
@@ -963,7 +963,7 @@ style "menu_item"
       function = OPTION
       state = NORMAL
       shadow = OUT
-      overlay_file = "assets/radio-unchecked.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -971,7 +971,7 @@ style "menu_item"
       function = OPTION
       state = PRELIGHT
       shadow = OUT
-      overlay_file = "assets/radio-unchecked-selected.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -979,7 +979,7 @@ style "menu_item"
       function = OPTION
       state = ACTIVE
       shadow = OUT
-      overlay_file = "assets/radio-unchecked.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -987,7 +987,7 @@ style "menu_item"
       function = OPTION
       state = INSENSITIVE
       shadow = OUT
-      overlay_file = "assets/radio-unchecked-insensitive.png"
+      overlay_file = "assets/radio-unchecked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -995,7 +995,7 @@ style "menu_item"
       function = OPTION
       state = NORMAL
       shadow = IN
-      overlay_file = "assets/radio-checked.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1003,7 +1003,7 @@ style "menu_item"
       function = OPTION
       state = PRELIGHT
       shadow = IN
-      overlay_file = "assets/radio-checked-selected.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1011,7 +1011,7 @@ style "menu_item"
       function = OPTION
       state = ACTIVE
       shadow = IN
-      overlay_file = "assets/radio-checked.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1019,7 +1019,7 @@ style "menu_item"
       function = OPTION
       state = INSENSITIVE
       shadow = IN
-      overlay_file = "assets/radio-checked-insensitive.png"
+      overlay_file = "assets/radio-checked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1104,7 +1104,7 @@ style "entry" {
 
   xthickness = 6
   ythickness = 4
-  
+
   engine "pixmap" {
 
     image {
