@@ -220,7 +220,7 @@ StScrollBar StButton#hhandle:active {
     height:1em;
     -slider-height:0.3em;
     -slider-background-color:#000000;
-	-slider-border-color:rgba(100,100,100, 0.3);
+    -slider-border-color:rgba(100,100,100, 0.3);
     -slider-active-background-color:#0077ff; /* coloraccent */
     -slider-active-border-color:transparent;
     -slider-border-width:1px;
@@ -1183,9 +1183,9 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked { 
-	color:#ffffff;
+    color:#ffffff;
     background-color:#0066cc; /* coloraccent */
-	box-shadow: inset 0 -1px #000066; /* coloraccent */
+    box-shadow: inset 0 -1px #000066; /* coloraccent */
 }
 
 #panel .panel-button:active > .system-status-icon, 
@@ -1514,7 +1514,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-today.calendar-day-with-events { 
     border: none; 
 	background-color: #0066cc; /* coloraccent */
-	color: #FFFFFF; /* coloraccent */
+	color: #FFFFFF; 
 }
 
 .calendar-today:hover, 
@@ -2034,7 +2034,12 @@ StScrollBar StButton#hhandle:active {
     background-image: url("assets/corner-ripple-rtl.svg"); 
 }
 
-.window-close { 
+.window-close,
+notification-close { 
+    border: 0 none transparent;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: none;
     height: 32px; 
     width: 32px; 
     -shell-close-overlap: 24px; 
@@ -2043,12 +2048,14 @@ StScrollBar StButton#hhandle:active {
     background-size: 32px; 
 }
 
-.window-close:hover { 
+.window-close:hover,
+.notification-close:hover { 
     background-image: url("assets/close-window.svg"); 
-    -st-background-image-shadow: 0 3px 4px rgba(0, 0, 0, 0.28); 
+    /*-st-background-image-shadow: 0 3px 4px rgba(0, 0, 0, 0.28); */
 }
 
-.window-close:active { 
+.window-close:active,
+.notification-close:active { 
     background-image: url("assets/close-window.svg"); 
 }
 
@@ -2236,7 +2243,7 @@ StScrollBar StButton#hhandle:active {
 
 .search-entry:hover, 
 .search-entry:focus { 
-	color:#ffffff;
+    color:#ffffff;
     border: 1px solid #CCCCCC;
     background-color: rgba(220, 230, 240, 0.1);
 }
@@ -3714,7 +3721,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .login-dialog .modal-dialog-button:default:insensitive { 
-	color: #667788;
+    color: #667788; 
 	border:1px solid #080808;
 	background-gradient-start:#283032;
 	background-gradient-end:#283032;

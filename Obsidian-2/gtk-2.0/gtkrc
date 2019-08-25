@@ -963,7 +963,7 @@ style "menu_item"
       function = OPTION
       state = NORMAL
       shadow = OUT
-      overlay_file = "assets/radio-unchecked.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -971,7 +971,7 @@ style "menu_item"
       function = OPTION
       state = PRELIGHT
       shadow = OUT
-      overlay_file = "assets/radio-unchecked-selected.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -979,7 +979,7 @@ style "menu_item"
       function = OPTION
       state = ACTIVE
       shadow = OUT
-      overlay_file = "assets/radio-unchecked.png"
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -987,7 +987,7 @@ style "menu_item"
       function = OPTION
       state = INSENSITIVE
       shadow = OUT
-      overlay_file = "assets/radio-unchecked-insensitive.png"
+      overlay_file = "assets/radio-unchecked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -995,7 +995,7 @@ style "menu_item"
       function = OPTION
       state = NORMAL
       shadow = IN
-      overlay_file = "assets/radio-checked.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1003,7 +1003,7 @@ style "menu_item"
       function = OPTION
       state = PRELIGHT
       shadow = IN
-      overlay_file = "assets/radio-checked-selected.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1011,7 +1011,7 @@ style "menu_item"
       function = OPTION
       state = ACTIVE
       shadow = IN
-      overlay_file = "assets/radio-checked.png"
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
@@ -1019,7 +1019,7 @@ style "menu_item"
       function = OPTION
       state = INSENSITIVE
       shadow = IN
-      overlay_file = "assets/radio-checked-insensitive.png"
+      overlay_file = "assets/radio-checked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
