@@ -13,7 +13,7 @@
    height="20"
    width="20"
    sodipodi:docname="max.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+   inkscape:version="0.92.4 (unknown)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,11 +24,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1011"
+     inkscape:window-height="1010"
      id="namedview7"
      showgrid="false"
      inkscape:zoom="13.111111"
-     inkscape:cx="-6.9025425"
+     inkscape:cx="-24.177966"
      inkscape:cy="9"
      inkscape:window-x="0"
      inkscape:window-y="32"
@@ -56,6 +56,6 @@
        cy="294.61874"
        cx="2.3812499"
        id="path815"
-       style="opacity:1;fill:#e23a36;fill-opacity:1;stroke:#ff5a5a;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#b41a1a;fill-opacity:1;stroke:#dc3232;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>
