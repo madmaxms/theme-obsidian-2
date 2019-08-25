@@ -811,7 +811,7 @@ style "menu" {
   bg[NORMAL] = @menu_bg
   fg[NORMAL] = @text_color
   bg[INSENSITIVE] = @menu_bg
-  bg[PRELIGHT] = @menu_bg
+  bg[PRELIGHT] = @selected_bg_color
 
   engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
 
