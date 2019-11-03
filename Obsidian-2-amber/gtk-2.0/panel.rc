@@ -3,9 +3,9 @@ style "theme-panel" {
   xthickness = 2
   ythickness = 0
 
-  bg[NORMAL] = "#2B2E37"
+  bg[NORMAL] = "#3e4243"
   bg[ACTIVE] = @selected_bg_color
-  bg[PRELIGHT] = "#3f4453"
+  bg[PRELIGHT] = "#484d4e"
   bg[SELECTED] = @selected_bg_color
 
   fg[NORMAL] = "#BAC3CF"
