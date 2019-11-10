@@ -1,18 +1,4 @@
 /* *********************************************************************** 
-                           O B S I D I A N  2
-              
-                            v2.6 (15.06.2018)
-                                
-                                 BLUE
-
- ------------------------------------------------------------------------
- A dark gray theme with blue accents, created by MadMaxMS, based 
- upon Adwaita-Maia. 
- 
- Code available at Github:
- https://github.com/madmaxms/theme-obsidian-2
- 
- ------------------------------------------------------------------------
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -28,6 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************** */
+
 stage {
     font-family: Noto Sans, sans-serif;
 }
@@ -274,8 +261,8 @@ StScrollBar StButton#vhandle:hover
     -slider-height: 0.3em;
     -slider-background-color: rgba(35,35,35,1);
     -slider-border-color: rgba(0,0,0,1);
-    -slider-active-background-color: rgba(0,80,160,1); /*+*/
-    -slider-active-border-color: rgba(0,30,80,1); /*+*/
+    -slider-active-background-color: #0066cc; /*+*/
+    -slider-active-border-color: #002666; /*+*/
     -slider-border-width: 1px;
     -slider-handle-radius: 0.5em;
 }
@@ -872,7 +859,7 @@ StScrollBar StButton#vhandle:hover
     text-shadow: black 0px 2px 2px;
     color: #ffffff;
     font-weight: bold;
-    background-color: rgba(0,80,160,1); /*+*/
+    background-color: #0066cc; /*+*/
     box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,1);
 }
 
@@ -1464,7 +1451,7 @@ StScrollBar StButton#vhandle:hover
     background-gradient-direction: vertical;
     color: black;
     border-radius: 5px;
-    border: 2px solid #535557; /*+*/
+    border: 2px solid #535557; 
 }
 
 .polkit-dialog-password-entry:focus {
@@ -2036,7 +2023,7 @@ StScrollBar StButton#vhandle:hover
     -slider-height: 0.5em;
     -slider-background-color: #000000;
     -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: rgb(0,80,160); /*+*/
+    -slider-active-background-color: #0066cc; /*+*/
     -slider-active-border-color: rgba(0, 0, 0, 0);
     -slider-border-width: 0px;
     -slider-handle-radius: 0px;
@@ -2256,7 +2243,7 @@ StScrollBar StButton#vhandle:hover
 .applet-box:checked,
 .applet-box:hover {
     color: #fff;
-    background-color: #005dcf; /**/
+    background-color: #0066cc; /*+*/
 }
 
 .applet-box:highlight {

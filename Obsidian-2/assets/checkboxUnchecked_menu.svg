@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="13"
-   viewBox="0 0 13 13"
-   width="13"
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
    version="1.1"
    id="svg4"
    sodipodi:docname="checkboxUnchecked_menu.svg"
-   inkscape:version="0.92.4 (unknown)"
+   inkscape:version="0.91 r13725"
    style="fill:#000000">
   <metadata
      id="metadata10">
@@ -38,15 +38,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1010"
+     inkscape:window-width="1918"
+     inkscape:window-height="1022"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="27.812867"
-     inkscape:cx="3.1731498"
+     inkscape:cx="3.245059"
      inkscape:cy="4.1341919"
      inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4" />
   <rect
@@ -54,12 +54,13 @@
      id="rect812"
      width="11"
      height="11"
-     x="1"
-     y="1"
+     x="2"
+     y="3"
      rx="0"
      ry="0" />
   <path
      style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.8888889"
-     d="M 1.7773438 0 C 0.79956595 0 0 0.79956595 0 1.7773438 L 0 11.222656 C 0 12.200434 0.79956595 13 1.7773438 13 L 11.222656 13 C 12.200434 13 13 12.200434 13 11.222656 L 13 1.7773438 C 13 0.79956595 12.200434 0 11.222656 0 L 1.7773438 0 z M 2.5039062 1 L 10.496094 1 C 11.323445 1 12 1.6765559 12 2.5039062 L 12 10.496094 C 12 11.323445 11.323445 12 10.496094 12 L 2.5039062 12 C 1.6765557 12 1 11.323445 1 10.496094 L 1 2.5039062 C 1 1.6765559 1.6765557 1 2.5039062 1 z "
-     id="path2" />
+     d="M 2.7773438,2 C 1.7995659,2 1,2.7995659 1,3.7773438 L 1,13.222656 C 1,14.200434 1.7995659,15 2.7773438,15 l 9.4453122,0 C 13.200434,15 14,14.200434 14,13.222656 L 14,3.7773438 C 14,2.7995659 13.200434,2 12.222656,2 L 2.7773438,2 Z M 3.5039062,3 11.496094,3 C 12.323445,3 13,3.6765559 13,4.5039062 l 0,7.9921878 C 13,13.323445 12.323445,14 11.496094,14 L 3.5039062,14 C 2.6765557,14 2,13.323445 2,12.496094 L 2,4.5039062 C 2,3.6765559 2.6765557,3 3.5039062,3 Z"
+     id="path2"
+     inkscape:connector-curvature="0" />
 </svg>
