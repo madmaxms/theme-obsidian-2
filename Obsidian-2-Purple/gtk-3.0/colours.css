@@ -58,7 +58,7 @@
 @define-color    slider_bg_b                           @theme_accent_color;
 @define-color    slider_bdr                            @theme_accent_color;
 @define-color    slider_fg_shadow                      @shadow_color;
-@define-color    slider_bg_a_hov                       #FF0099;
+@define-color    slider_bg_a_hov                       #b24dff;
 @define-color    slider_bg_b_hov                       @slider_bg_a_hov;
 @define-color    slider_bdr_hov                        @slider_bg_a_hov;
 @define-color    slider_bg_act                         @slider_bg_a_hov;
