@@ -4154,26 +4154,33 @@ headerbar switch {
 
 .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar:backdrop,
 .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child {
-    border-top-left-radius: 7px;
+    border-top-left-radius: 0px;
+    background: linear-gradient(to bottom, @header_bg_b, @header_bg_b);
+}
+window:not(.tiled):not(.maximized):not(.solid-csd) separator:only-child + headerbar:backdrop,
+window:not(.tiled):not(.maximized):not(.solid-csd) separator:only-child + headerbar,
+window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:only-child:backdrop,
+window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:only-child {
+    border-top-left-radius: 6px;
 }
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child {
-    border-top-right-radius: 7px;
+    border-top-right-radius: 6px;
 }
 window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child,
 window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:last-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:last-child {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 window.csd > .titlebar:not(headerbar) {
@@ -4480,6 +4487,7 @@ treeview.view.expander:backdrop {
 }
 GtkTreeView.view.progressbar,
 treeview.view.progressbar {
+    color: #fff;
     border: 1px solid @prgbar_border;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, @prgbar_bg_a, @prgbar_bg_b);
@@ -4506,12 +4514,15 @@ treeview.view.progressbar:backdrop {
 }
 GtkTreeView.view.trough,
 treeview.view.trough {
-    background-color: rgba(238, 238, 236, 0.1);
+    border: 1px solid alpha(@prgbar_trough, 0.6);
+    background-color: alpha(@prgbar_trough, 0.4);
     border-radius: 4px;
 }
 GtkTreeView.view.trough:selected,
 treeview.view.trough:selected:focus,
 treeview.view.trough:selected {
+    border: 1px solid rgba(30, 30, 30, 0.6);
+    background-color: rgba(30, 30, 30, 0.4);
     border-radius: 4px;
 }
 
@@ -8466,6 +8477,9 @@ assistant .sidebar:backdrop {
 }
 assistant.csd .sidebar {
     border-top-style: none;
+}
+assistant .sidebar label {
+    padding: 8px;
 }
 assistant .sidebar label.highlight {
     background-color: @assistant_sidebar_bg_lbl;
