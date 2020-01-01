@@ -50,6 +50,7 @@
 /* progress bar */
 @define-color    prgbar_bg_a                           #7389ae;
 @define-color    prgbar_bg_b                           #6c7d9e;
+@define-color    prgbar_trough                         #101010;
 @define-color    prgbar_border                         #24313d;
 @define-color    prgbar_progress                       @theme_accent_color;
 
