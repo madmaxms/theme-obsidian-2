@@ -880,7 +880,7 @@ StScrollBar StButton#vhandle:hover
     font-size: 8.5pt;
     border-radius: 5px;
     border: 1px solid rgba(114, 114, 114, 0.9);
-    background-color: rgba(47, 53, 53, 0.9)
+    background-color: rgba(47, 53, 53, 0.9);
     padding: 8px 8px 8px 8px;
     spacing-rows: 10px;
     spacing-columns: 10px;

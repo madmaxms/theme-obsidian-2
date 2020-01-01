@@ -5,15 +5,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 5.2916665 5.2916665"
    height="20"
-   width="20">
-  <defs
-     id="defs2" />
+   viewBox="0 0 20 20"
+   width="20"
+   version="1.1"
+   id="svg4"
+   style="fill:#000000">
   <metadata
-     id="metadata5">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -24,16 +23,10 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="matrix(0.330728,0,0,0.330728,0,-92.9345)"
-     id="layer1">
-    <path
-       style="opacity:1;fill:#008ef2;fill-opacity:1;stroke:none;stroke-width:0.36973873;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       d="M 2.3417969,0 C 1.0444651,0 0,1.0852485 0,2.4335938 V 13.566406 C 0,14.914751 1.0444651,16 2.3417969,16 H 13.658203 C 14.955536,16 16,14.914751 16,13.566406 V 2.4335938 C 16,1.0852485 14.955536,0 13.658203,0 Z M 2,2 H 14 V 14 H 2 Z"
-       transform="matrix(1.0000035,0,0,1.0000035,0,280.99979)"
-       id="rect815" />
-    <g
-       transform="translate(-0.02403434,0.19180125)"
-       id="g855" />
-  </g>
+  <defs
+     id="defs8" />
+  <path
+     id="path2"
+     d="M 2.2226562 0 C 0.98932284 0 -2.9605947e-16 1.000434 0 2.2226562 L 0 17.777344 C 0 18.999567 0.98932284 20 2.2226562 20 L 17.777344 20 C 19.010678 20 20 18.999567 20 17.777344 L 20 2.2226562 C 20 1.000434 19.010678 -2.9605947e-16 17.777344 0 L 2.2226562 0 z M 3.7773438 2 L 16.222656 2 C 17.209324 2 18 2.7995659 18 3.7773438 L 18 16.222656 C 18 17.200435 17.209323 18 16.222656 18 L 3.7773438 18 C 2.7906767 18 2 17.200435 2 16.222656 L 2 3.7773438 C 2 2.7995659 2.7906767 2 3.7773438 2 z "
+     style="fill:#008ef2;fill-opacity:1;stroke-width:1.11111104" />
 </svg>
