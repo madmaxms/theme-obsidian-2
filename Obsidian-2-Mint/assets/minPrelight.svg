@@ -25,17 +25,25 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(1.1111111,0,0,1.1111111,1.8212526e-8,-324.70833)"
+     transform="matrix(1.1111111,0,0,1.1111111,1.6391275e-8,-324.70834)"
      id="layer1">
     <circle
        r="2.2559211"
        cy="294.61874"
        cx="2.3812499"
        id="path815"
-       style="opacity:1;fill:#4a860d;fill-opacity:1;stroke:#61aa0d;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#61934b;fill-opacity:1;stroke:#6aa33f;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       id="rect1044"
+       d="m -5.1782098,293.58957 h 1.666875 v 1.66687 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       id="rect1044-7"
+       d="m -4.2257098,295.97082 h -1.666875 v -1.66688 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
     <path
        id="rect1265"
-       d="m 1.190625,294.38062 h 2.38125 v 0.71438 h -2.38125 z"
+       d="m 1.190625,294.38063 h 2.38125 v 0.71438 h -2.38125 z"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20839009;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>

@@ -26,20 +26,28 @@
   </metadata>
   <g
      id="layer1"
-     transform="translate(0,-291.70834)">
+     transform="matrix(1.1111111,0,0,1.1111111,1.6391275e-8,-324.70834)">
     <circle
-       style="opacity:1;fill:#4a860d;fill-opacity:1;stroke:#61aa0d;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#61934b;fill-opacity:1;stroke:#6aa33f;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
-       cx="2.6458333"
-       cy="294.35416"
-       r="2.5065789" />
+       cx="2.3812499"
+       cy="294.61874"
+       r="2.2559211" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.290021;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 4.7624967,294.08959 h -1.85208 v -1.85208 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m -5.1782098,293.58957 h 1.666875 v 1.66687 z"
        id="rect1044" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.290021;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 0.52916667,294.61876 H 2.3812466 v 1.85208 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m -4.2257098,295.97082 h -1.666875 v -1.66688 z"
        id="rect1044-7" />
+    <path
+       id="rect1044-3"
+       d="M 4.286247,294.38063 H 2.619375 v -1.66687 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       id="rect1044-7-6"
+       d="M 0.47624999,294.85688 H 2.1431219 v 1.66688 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2610189;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>

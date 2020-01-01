@@ -28,14 +28,14 @@
      id="layer1"
      transform="matrix(0.80211085,0,0,0.80212642,0.52358314,-233.72804)">
     <circle
-       style="opacity:1;fill:#4a860d;fill-opacity:1;stroke:#61aa0d;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#61934b;fill-opacity:1;stroke:#6aa33f;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
        cx="2.6457057"
        cy="294.35428"
        r="2.4739506" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21212414;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 1.3263964,294.18929 h 2.6388704 v 0.82463 H 1.3263964 Z"
+       id="rect1265" />
   </g>
-  <path
-     id="rect1265"
-     d="M 1.5875001,2.2489584 H 3.7041668 V 2.9104168 H 1.5875001 Z"
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.17014873;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
 </svg>

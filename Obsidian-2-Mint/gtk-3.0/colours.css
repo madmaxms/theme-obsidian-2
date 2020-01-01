@@ -7,18 +7,18 @@
 
 /* ****************************** A C C E N T   C O L O U R S *********************************** */
 
-@define-color    theme_accent_color                    #5fa24a;
+@define-color    theme_accent_color                    #6c954a;
 
 @define-color    theme_selected_bg_color               @theme_accent_color;
 @define-color    theme_selected_fg_color               #ffffff;
 @define-color    theme_unfocused_selected_bg_color     @theme_accent_color;
 
 /* sidebar colours */
-@define-color    sidebar_bg                            #355318;
-@define-color    sidebar_hovering                      #667755;
+@define-color    sidebar_bg                            #4b6438;
+@define-color    sidebar_hovering                      #889977;
 @define-color    sidebar_fg                            #ffffff;
 
-@define-color    theme_fg_color_sel                    #00CC66;
+@define-color    theme_fg_color_sel                    #66c580;
 
 /* view */
 @define-color    view_fg_sel                           #4c9900;
@@ -26,31 +26,32 @@
 @define-color    view_bg_acceleditor                   #6f9f10;
 
 /* entry */
-@define-color    entry_border_act                      #4d7e1b;
-@define-color    entry_border_act_shad                 #90d22d;
-@define-color    entry_tag_a                           #5cb900;
-@define-color    entry_tag_b                           #57b600;
-@define-color    entry_tag_c                           #55b300;
-@define-color    entry_tag_border                      #339900;
+@define-color    entry_border_act                      #5f7943;
+@define-color    entry_border_act_shad                 #92ba57;
+@define-color    entry_tag_a                           #6cae2c;
+@define-color    entry_tag_b                           #69ac2b;
+@define-color    entry_tag_c                           #67aa2a;
+@define-color    entry_tag_border                      #4b9726;
 
 /* buttons */
 @define-color    button_fg_sugg_color                  #f7f7f7;
-@define-color    button_bg_sugg_a                      #52a33f;
-@define-color    button_bg_sugg_b                      #4f9636;
-@define-color    button_bg_sugg_c                      #488c2e;
-@define-color    button_bg_sugg_a_hov                  #62b34f;
-@define-color    button_bg_sugg_b_hov                  #5fa646;
-@define-color    button_bg_sugg_c_hov                  #589c3e;
-@define-color    button_bg_sugg_a_act                  #3d7c01;
-@define-color    button_bg_sugg_b_act                  #478d04;
-@define-color    button_bg_sugg_c_act                  #50a411;
-@define-color    button_bg_sugg_flt                    #5d9b20;
+@define-color    button_bg_sugg_a                      #648844;
+@define-color    button_bg_sugg_b                      #59783a;
+@define-color    button_bg_sugg_c                      #4c662a;
+@define-color    button_bg_sugg_a_hov                  #739554;
+@define-color    button_bg_sugg_b_hov                  #668146;
+@define-color    button_bg_sugg_c_hov                  #4c662a;
+@define-color    button_bg_sugg_a_act                  #3e571d;
+@define-color    button_bg_sugg_b_act                  #4a692c;
+@define-color    button_bg_sugg_c_act                  #648844;
+@define-color    button_bg_sugg_flt                    #59783a;
 @define-color    button_border_sugg                    #213c0e;
 
 /* progress bar */
-@define-color    prgbar_bg_a                           #5ba900;
-@define-color    prgbar_bg_b                           #558000;
-@define-color    prgbar_border                         #546f00;
+@define-color    prgbar_bg_a                           #6ca34a;
+@define-color    prgbar_bg_b                           #5e8047;
+@define-color    prgbar_trough                         #101010;
+@define-color    prgbar_border                         #4e6d22;
 @define-color    prgbar_progress                       @theme_accent_color;
 
 /* scale slider */
@@ -64,16 +65,16 @@
 @define-color    slider_bg_act                         #65cc00;
 
 /* infobar */
-@define-color    infobar_bg_a                          #6eb35d;
-@define-color    infobar_bg_b                          #589941;
+@define-color    infobar_bg_a                          #5c8a50;
+@define-color    infobar_bg_b                          #517743;
 @define-color    infobar_border                        #3b7014;
 @define-color    infobar_button_fg                     #f7f7f7;
 @define-color    infobar_button_fg_dis                 #7dcd6a;
-@define-color    infobar_button_bg_a                   #6eb35d;
-@define-color    infobar_button_bg_b                   #589941;
-@define-color    infobar_button_bg_act_a               #3d7c01;
-@define-color    infobar_button_bg_act_b               #50a411;
-@define-color    infobar_button_border                 #3b7014;
+@define-color    infobar_button_bg_a                   #5c8a50;
+@define-color    infobar_button_bg_b                   #517743;
+@define-color    infobar_button_bg_act_a               #517743;
+@define-color    infobar_button_bg_act_b               #5c8a50;
+@define-color    infobar_button_border                 #436829;
 
 @define-color    terminal_fg                           #729FCF;
 
