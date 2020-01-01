@@ -1,18 +1,4 @@
 /* *********************************************************************** 
-                           O B S I D I A N  2
-              
-                            v2.8 (15.11.2018)
-                                
-                                AMBER
-
- ------------------------------------------------------------------------
- A dark gray theme with amber accents, created by MadMaxMS, based 
- upon Adwaita-Maia. 
- 
- Code available at Github:
- https://github.com/madmaxms/theme-obsidian-2
- 
- ------------------------------------------------------------------------
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -719,12 +705,12 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu .popup-menu-item:checked, 
 .popup-menu .popup-menu-item:checked.selected { 
-    background-color:rgba(66,33,0,0.91); /* coloraccent */
+    background-color:rgba(85,55,5,0.91); /* coloraccent */
     color:#ffcca2; /* coloraccent */
 }
 
 .popup-menu .popup-menu-item:checked:hover { 
-	background-color:#bb4b00; /* coloraccent */
+	background-color:#b56400; /* coloraccent */
 	color:#ffcca2; /* coloraccent */
 }
 
@@ -738,19 +724,19 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-menu-item.selected { 
-    background-color:#bb4b00; /* coloraccent */
+    background-color:#b56400; /* coloraccent */
     color: #ffcca2; /* coloraccent */
     transition-duration: 0s; 
 }
 
 .popup-menu .popup-menu-item:active { 
-    background-color:#bb4b00; /* coloraccent */
+    background-color:#b56400; /* coloraccent */
     color: #ffcca2; /* coloraccent */
     transition-duration: 0.15s; 
 }
 
 .popup-menu .popup-menu-item.selected:active { 
-    background-color:#bb4b00; /* coloraccent */
+    background-color:#b56400; /* coloraccent */
     color: #ffcca2; /* coloraccent */
 }
 
@@ -800,7 +786,7 @@ StScrollBar StButton#hhandle:active {
 .popup-menu StEntry:hover, 
 .popup-menu StEntry:focus, 
 .popup-menu StEntry:insensitive { 
-	background-color:#bb4b00; /* coloraccent */
+	background-color:#b56400; /* coloraccent */
 	color:#FFF;
 }
 
@@ -815,13 +801,13 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StScrollBar StButton#vhandle:hover, 
 .popup-menu StScrollBar StButton#hhandle:hover { 
-	background-color:#bb4b00; /* coloraccent */
+	background-color:#b56400; /* coloraccent */
 	color:#FFF;
 }
 
 .popup-menu StScrollBar StButton#vhandle:active, 
 .popup-menu StScrollBar StButton#hhandle:active { 
-    background-color: #bb4b00; /* coloraccent */
+    background-color: #b56400; /* coloraccent */
 }
 
 .popup-menu-arrow { 
@@ -1183,9 +1169,9 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked { 
-	color:#ffffff;
-    background-color:#cc4800; /* coloraccent */
-	box-shadow: inset 0 -1px #662400; /* coloraccent */
+    color:#ffffff;
+    background-color:#b56400; /* coloraccent */
+    box-shadow: inset 0 -1px #662400; /* coloraccent */
 }
 
 #panel .panel-button:active > .system-status-icon, 
@@ -1513,7 +1499,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-today, 
 .calendar-today.calendar-day-with-events { 
     border: none; 
-	background-color: #bb4b00; /* coloraccent */
+	background-color: #b56400; /* coloraccent */
 	color: #FFFFFF; 
 }
 
@@ -1521,14 +1507,14 @@ StScrollBar StButton#hhandle:active {
 .calendar-today:focus, 
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
-    background-color: #bb4b00; /* coloraccent */
+    background-color: #b56400; /* coloraccent */
 }
 
 .calendar-today:selected, 
 .calendar-today:selected:hover, 
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
-    background-color: #bb4b00; /* coloraccent */ 
+    background-color: #b56400; /* coloraccent */ 
 }
 
 .calendar-nonwork-day{
@@ -1607,18 +1593,18 @@ StScrollBar StButton#hhandle:active {
     padding-top: 0.45em; 
     border-radius: 4px; 
     icon-size: 16px; 
-    color: #cc4800;  /* coloraccent */
+    color: #b56400;  /* coloraccent */
     background-color: transparent; 
 }
 
 .message-list-section-close:hover > StIcon, 
 .message-list-section-close:focus > StIcon { 
-    color: #cc4800;  /* coloraccent */
+    color: #b56400;  /* coloraccent */
     background-color: rgba(38, 50, 56, 0.12); 
 }
 
 .message-list-section-close:active > StIcon { 
-    color: #cc4800;   /* coloraccent */
+    color: #b56400;   /* coloraccent */
     background-color: rgba(38, 50, 56, 0.25); 
 }
 
@@ -1641,7 +1627,7 @@ StScrollBar StButton#hhandle:active {
 }
 .message:hover,
 .message:focus{
-	border:1px solid #cc4800; /* coloraccent */
+	border:1px solid #b56400; /* coloraccent */
 }
 .message-icon-bin{
 	padding:10px 0px 10px 10px
@@ -1689,22 +1675,22 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu .message:hover, 
 .popup-menu .message:focus { 
-    border:1px solid #cc4800; /* coloraccent */
-    background-color:rgba(85,34,0,0.5); /* coloraccent */
+    border:1px solid #b56400; /* coloraccent */
+    background-color:rgba(85,55,5,0.8); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:ltr, 
 .popup-menu .message:focus:ltr { 
-    border:1px solid #cc4800; /* coloraccent */
-    background-color:rgba(85,34,0,0.5); /* coloraccent */
+    border:1px solid #b56400; /* coloraccent */
+    background-color:rgba(85,55,5,0.8); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:rtl, 
 .popup-menu .message:focus:rtl { 
-    border:1px solid #cc4800; /* coloraccent */
-    background-color:rgba(153,61,0,0.5); /* coloraccent */
+    border:1px solid #b56400; /* coloraccent */
+    background-color:rgba(85,55,255,0.8); /* coloraccent */
     color: #BBCCDD; 
 }
 
@@ -1822,7 +1808,7 @@ StScrollBar StButton#hhandle:active {
     padding: 2px; 
     margin: 2px 2px 2px 6px;
     color: #FF9900; /* coloraccent */ 
-    background-color: #662900; /* coloraccent */ 
+    background-color: rgba(230, 153, 90, 0.3); /* coloraccent */
 }
 
 .message-content *:active > StIcon { 
@@ -1922,14 +1908,14 @@ StScrollBar StButton#hhandle:active {
 
 .system-menu-action:hover, 
 .system-menu-action:focus { 
-    background-color: #bb4b00; /* coloraccent */
+    background-color: #b56400; /* coloraccent */
     color: #eeeeec;
     border-color:#dd5800; /* coloraccent */
     padding: 13px; 
 }
 
 .system-menu-action:active { 
-    background-color: #bb4b00; /* coloraccent */
+    background-color: #b56400; /* coloraccent */
     color: #ffffff; 
 }
 
@@ -2160,7 +2146,7 @@ notification-close {
 }
 
 .nm-dialog-item:selected { 
-    background-color:#bb4b00; /* coloraccent */
+    background-color:#b56400; /* coloraccent */
     color:#ffcca2; /* coloraccent */
 }
 
@@ -3210,7 +3196,7 @@ notification-close {
 .notification-banner .notification-button { 
 	border-radius:4px;
 	border:1px solid #080808;
-	padding:6px 10px;
+	/*padding:6px 10px;*/
 	color:#fff;
 	background:none;
 	background-color:none;
