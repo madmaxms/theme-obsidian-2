@@ -4162,15 +4162,9 @@ window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + heade
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child {
-    border-top-left-radius: 0px;
-    background: linear-gradient(to bottom, @header_bg_b, @header_bg_b);
-}
-window:not(.tiled):not(.maximized):not(.solid-csd) separator:only-child + headerbar:backdrop,
-window:not(.tiled):not(.maximized):not(.solid-csd) separator:only-child + headerbar,
-window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:only-child:backdrop,
-window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:only-child {
     border-top-left-radius: 6px;
 }
+
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:last-child {
     border-top-right-radius: 6px;
