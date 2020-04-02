@@ -14,8 +14,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # *************************************************************************
-
-
 gtk-color-scheme = "base_color: #2c3031"
 gtk-color-scheme = "text_color: #FFFFFF"
 gtk-color-scheme = "bg_color: #393F3F"
@@ -29,6 +27,7 @@ gtk-color-scheme = "insensitive_fg_color: #a9acb2"
 gtk-color-scheme = "notebook_bg: #34393b"
 gtk-color-scheme = "dark_sidebar_bg: #183f53"
 gtk-color-scheme = "link_color: #5294e2"
+gtk-color-scheme = "menu_fg: #f7f7f7"
 gtk-color-scheme = "menu_bg: #414747"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
@@ -108,6 +107,8 @@ style "default" {
   GtkIMHtml::hyperlink-color = @link_color
   GtkWidget::link-color = @link_color
   GtkWidget::visited-link-color = @text_color
+
+
   # Colors
 
   bg[NORMAL] = @bg_color
@@ -231,6 +232,7 @@ style "default" {
     }
 
     # Radio Buttons
+
 
     image {
       function = OPTION
@@ -584,15 +586,19 @@ style "ooo_stepper_hack" {
 
 # Menubar
 style "murrine-menubar" {
-    bg[NORMAL]          = "#414747"
-    bg[INSENSITIVE]     = "#181818"
-    base[NORMAL]        = "#393f3f"
-    base[INSENSITIVE]   = "#181818"
-    fg[NORMAL]          = "#ffffff"
-    fg[INSENSITIVE]     = "#484848"
-    fg[SELECTED]        = "#FFFFFF"
-    text[NORMAL]        = "#ffffff"
-    text[INSENSITIVE]   = "#484848"
+  
+  bg[NORMAL]          = "#414747"
+  bg[INSENSITIVE]     = "#181818"
+  base[NORMAL]        = "#393f3f"
+  base[INSENSITIVE]   = "#181818"
+  fg[NORMAL]          = @menu_fg
+  fg[INSENSITIVE]     = "#484848"
+  fg[SELECTED]        = @menu_fg
+  text[NORMAL]        = @menu_fg
+  text[INSENSITIVE]   = "#484848"
+
+  xthickness = 2
+  ythickness = 4
 
   engine "pixmap" {
 
@@ -605,27 +611,50 @@ style "murrine-menubar" {
   }
 }
 
-style "murrine-menubar-menuitem" = "murrine-wider" {
-  
-  fg[PRELIGHT]  = "#FFFFFF"
-  text[PRELIGHT] = @fg_color
-  bg[PRELIGHT]  = @selected_bg_color
-  bg[SELECTED]  = @selected_bg_color
-  
+style "murrine-menubar-menuitem" {
+
   xthickness = 2
   ythickness = 4
 
-  fg[PRELIGHT] = @selected_fg_color
+  fg[PRELIGHT] = "#ffffff"
+  fg[ACTIVE] = "#ffffff"
+  fg[SELECTED] = "#ffffff"
+  fg[INSENSITIVE] = shade(0.7, "#999999")
+  text[NORMAL] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+  text[ACTIVE] = "#ffffff"
+  text[SELECTED] = "#ffffff"
+  text[INSENSITIVE] = shade(0.7, "#999999")
 
   engine "pixmap" {
 
     image {
       function = BOX
+      file  = "assets/menubar_button.png"
+      stretch  = TRUE
       state = PRELIGHT
-      file = "assets/menubar_button.png"
-      border = { 2, 2, 2, 2 }
-      stretch = TRUE
+      border = { 1, 1, 1, 1 }
     }
+  }
+}
+
+# Text Style Menubar
+style "menubar_text" {
+
+  fg[NORMAL] = @menu_fg
+  fg[PRELIGHT] = @menu_fg
+  fg[ACTIVE] = @menu_fg
+  fg[SELECTED] = @menu_fg
+  fg[INSENSITIVE] = shade(0.7, "#999999")
+  text[NORMAL] = @menu_fg
+  text[PRELIGHT] = @menu_fg
+  text[ACTIVE] = @menu_fg
+  text[SELECTED] = @menu_fg
+  text[INSENSITIVE] = shade(0.7, "#999999")
+
+  engine "murrine" {
+    text_shade = 1.0
+    textstyle = 1
   }
 }
 
@@ -636,9 +665,11 @@ style "murrine-nogap" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = "#414747" # menu background
- fg[PRELIGHT] = "#FFFFFF"
- text[ACTIVE] = "#FFFFFF"
+ bg[NORMAL] = @menu_bg # menu background
+ fg[NORMAL] = @menu_fg
+ fg[PRELIGHT] = @menu_fg
+ text[ACTIVE] = @menu_fg
+ text[NORMAL] = @menu_fg
  GtkMenuItem::arrow-scaling = .5 # small arrow
 
  engine "murrine" {
@@ -795,9 +826,11 @@ style "menu" {
   GtkMenuItem::arrow-scaling = 0.4
 
   bg[NORMAL] = @menu_bg
-  fg[NORMAL] = @text_color
+  fg[NORMAL] = @menu_fg
   bg[INSENSITIVE] = @menu_bg
-  bg[PRELIGHT] = @selected_bg_color
+  fg[INSENSITIVE] = @menu_fg
+  bg[PRELIGHT] = @menu_bg
+  fg[PRELIGHT] = @menu_fg
 
   engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
 
@@ -829,9 +862,10 @@ style "menu_item"
   # highlight. The price to pay is black text on menus as well,
   # but at least it's readable.
   # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
-  bg[SELECTED] = @selected_fg_color
+  bg[SELECTED] = @selected_bg_color
 
-  fg[NORMAL] = @fg_color
+  fg[NORMAL] = @menu_fg
+  text[NORMAL] = @menu_fg
   fg[SELECTED] = @selected_fg_color
 
   fg[PRELIGHT] = @selected_fg_color
@@ -2417,8 +2451,6 @@ class "GtkTreeView"                                                 style "treev
 class "GtkToolbar"                                                  style "toolbar"
 class "*HandleBox"                                                  style "toolbar"
 
-widget_class "*<GtkMenu>*"           style "murrine-menu"
-widget_class "*<GtkMenuItem>*"                                      style "menu_item"
 widget_class "*<GtkCheckButton>*"                                   style "checkbutton"
 widget_class "*<GtkComboBox>"                                       style "combobox"
 widget_class "*<GtkComboBox>*<GtkButton>"                           style "combobox_button"
@@ -2429,9 +2461,11 @@ widget_class "*<GtkComboBoxEntry>*<GtkEntry>"                       style "combo
 widget_class "*<GtkComboBoxEntry>*<GtkButton>"                      style "combobox_entry_button"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"     style "notebook_viewport"
 widget_class "*HandleBox"                                           style "toolbar"
-widget_class "*<GtkMenuBar>*"         style "murrine-menubar"
-widget_class "*<GtkMenuBar>*<GtkMenuItem>*"  style "murrine-menubar-menuitem"
-widget_class "*<GtkSeparatorMenuItem>*"    style "murrine-menuitem-separator"
+widget_class "*<GtkMenu>*"                                          style "murrine-menu"
+widget_class "*<GtkMenuItem>*"                                      style "menu_item"
+widget_class "*<GtkMenuBar>*"                                       style "murrine-menubar"
+widget_class "*<GtkMenuBar>*<GtkMenuItem>*"                         style "murrine-menubar-menuitem"
+widget_class "*<GtkSeparatorMenuItem>*"                             style "murrine-menuitem-separator"
 
 # Entries in notebooks draw with notebook's base color, but not if there's
 # something else in the middle that draws gray again
@@ -2482,6 +2516,7 @@ widget "xfwm4-tabwin*GtkButton*"                                    style "xfwm-
 # Fixes ugly text shadows for insensitive text
 widget_class "*<GtkLabel>"                                          style "text"
 widget_class "*<GtkMenu>*<GtkLabel>"                                style "menu_text" 
+widget_class "*<GtkMenuBar>*<GtkMenuItem>*<GtkLabel>"               style "menubar_text" 
 widget_class "*<GtkComboBox>*<GtkCellLayout>"                       style "text"
 widget_class "*<GtkNotebook>*<GtkLabel>"                            style "text"
 widget_class "*<GtkNotebook>*<GtkCellLayout>"                       style "text"

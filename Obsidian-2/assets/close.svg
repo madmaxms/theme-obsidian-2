@@ -14,7 +14,7 @@
    viewBox="0 0 5.2916668 5.2916668"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="close.svg">
   <defs
      id="defs2" />
@@ -26,13 +26,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="5.7834574"
+     inkscape:cx="-7.1212414"
      inkscape:cy="14.782056"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1011"
+     inkscape:window-height="1010"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
@@ -55,7 +55,7 @@
      id="layer1"
      transform="translate(0,-291.70833)">
     <circle
-       style="opacity:1;fill:#00c5fe;fill-opacity:1;stroke:#50e1ff;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#007dcc;fill-opacity:1;stroke:#009cff;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
        cx="2.6458333"
        cy="294.35416"

@@ -5,35 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 5.0270835 5.0270835"
    height="19"
-   width="19"
-   sodipodi:docname="button_close.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="867"
-     inkscape:window-height="480"
-     id="namedview7"
-     showgrid="false"
-     inkscape:zoom="12.421053"
-     inkscape:cx="0.16101695"
-     inkscape:cy="9.5"
-     inkscape:window-x="386"
-     inkscape:window-y="199"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+   width="19">
   <defs
      id="defs2" />
   <metadata
@@ -44,18 +20,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.75197893,0,0,0.75197893,0.78851424,-219.09917)"
+     transform="matrix(0.80211085,0,0,0.80212642,0.52358314,-233.72804)"
      id="layer1">
     <circle
-       r="2.6388247"
-       cy="294.53009"
-       cx="2.4699085"
+       r="2.4739506"
+       cy="294.35428"
+       cx="2.6457057"
        id="path815"
-       style="opacity:1;fill:#00c5fe;fill-opacity:1;stroke:#50e1ff;stroke-width:0.35194132;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#007dcc;fill-opacity:1;stroke:#009cff;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>

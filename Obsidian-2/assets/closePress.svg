@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   width="20"
-   height="20"
-   viewBox="0 0 5.2916667 5.2916667"
+   id="svg8"
    version="1.1"
-   id="svg8">
+   viewBox="0 0 5.2916667 5.2916667"
+   height="20"
+   width="20">
   <defs
      id="defs2" />
   <metadata
@@ -25,21 +25,21 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
-     transform="translate(0,-291.70834)">
+     transform="translate(0,-291.70834)"
+     id="layer1">
     <circle
-       style="opacity:1;fill:#00c5fe;fill-opacity:1;stroke:#50e1ff;stroke-width:0.26458334;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path815"
-       cx="2.6458333"
+       r="2.5065789"
        cy="294.35416"
-       r="2.5065789" />
+       cx="2.6458333"
+       id="path815"
+       style="opacity:1;fill:#007dcc;fill-opacity:1;stroke:#009cff;stroke-width:0.26458334;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33201277;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect849-9"
        d="m 1.7477173,293.08718 2.1650696,2.16517 c 0.085257,0.0852 0.071571,0.23603 -0.030616,0.33823 -0.1021676,0.10213 -0.2530046,0.11576 -0.3382213,0.0306 L 1.3788801,293.456 c -0.085258,-0.0852 -0.071571,-0.23602 0.030616,-0.33823 0.1021567,-0.10213 0.2529943,-0.11575 0.3382112,-0.0306 z"
-       id="rect849-9" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33201277;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33201277;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect849-9-9"
        d="m 3.9128277,293.45603 -2.1651701,2.16507 c -0.0852,0.0853 -0.23603,0.0716 -0.33823,-0.0306 -0.10213,-0.10216 -0.11576,-0.253 -0.0306,-0.33822 l 2.1651801,-2.16507 c 0.0852,-0.0853 0.23602,-0.0716 0.33823,0.0306 0.10213,0.10216 0.11575,0.25299 0.0306,0.33821 z"
-       id="rect849-9-9" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33201277;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>
