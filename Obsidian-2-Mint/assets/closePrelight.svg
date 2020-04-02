@@ -32,10 +32,10 @@
        cy="294.35416"
        cx="2.6458333"
        id="path815"
-       style="opacity:1;fill:#8cc763;fill-opacity:1;stroke:#9ce17e;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#6aa44e;fill-opacity:1;stroke:#83c169;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3320128;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 1.5850595,293.03211 c -0.06113,0.006 -0.124105,0.0342 -0.175184,0.0853 -0.102187,0.10221 -0.116263,0.25328 -0.03101,0.33848 l 0.8981369,0.89813 -0.8981369,0.89814 c -0.08515,0.0852 -0.07163,0.2358 0.03049,0.33796 0.102193,0.1022 0.253288,0.11631 0.338481,0.031 l 0.8981365,-0.89814 0.8981365,0.89814 c 0.085217,0.0852 0.2357964,0.0716 0.3379639,-0.0305 0.1021871,-0.1022 0.1162629,-0.25328 0.031006,-0.33848 L 3.014943,294.354 3.9125626,293.45587 c 0.085143,-0.0852 0.071633,-0.23632 -0.030489,-0.33848 -0.1022022,-0.1022 -0.2527707,-0.11579 -0.3379639,-0.0305 l -0.8981364,0.89813 -0.8981368,-0.89813 c -0.04261,-0.0426 -0.101649,-0.0603 -0.16278,-0.0548 z"
-       id="rect849-9-9" />
+       id="rect849-9-9"
+       d="m 1.585057,293.03211 c -0.061131,0.006 -0.1241048,0.0342 -0.1751831,0.0853 -0.1021871,0.10221 -0.1162639,0.25328 -0.031006,0.33848 l 0.8981364,0.89813 -0.8981364,0.89814 c -0.085153,0.0852 -0.071633,0.2358 0.030489,0.33796 0.1021921,0.1022 0.2532876,0.11631 0.3384806,0.031 l 0.8981364,-0.89814 0.8981364,0.89814 c 0.085217,0.0852 0.2357964,0.0716 0.3379639,-0.0305 0.1021872,-0.1022 0.116263,-0.25328 0.031006,-0.33848 L 3.0149438,294.354 3.9125634,293.45587 c 0.085143,-0.0852 0.071633,-0.23632 -0.030489,-0.33848 -0.1022022,-0.1022 -0.2527707,-0.11579 -0.3379639,-0.0305 l -0.8981364,0.89813 -0.8981364,-0.89813 c -0.042609,-0.0426 -0.1016497,-0.0603 -0.1627807,-0.0548 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33201277;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>

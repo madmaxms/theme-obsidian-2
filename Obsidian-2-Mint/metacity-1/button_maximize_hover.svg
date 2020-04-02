@@ -28,13 +28,13 @@
      id="layer1"
      transform="matrix(0.80211085,0,0,0.80212642,0.52358314,-233.72804)">
     <circle
-       style="opacity:1;fill:#61934b;fill-opacity:1;stroke:#6aa33f;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#6d6d6d;fill-opacity:1;stroke:#8b8b8b;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
        cx="2.6457057"
        cy="294.35428"
        r="2.4739506" />
     <g
-       transform="matrix(0.79999998,0,0,0.79999998,0.19352063,59.834899)"
+       transform="matrix(0.79999999,0,0,0.79999999,0.19352062,59.834896)"
        id="g843">
       <path
          id="rect1044"
