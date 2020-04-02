@@ -12,7 +12,7 @@
    viewBox="0 0 5.0270835 5.0270835"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="button_backdrop.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -27,11 +27,11 @@
      inkscape:window-height="759"
      id="namedview7"
      showgrid="false"
-     inkscape:zoom="17.566021"
-     inkscape:cx="-2.3919614"
-     inkscape:cy="7.0504864"
-     inkscape:window-x="69"
-     inkscape:window-y="63"
+     inkscape:zoom="12.421053"
+     inkscape:cx="-0.68432203"
+     inkscape:cy="9.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -52,7 +52,7 @@
      id="layer1"
      transform="matrix(0.80211085,0,0,0.80212642,0.52358314,-233.72804)">
     <circle
-       style="opacity:1;fill:#666666;fill-opacity:1;stroke:#828282;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#4e4e4e;fill-opacity:1;stroke:#6c6c6c;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
        cx="2.6457057"
        cy="294.35428"
