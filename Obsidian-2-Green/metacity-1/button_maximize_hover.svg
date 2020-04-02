@@ -5,35 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="19"
    height="19"
    viewBox="0 0 5.0270835 5.0270835"
    version="1.1"
-   id="svg8"
-   sodipodi:docname="button_maximize_hover.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1410"
-     inkscape:window-height="694"
-     id="namedview10"
-     showgrid="false"
-     inkscape:zoom="12.421053"
-     inkscape:cx="5.2096738"
-     inkscape:cy="10.724841"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+   id="svg8">
   <defs
      id="defs2" />
   <metadata
@@ -44,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,7 +28,7 @@
      id="layer1"
      transform="matrix(0.80211085,0,0,0.80212642,0.52358314,-233.72804)">
     <circle
-       style="opacity:1;fill:#008e4d;fill-opacity:1;stroke:#00b873;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="opacity:1;fill:#6d6d6d;fill-opacity:1;stroke:#8b8b8b;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path815"
        cx="2.6457057"
        cy="294.35428"

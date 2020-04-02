@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Jade-1</name>
+	<name>Obsidian-2</name>
 	<author>madmaxms</author>
 	<copyright>GPLv3.0</copyright>
 	<date>2018</date>
-	<description>Jade-1 Metacity theme</description>
+	<description>Obsidian-2 Metacity theme</description>
 </info>
 
 <!-- meaningfull constants -->
@@ -22,7 +22,8 @@
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
-	<distance name="left_titlebar_edge" value="0"/>
+	<!-- <distance name="left_titlebar_edge" value="0"/> -->
+	<distance name="left_titlebar_edge" value="12"/> 
 	<distance name="right_titlebar_edge" value="0"/>
 	<distance name="title_vertical_pad" value="12"/>
 	<border name="title_border" left="10" right="10" top="0" bottom="0"/>
