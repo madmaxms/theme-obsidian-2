@@ -5,35 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="20"
-   height="20"
-   viewBox="0 0 5.2916667 5.2916667"
-   version="1.1"
    id="svg8"
-   sodipodi:docname="minPrelight.svg"
-   inkscape:version="0.92.4 (unknown)">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1010"
-     id="namedview8"
-     showgrid="false"
-     inkscape:zoom="11.8"
-     inkscape:cx="-9.1949153"
-     inkscape:cy="10"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+   version="1.1"
+   viewBox="0 0 5.2916668 5.2916668"
+   height="20"
+   width="20">
   <defs
      id="defs2" />
   <metadata
@@ -44,22 +20,22 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
-     transform="matrix(1.1111111,0,0,1.1111111,1.8212526e-8,-324.70833)">
+     transform="translate(0,-291.70833)"
+     id="layer1">
     <circle
-       style="opacity:1;fill:#b41a1a;fill-opacity:1;stroke:#dc3232;stroke-width:0.238125;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       r="2.5065789"
+       cy="294.35416"
+       cx="2.6458333"
        id="path815"
-       cx="2.3812499"
-       cy="294.61874"
-       r="2.2559211" />
+       style="opacity:1;fill:#6d6d6d;fill-opacity:1;stroke:#8b8b8b;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20839009;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 1.190625,294.38062 h 2.38125 v 0.71438 h -2.38125 z"
-       id="rect1265" />
+       id="rect1265"
+       d="m 1.3229167,294.08957 2.6458334,0 0,0.79376 -2.6458334,0 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20839009;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>
