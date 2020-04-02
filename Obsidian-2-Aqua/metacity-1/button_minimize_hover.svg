@@ -32,10 +32,10 @@
        cy="294.35428"
        cx="2.6457057"
        id="path815"
-       style="opacity:1;fill:#37a4d4;fill-opacity:1;stroke:#41cdff;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <path
-       id="rect1265"
-       d="m 1.3263964,294.18929 h 2.6388705 v 0.82463 H 1.3263964 Z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21212414;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#6d6d6d;fill-opacity:1;stroke:#8b8b8b;stroke-width:0.32983989;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
+  <path
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.17014873;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     d="M 1.5875001,2.2489584 H 3.7041668 V 2.9104168 H 1.5875001 Z"
+     id="rect1265" />
 </svg>
