@@ -784,7 +784,7 @@ headerbar button:backdrop,
     outline-color: rgba(238, 238, 236, 0.3);
     background-image: linear-gradient(to bottom, @titlebutton_bg_a, @titlebutton_bg_b 40%, @titlebutton_bg_c);
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
 
@@ -9748,7 +9748,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: transparent; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:hover:not(#tasklist-button),
 .mate-panel-menu-bar button:hover:not(#tasklist-button), 
@@ -9757,7 +9757,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: @panel_bg_hov; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:active:not(#tasklist-button),
 .mate-panel-menu-bar button:active:not(#tasklist-button), 
@@ -9770,7 +9770,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: @theme_accent_color;
     background-image: none; 
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:not(#tasklist-button) label,
 .mate-panel-menu-bar button:not(#tasklist-button) label, 
@@ -9781,7 +9781,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     color: inherit; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 
 .floating-bar {
