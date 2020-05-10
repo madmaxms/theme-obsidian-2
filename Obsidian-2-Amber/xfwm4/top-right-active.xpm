@@ -1,6 +1,6 @@
 /* XPM */
 static char * top_right_active_xpm[] = {
-"5 24 41 1",
+"5 36 41 1",
 " 	c None",
 ".	c #313133",
 "+	c #4B5252",
@@ -65,4 +65,16 @@ static char * top_right_active_xpm[] = {
 "3242.",
 "5666.",
 "7866.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
+"90ab.",
 "90ab."};
