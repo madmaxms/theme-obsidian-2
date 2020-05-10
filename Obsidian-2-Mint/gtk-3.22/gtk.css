@@ -658,7 +658,7 @@ button,
     outline-color: rgba(238, 238, 236, 0.3);
     background-image: linear-gradient(to bottom, @button_bg_a, @button_bg_b 40%, @button_bg_c);
     text-shadow: 0 -1px alpha(@button_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@button_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@button_fg_shadow, 0.8);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
 headerbar button,
@@ -672,7 +672,7 @@ headerbar button,
     outline-color: rgba(238, 238, 236, 0.3);
     background-image: linear-gradient(to bottom, @titlebutton_bg_a, @titlebutton_bg_b 40%, @titlebutton_bg_c);
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
 headerbar button label {
@@ -822,7 +822,7 @@ headerbar button:backdrop,
     outline-color: rgba(238, 238, 236, 0.3);
     background-image: linear-gradient(to bottom, @titlebutton_bg_a, @titlebutton_bg_b 40%, @titlebutton_bg_c);
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
 
@@ -1043,7 +1043,7 @@ headerbar button:disabled,
     border-color: @titlebutton_border;
     background-color: @insensitive_bg_color;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
     color: @titlebutton_fg_dis;
     outline-color: rgba(238, 238, 236, 0.3);
@@ -2125,32 +2125,31 @@ button.circular {
     -gtk-outline-radius: 9999px;
     background-origin: padding-box, border-box;
     background-clip: padding-box, border-box;
-    padding: 0px;
+    background-image: linear-gradient(to bottom, @button_bgcirc_a, @button_bgcirc_b 60%, @button_bgcirc_c);
+    padding: 4px;
+    min-width: 24px;
+    min-height: 24px;
 }
 button.circular label {
-    padding: 0;
+    padding: 0px;
 }
 button.circular:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
     color: @theme_fg_color;
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: @button_border;
-    border-bottom-color: @button_bgcirc_a;
     text-shadow: 0 -1px alpha(@button_fgcirc_shadow, 0.8);
     -gtk-icon-shadow: 0 -1px alpha(@button_fgcirc_shadow, 0.8);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
     background-image: linear-gradient(to bottom, @button_bgcirc_a, @button_bgcirc_b 60%, @button_bgcirc_c);
-    border-color: transparent;
 }
 button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
     color: @theme_fg_color;
     outline-color: rgba(238, 238, 236, 0.3);
     border-color: @button_border;
-    border-bottom-color: @button_bgcirc_flt_a;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.77945);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.77945);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
     background-image: linear-gradient(to top, @button_bgcirc_flt_a 25%, @button_bgcirc_flt_b 50%);
-    border-color: transparent;
 }
 
 .stack-switcher > button.needs-attention > label,
@@ -9857,7 +9856,7 @@ stackswitcher button.circular,
 stackswitcher button.text-button.circular {
     min-width: 32px;
     min-height: 32px;
-    padding: 0;
+    padding: 4px;
 }
 
 /***************************************************************************************************
@@ -10351,7 +10350,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: transparent; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:hover:not(#tasklist-button),
 .mate-panel-menu-bar button:hover:not(#tasklist-button), 
@@ -10360,7 +10359,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: @panel_bg_hov; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:active:not(#tasklist-button),
 .mate-panel-menu-bar button:active:not(#tasklist-button), 
@@ -10373,7 +10372,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     background-color: @theme_accent_color;
     background-image: none; 
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 .gnome-panel-menu-bar button:not(#tasklist-button) label,
 .mate-panel-menu-bar button:not(#tasklist-button) label, 
@@ -10384,7 +10383,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     color: inherit; 
     background-image: none;
     text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
-    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
 }
 
 .floating-bar {
