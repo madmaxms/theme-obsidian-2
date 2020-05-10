@@ -1,1 +1,7 @@
-left-active.xpm
+/* XPM */
+static char * left_active_xpm[] = {
+"3 1 3 1",
+" 	c None",
+".	c #313133",
+"+	c #414747",
+".++"};
