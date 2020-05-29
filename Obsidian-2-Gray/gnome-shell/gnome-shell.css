@@ -124,7 +124,7 @@ stage {
 }
 
 StEntry { 
-    border-color: transparent; 
+    /*border-color: transparent; */ 
     background-color: rgba(0, 0, 0, 0.01); 
     box-shadow: inset 0 -1px rgba(38, 50, 56, 0.2); 
     min-height: 2.5em; 
@@ -138,16 +138,16 @@ StEntry {
 }
 
 StEntry:hover { 
-    border-color: transparent; 
+    /*border-color: transparent; */ 
     box-shadow: inset 0 -2px rgba(38, 50, 56, 0.2); 
 }
 
 StEntry:focus { 
-    border-color: transparent; 
+    /*border-color: transparent; */ 
 }
 
 StEntry:insensitive { 
-    border-color: transparent; 
+    /*border-color: transparent; */ 
     color: rgba(38, 50, 56, 0.28); 
     box-shadow: inset 0 -1px rgba(38, 50, 56, 0.06); 
 }
@@ -569,6 +569,17 @@ StScrollBar StButton#hhandle:active {
     padding-bottom: 8px; 
 }
 
+.prompt-dialog-error-label,
+.prompt-dialog-info-label,
+.prompt-dialog-null-label {
+  text-align: center;
+  font-size: 10pt; 
+}
+
+.prompt-dialog-error-label {
+  color: #f57900; 
+}
+
 .hidden { 
     color: transparent; 
 }
@@ -776,6 +787,19 @@ StScrollBar StButton#hhandle:active {
     color: #CCDDEE; 
 }
 
+.popup-separator-menu-item {
+  padding: 0; 
+}
+.popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 1px;
+    margin: 12px 64px;
+    background-color: rgba(100,120,130, 0.3);
+}
+.popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+    margin: 0 64px 0 32px;
+    background-color: rgba(100,120,130, 0.3);
+}
+
 .popup-menu.panel-menu { 
     -boxpointer-gap: 4px; 
     margin-bottom: 16px; 
@@ -867,16 +891,6 @@ StScrollBar StButton#hhandle:active {
     -arrow-box-shadow: 0px 0px transparent; 
     border-top-width: 0px;
     border-radius: 4px; 
-    background-color: transparent; 
-}
-
-.popup-separator-menu-item { 
-    height: 1px; 
-    margin: 5px 0px; 
-    spacing: 0px; 
-    border-color: rgba(100,120,130, 0.3); 
-    border-bottom-width: 1px; 
-    border-bottom-style: solid; 
     background-color: transparent; 
 }
 
@@ -4374,17 +4388,20 @@ notification-close {
     spacing: 8px; 
 }
 
-.popup-separator-menu-item .popup-separator-menu-item-separator {
-    background-color: transparent; 
-    height: 1px;
+      
+/* Password or Authentication Dialog */
+.prompt-dialog .modal-dialog-content-box {
+    margin-bottom: 24px; }
+
+.prompt-dialog-password-layout {
+  spacing: 8px; 
 }
 
-.popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
-    background-color: transparent; 
+.prompt-dialog-password-entry {
+    border-radius: 4px;
+    background-color: rgba(0,0,0, 0.3);
+    border: 1px solid #445566;  
 }
-
-
-
 
 
 
