@@ -276,6 +276,18 @@
 @define-color    row_bg_active                         @theme_accent_color;
 @define-color    row_fg_dis                            #566164;
 
+/* hdyview */
+@define-color    hdybutton_bg_hov                      #414747;
+@define-color    hdybutton_bg_chk                      #475050;
+@define-color    hdyheadbutton_bg_a                    #555e5e;
+@define-color    hdyheadbutton_bg_b                    #4a4e4e;
+@define-color    hdyheadbutton_bdr                     #636969;
+@define-color    hdyheadbutton_bdr_r                   #424949;
+@define-color    hdyheadbutton_chk_bg_a                #606767;
+@define-color    hdyheadbutton_chk_bg_b                #4c5050;
+@define-color    hdyheadbutton_chk_bdr                 #6a7070;
+@define-color    hdyheadbutton_chk_bdr_r               #424949;
+
 /* text/foreground color of selections */
 @define-color    theme_selected_fg_color               #ffffff;
 

@@ -44,11 +44,12 @@ stage {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 
 .button:hover { 
     border:1px solid #080808;
+    background-gradient-direction:vertical;
     background-gradient-start:#0056cb; /* coloraccent */
     background-gradient-end:#0045b4; /* coloraccent */
 }
@@ -87,7 +88,7 @@ stage {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 
 .modal-dialog-linked-button:hover { 
@@ -391,7 +392,7 @@ StScrollBar StButton#hhandle:active {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 .end-session-dialog .modal-dialog-linked-button:active {
     border:1px solid #080808;
@@ -417,7 +418,7 @@ StScrollBar StButton#hhandle:active {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 .end-session-dialog .modal-dialog-linked-button:last-child:hover, 
 .end-session-dialog .modal-dialog-linked-button:last-child:active {
@@ -2167,7 +2168,7 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 
 .nm-dialog-airplane-box .button:hover { 
@@ -3282,11 +3283,13 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms 
+    transition-duration:200ms; 
 }
 
 .notification-banner .notification-button:hover { 
     border:1px solid #080808;
+    background:none;
+    background-color:none;
     background-gradient-start:#0056cb; /* coloraccent */
     background-gradient-end:#0045b4; /* coloraccent */
 }
@@ -3302,7 +3305,6 @@ notification-close {
     background-gradient-start:#0056cb; /* coloraccent */
     background-gradient-end:#0045b4; /* coloraccent */
 }
-
 
 .summary-source-counter { 
     font-size: 10pt; 
@@ -3629,7 +3631,7 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms 
+    transition-duration:200ms; 
 }
 
 .candidate-page-button:hover { 
@@ -3727,7 +3729,7 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
     margin:4px;
 }
 
@@ -3989,7 +3991,7 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 
 .login-dialog-session-list-button:focus,
@@ -4212,12 +4214,12 @@ notification-close {
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
-    transition-duration:200ms
+    transition-duration:200ms;
 }
 
 .lg-obj-inspector-button:hover, 
 .lg-obj-inspector-button:focus { 
-    border:1px solid #080808;
+    border:1px solid #ff0000;
     background-gradient-start:#0056cb; /* coloraccent */
     background-gradient-end:#0045b4; /* coloraccent */
 }
@@ -4277,6 +4279,20 @@ notification-close {
 #LookingGlassPropertyInspector:rtl { 
     border-radius: 0 2px 2px 0; 
     border-right-color: transparent; 
+}
+
+.button:hover { 
+    border:1px solid #080808;
+    background-gradient-direction:vertical;
+    background-gradient-start:#0056cb; /* coloraccent */
+    background-gradient-end:#0045b4; /* coloraccent */
+}
+
+.app-view-control:hover { 
+    color: #FFFFFF; 
+    border: 1px solid #AABBCC;
+    background-gradient-start :rgba(207, 216, 220, 0.18) !important; 
+    background-gradient-end: rgba(207, 216, 220, 0.18) !important; 
 }
 
 /* GNOME 3.34 */
@@ -4406,7 +4422,5 @@ notification-close {
     background-color: rgba(0,0,0, 0.3);
     border: 1px solid #445566;  
 }
-
-
 
 
