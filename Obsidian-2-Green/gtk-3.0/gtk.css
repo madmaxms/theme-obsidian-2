@@ -7831,9 +7831,12 @@ filechooser #pathbarbox {
     color: @sidebar_fg;
 }
 
-.sidebar row,
 .sidebar .frame {
     background-color: @sidebar_bg;
+}
+
+.sidebar row {
+    background-color: transparent;
 }
 
 row.activatable:hover {
