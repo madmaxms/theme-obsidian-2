@@ -3299,6 +3299,19 @@ notification-close {
     background-gradient-end:#b42323; /* coloraccent */
 }
 
+.button:hover { 
+    border:1px solid #080808;
+    background-gradient-direction:vertical;
+    background-gradient-start:#cb2b2b; /* coloraccent */
+    background-gradient-end:#b42323; /* coloraccent */
+}
+
+.app-view-control:hover { 
+    color: #FFFFFF; 
+    border: 1px solid #AABBCC;
+    background-gradient-start :rgba(207, 216, 220, 0.18) !important; 
+    background-gradient-end: rgba(207, 216, 220, 0.18) !important; 
+}
 
 .summary-source-counter { 
     font-size: 10pt; 
@@ -4275,6 +4288,19 @@ notification-close {
     border-right-color: transparent; 
 }
 
+.button:hover { 
+    border:1px solid #080808;
+    background-gradient-start:#cb2b2b; /* coloraccent */
+    background-gradient-end:#b42323; /* coloraccent */
+}
+
+.app-view-control:hover { 
+    color: #FFFFFF; 
+    border: 1px solid #AABBCC;
+    background-gradient-start :rgba(207, 216, 220, 0.18) !important; 
+    background-gradient-end: rgba(207, 216, 220, 0.18) !important; 
+}
+
 /* GNOME 3.34 */
 
 .app-well-app:drop .overview-icon,
@@ -4401,5 +4427,6 @@ notification-close {
     background-color: rgba(0,0,0, 0.3);
     border: 1px solid #445566;  
 }
+
 
 
