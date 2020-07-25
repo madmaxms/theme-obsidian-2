@@ -4139,6 +4139,108 @@ headerbar switch {
     border-top-right-radius: 6px;
 }
 
+/** hdyview **/
+
+hdydialer button {
+  font-weight: lighter;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none; 
+}
+hdydialer button:backdrop {
+    background-color: transparent; 
+}
+hdydialer button:focus {
+    background-color: transparent;
+    border: none; 
+}
+
+hdyviewswitcher > button,
+hdyviewswitcher > button:backdrop {
+  border: 0;
+  background-color: transparent; 
+}
+hdyviewswitcher > button:backdrop:hover, 
+hdyviewswitcher > button:hover, 
+hdyviewswitcher > button:active, 
+hdyviewswitcher > button:hover:focus, 
+hdyviewswitcher > button:active:focus, 
+hdyviewswitcher > button:checked, 
+hdyviewswitcher > button:checked:hover {
+    background-color: transparent; 
+}
+hdyviewswitcher > button:checked, 
+hdyviewswitcher > button:checked:backdrop {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent; 
+}
+
+hdyviewswitcher > button:checked > stack, 
+hdyviewswitcher > button:checked:backdrop > stack {
+    border-bottom: 3px solid @hdybutton_bg_chk;
+    background: linear-gradient(to bottom, @hdybutton_bg_chk, @hdybutton_bg_chk);
+    border-top: 3px solid @theme_accent_color; 
+    border-left: 1px solid @notebook_border;
+    border-right: 1px solid @notebook_border;
+}
+hdyviewswitcher > button:hover > stack, 
+hdyviewswitcher > button:hover:backdrop > stack {
+    border-bottom: 3px solid @hdybutton_bg_hov;
+    background: linear-gradient(to bottom, @hdybutton_bg_hov, @hdybutton_bg_hov);
+    border-top: 3px solid @hdybutton_bg_hov; 
+}
+hdyviewswitcher > button:hover:checked > stack, 
+hdyviewswitcher > button:hover:checked:backdrop > stack {
+    border-bottom: 3px solid @hdybutton_bg_chk;
+    background: linear-gradient(to bottom, @hdybutton_bg_chk, @hdybutton_bg_chk);
+    border-top: 3px solid @theme_accent_color; 
+    border-left: 1px solid @notebook_border;
+    border-right: 1px solid @notebook_border;
+}
+hdyviewswitcher > button.needs-attention > stack > box label,
+hdyviewswitcher > button:backdrop.needs-attention > stack > box label {
+    animation: needs_attention 150ms ease-in;
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@theme_button_decoration_focus), to(transparent));
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 0px, right 1px; 
+}
+
+
+
+headerbar hdyviewswitcher > button > stack,
+headerbar hdyviewswitcher > button:hover > stack,
+headerbar hdyviewswitcher > button:backdrop > stack,
+headerbar hdyviewswitcher > button:hover:backdrop > stack {
+    background: linear-gradient(to bottom, @hdyheadbutton_bg_a, @hdyheadbutton_bg_b);
+    border: 1px solid @hdyheadbutton_bdr;
+    border-right-color: @hdyheadbutton_bdr_r; 
+}
+
+headerbar hdyviewswitcher > button:last-child > stack,
+headerbar hdyviewswitcher > button:last-child:backdrop > stack {
+    border-right-color: @hdyheadbutton_bdr; 
+}
+
+headerbar hdyviewswitcher > button:checked > stack,
+headerbar hdyviewswitcher > button:hover:checked > stack,
+headerbar hdyviewswitcher > button:checked:backdrop > stack,
+headerbar hdyviewswitcher > button:hover:checked:backdrop > stack  {
+    background: linear-gradient(to bottom, @hdyheadbutton_chk_bg_a, @hdyheadbutton_chk_bg_b);
+    border: 1px solid @hdyheadbutton_chk_bdr;
+    border-right-color: @hdyheadbutton_chk_bdr_r;
+}
+
+headerbar hdyviewswitcher > button:last-child:checked > stack,
+headerbar hdyviewswitcher > button:last-child:checked:backdrop > stack {
+    border-right-color: @hdyheadbutton_chk_bdr; 
+}
+
+
+
+
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar:backdrop,
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar,
 window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop,
@@ -8387,9 +8489,12 @@ filechooserbutton:drop(active) {
     color: @sidebar_fg;
 }
 
-.sidebar row,
 .sidebar .frame {
     background-color: @sidebar_bg;
+}
+
+.sidebar row {
+    background-color: transparent;
 }
 
 row.activatable:hover {
