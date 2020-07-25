@@ -14,8 +14,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # *************************************************************************
-
-
 gtk-color-scheme = "base_color: #2c3031"
 gtk-color-scheme = "text_color: #FFFFFF"
 gtk-color-scheme = "bg_color: #393F3F"
@@ -29,6 +27,7 @@ gtk-color-scheme = "insensitive_fg_color: #a9acb2"
 gtk-color-scheme = "notebook_bg: #34393b"
 gtk-color-scheme = "dark_sidebar_bg: #37454c"
 gtk-color-scheme = "link_color: #7692bd"
+gtk-color-scheme = "menu_fg: #f7f7f7"
 gtk-color-scheme = "menu_bg: #414747"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
