@@ -825,7 +825,7 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StEntry:insensitive { 
     border-color: transparent; 
-    color: color: #CCDDEE;
+    color: #CCDDEE;
     box-shadow: inset 0 -1px rgba(38, 50, 56, 0.056); 
 }
 
@@ -1909,7 +1909,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .message-media-control:insensitive { 
-    color: color: #8899AA;  
+    color: #8899AA;  
     background-image: none; 
     background: transparent; 
 }
