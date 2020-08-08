@@ -78,19 +78,19 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-  <title color="#333" x="10" y="(((height - title_height) / 2) `max` 0)+1"/>
-  <title color="#333" x="10" y="(((height - title_height) / 2) `max` 0)-1"/>
-  <title color="#333" x="9" y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#333" x="11" y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="C_title_focused" x="10" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)+1"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)-1"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) - 1" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 1" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="C_title_focused" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)"/>
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-  <title color="#333" x="10" y="(((height - title_height) / 2) `max` 0)+1"/>
-  <title color="#333" x="10" y="(((height - title_height) / 2) `max` 0)-1"/>
-  <title color="#333" x="9" y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#333" x="11" y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="C_title_unfocused" x="10" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)+1"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)-1"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) - 1" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="#333" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width))) + 1" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="C_title_unfocused" x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))" y="(((height - title_height) / 2) `max` 0)"/>
 </draw_ops>
 
 	<!-- window decorations -->
