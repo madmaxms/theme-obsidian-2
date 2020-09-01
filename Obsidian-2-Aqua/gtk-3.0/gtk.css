@@ -993,12 +993,12 @@ button.flat:backdrop:insensitive,
     text-shadow: none;
     icon-shadow: none;
 }*/
+*:disabled {
+  -gtk-icon-effect: dim;
+}
 notebook > header > tabs > arrow:insensitive {
     border-color: @button_border;
     background-color: @insensitive_bg_color;
-    /*text-shadow: none;
-    icon-shadow: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);*/
     color: @button_fg_dis;
 }
 headerbar button:insensitive,
@@ -6164,6 +6164,11 @@ radiobutton label:not(:only-child):first-child {
 checkbutton label:not(:only-child):last-child,
 radiobutton label:not(:only-child):last-child {
     margin-right: 4px;
+}
+
+checkbutton:hover, 
+radiobutton:hover {
+    background-color: mix (@theme_accent_color, @theme_base_color, 0.9);
 }
 
 check,
