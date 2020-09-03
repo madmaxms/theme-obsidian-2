@@ -1528,19 +1528,46 @@ button.suggested-action:checked,
     text-shadow: none;
     -gtk-icon-shadow: none;
 }
-.selection-mode button.titlebutton:backdrop,
 button.suggested-action:backdrop,
 button.suggested-action.flat:backdrop,
 .button.suggested-action:backdrop,
 .button.suggested-action.flat:backdrop {
-    border-color: @button_border_sugg;
     color: @button_fg_dis;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: 0 -1px alpha(@button_fg_shadow, 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@button_fg_shadow, 0.8);
+    box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
-.header-bar .suggested-action.titlebutton.button:backdrop,
-.titlebar .suggested-action.titlebutton.button:backdrop {
-    background-image: image(@button_bg_sugg_flt);
+headerbar button.suggested-action:backdrop,
+.header-bar .button.suggested-action:backdrop,
+.titlebar .button.suggested-action:backdrop,
+.header-bar .suggested-action.button.titlebutton:backdrop,
+.titlebar .suggested-action.button.titlebutton:backdrop {
+    color: @titlebutton_fg_dis;
+    text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
+    box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
+
+button.suggested-action:backdrop:hover,
+button.suggested-action.flat:backdrop:hover,
+.button.suggested-action:backdrop:hover,
+.button.suggested-action.flat:backdrop:hover {
+    border-color: @button_border;
+    background-image: linear-gradient(to bottom, @button_bg_a, @button_bg_b 40%, @button_bg_c);
+}
+
+headerbar button.suggested-action:backdrop:hover,
+.header-bar .button.suggested-action:backdrop:hover,
+.titlebar .button.suggested-action:backdrop:hover,
+.header-bar .suggested-action.button.titlebutton:backdrop:hover,
+.titlebar .suggested-action.button.titlebutton:backdrop:hover {
+    border-color: @titlebutton_border;
+    background-image: linear-gradient(to bottom, @titlebutton_bg_a, @titlebutton_bg_b 40%, @titlebutton_bg_c);
+    text-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
+    -gtk-icon-shadow: 0 -1px alpha(@titlebutton_fg_shadow, 0.8);
+    box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
+}
+
 .selection-mode button.titlebutton:backdrop:active,
 .selection-mode button.titlebutton:backdrop:checked,
 button.suggested-action:backdrop:active,
@@ -1551,7 +1578,6 @@ button.suggested-action.flat:backdrop:checked,
 .button.suggested-action:backdrop:checked,
 .button.suggested-action.flat:backdrop:active,
 .button.suggested-action.flat:backdrop:checked {
-    border-color: @button_border_sugg;
     background-image: image(@button_bg_a_dis);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
