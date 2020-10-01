@@ -14,21 +14,21 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # *************************************************************************
-gtk-color-scheme = "base_color: #2c3031"
+gtk-color-scheme = "base_color: #202a2f"
 gtk-color-scheme = "text_color: #FFFFFF"
-gtk-color-scheme = "bg_color: #393F3F"
+gtk-color-scheme = "bg_color: #2f393f"
 gtk-color-scheme = "fg_color: #eeeeec"
 gtk-color-scheme = "tooltip_bg_color: #000000"
 gtk-color-scheme = "tooltip_fg_color: #FFFFFF"
 gtk-color-scheme = "selected_bg_color: #8024ab"
 gtk-color-scheme = "selected_fg_color: #FFFFFF"
-gtk-color-scheme = "insensitive_bg_color: #393F3F"
+gtk-color-scheme = "insensitive_bg_color: #2b353a"
 gtk-color-scheme = "insensitive_fg_color: #a9acb2"
-gtk-color-scheme = "notebook_bg: #34393b"
+gtk-color-scheme = "notebook_bg: #30393f"
 gtk-color-scheme = "dark_sidebar_bg: #451854"
 gtk-color-scheme = "link_color: #9452e2"
 gtk-color-scheme = "menu_fg: #f7f7f7"
-gtk-color-scheme = "menu_bg: #414747"
+gtk-color-scheme = "menu_bg: #384248"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -587,9 +587,9 @@ style "ooo_stepper_hack" {
 # Menubar
 style "murrine-menubar" {
   
-  bg[NORMAL]          = "#414747"
+  bg[NORMAL]          = @menu_bg
   bg[INSENSITIVE]     = "#181818"
-  base[NORMAL]        = "#393f3f"
+  base[NORMAL]        = @bg_color
   base[INSENSITIVE]   = "#181818"
   fg[NORMAL]          = @menu_fg
   fg[INSENSITIVE]     = "#484848"
