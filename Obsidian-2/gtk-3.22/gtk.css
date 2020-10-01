@@ -743,7 +743,7 @@ button.flat:hover,
 .button.flat:hover {
     border-color: transparent;
     color: @theme_fg_color;
-    background-color: @theme_bg_color_hov;
+    background-color: alpha(@notebook_border_hov, 0.15);
     background-image: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
@@ -5019,7 +5019,7 @@ menu separator,
 popover.background {
     padding: 2px;
     border-radius: 5px;
-    background-color: @theme_bg_color;
+    background-color: @popover;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid @border_box;
 }
@@ -5029,7 +5029,7 @@ popover.background {
     border: 1px solid @border_box;
 }
 popover.background:backdrop {
-    background-color: @theme_bg_color;
+    background-color: @popover;
     box-shadow: none;
 }
 .popover > .list,
@@ -6784,7 +6784,8 @@ radio {
 
 checkbutton:hover, 
 radiobutton:hover {
-    background-color: mix (@theme_accent_color, @theme_base_color, 0.9);
+    background-color: mix (@theme_bg_color_hov, @theme_base_color, 0.9);
+    border-radius: 4px;
 }
 
 menu menuitem check,
