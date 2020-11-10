@@ -46,6 +46,7 @@
 @define-color    button_bg_sugg_c_act                  #486079;
 @define-color    button_bg_sugg_flt                    #485f7d;
 @define-color    button_border_sugg                    #24313d;
+@define-color    button_fg_sugg_shadow                 @shadow_color;
 
 /* progress bar */
 @define-color    prgbar_bg_a                           #627c9b;
@@ -115,6 +116,7 @@
 @define-color    tooltip_fg                            #f7f7f7;
 
 @define-color    separator                             #1b1f20;
+@define-color    header_separator                      #1b1f20;
 @define-color    notebook_separator                    #1b1f20;
 @define-color    border_box                            #1b1f20;
 
@@ -199,9 +201,6 @@
 @define-color    titlebutton_bg_a_dis                  #232628;
 @define-color    titlebutton_border                    #0a0a0a;
 
-@define-color    button_fg_sugg_color                  #ffffff;
-@define-color    button_fg_sugg_shadow                 @shadow_color;
-
 @define-color    button_fg_dest_color                  #f7f7f7;
 @define-color    button_bg_dest_a                      #d43724;
 @define-color    button_bg_dest_b                      #c20f0f;
@@ -216,7 +215,7 @@
 @define-color    button_border_dest                    #560000;
 
 @define-color    button_bg_dis_a                       #2f3333;
-@define-color    button_bg_dis_b                       #323636;
+@define-color    button_bg_dis_b                       #2d343a;
 
 @define-color    button_bgcirc_a_hov                   #353c3e;
 @define-color    button_bgcirc_b_hov                   #444444;
@@ -294,7 +293,7 @@
 @define-color    theme_selected_fg_color               #ffffff;
 
 /* base background color of insensitive widgets */
-@define-color    insensitive_bg_color                  #323636;
+@define-color    insensitive_bg_color                  #2d343a;
 
 /* text foreground color of insensitive widgets */
 @define-color    insensitive_fg_color                  #919494;
@@ -362,3 +361,8 @@ read if you used those and something break with a version upgrade you're on your
 @define-color    wm_button_active_color_b              shade(@theme_base_color, 0.89);
 @define-color    wm_button_active_color_c              shade(@theme_base_color, 0.9);
 @define-color    content_view_bg                       @view_bg;
+
+@define-color    success_color                         #00cc66;
+@define-color    warning_color                         #F27835;
+@define-color    error_color                           #FC4138;
+
