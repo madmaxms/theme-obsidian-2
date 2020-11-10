@@ -1336,7 +1336,8 @@ StScrollBar StButton#hhandle:active {
 }
 
 .world-clocks-button, 
-.weather-button { 
+.weather-button,
+.events-button { 
     color: #CCDDEE; 
     /*margin: 4px 8px;*/
     padding: 12px; 
@@ -1356,7 +1357,10 @@ StScrollBar StButton#hhandle:active {
 .world-clocks-button:hover, 
 .world-clocks-button:focus, 
 .weather-button:hover, 
-.weather-button:focus { 
+.weather-button:focus, 
+.weather-button:focus,
+.events-button:hover,
+.events-button:hover { 
     color: #CCDDEE; 
     border:1px solid #3399ff; /* coloraccent */
     background-color:rgba(36,105,172,0.8); /* coloraccent */
@@ -1364,10 +1368,26 @@ StScrollBar StButton#hhandle:active {
 
 .datemenu-today-button:active, 
 .world-clocks-button:active, 
-.weather-button:active { 
+.weather-button:active,
+.events-button:active { 
     color: #CCDDEE; 
     background-color: rgba(40, 52, 59, 0.6); 
 }
+
+.events-button .events-list,
+.weather-button .weather-header.location {
+    color: #cfcfcf; 
+}
+.events-button .events-title,
+.weather-button .weather-header {
+    color: #F9F9F9;
+}
+.events-button .event-time,
+.weather-button .weather-forecast-time {
+    color: #cfcfcf;
+    font-feature-settings: "tnum";
+}
+
 
 .message-list-section-title:active, 
 .events-section-title:active { 
