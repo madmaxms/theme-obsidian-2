@@ -728,8 +728,7 @@ treeview entry:focus {
 
 button.titlebutton, 
 button {
-    min-height: 24px;   
-    min-width: 24px;
+    min-height: 24px; 
     padding: 4px 6px;
     border: 1px solid @button_border;
     border-radius: 4px;
@@ -2948,6 +2947,7 @@ headerbar .path-bar {
 treeview.view {
     border-left-color: @theme_bg_color;
     border-top-color: @theme_bg_color;
+    color: @theme_fg_color;
 }
 * {
     -GtkTreeView-horizontal-separator: 4;
@@ -2970,13 +2970,13 @@ treeview.view:disabled {
     color: @theme_fg_color_dis;
 }
 treeview.view:disabled:selected {
-    color: @view_fg_sel
+    color: @theme_fg_color_dis;
 }
 treeview.view:disabled:selected:backdrop {
-    color: @view_fg_sel
+    color: @theme_fg_color_dis;
 }
 treeview.view:disabled:backdrop {
-    color: @view_fg_sel
+    color: @theme_fg_color_dis;
 }
 treeview.view.separator {
     min-height: 2px;
@@ -3635,7 +3635,7 @@ notebook > header tab:checked {
 }
 
 notebook > header tab:backdrop:checked {
-    color: @theme_unfocused_fg_color;
+    color: @theme_fg_color_dis;
 }
 notebook > header tab button.flat,
 notebook > header tab button.flat:backdrop {
@@ -7219,7 +7219,8 @@ iconview text selection:focus,
 .view text selection, 
 iconview text selection, 
 flowbox flowboxchild:selected,
-entry selection, modelbutton.flat:selected,
+entry selection, 
+modelbutton.flat:selected,
 .menuitem.button.flat:selected, 
 spinbutton:not(.vertical) selection, 
 treeview.view:selected:focus, 
@@ -8249,7 +8250,7 @@ button {
     outline-style: dashed;
     outline-offset: -3px;
     outline-width: 1px;
-    -gtk-outline-radius: 2px;     
+    -gtk-outline-radius: 3px;     
 }
 button.suggested-action, 
 button.suggested-action:hover, 
@@ -8272,7 +8273,7 @@ switch:focus {
 checkbutton,
 radiobutton {
     outline-offset: 1px;
-    outline-width: 2px; 
+    outline-width: 1px; 
 }
 row:selected checkbutton, 
 treeview:selected checkbutton, 
@@ -8515,7 +8516,7 @@ headerbar box button.toggle,
 headerbar buttonbox.toggle,
 headerbar stackswitcher button,
 headerbar filechooser .path-bar.linked > button,
-headerbar .path-bar button/*,
+headerbar .path-bar button,
 .titlebar buttton,
 .titlebar buttton.toggle,
 .titlebar buttton.popup.toggle,
@@ -8527,7 +8528,7 @@ headerbar .path-bar button/*,
 .titlebar butttonbox.toggle,
 .titlebar stackswitcher button,
 .titlebar filechooser .path-bar.linked > button,
-.titlebar .path-bar button*/ {
+.titlebar .path-bar button {
     min-height: 24px;   
     min-width: 24px;   
     border-color: @titlebutton_border;
