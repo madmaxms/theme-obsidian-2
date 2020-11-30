@@ -327,6 +327,7 @@ entry,
 .entry {
     background-color: @theme_accent_color; 
 }
+
 /* workaround webkit2gtk 2.26 */
 * entry,
 .entry,
@@ -344,8 +345,7 @@ entry:selected:focus {
 .titlebar .entry,
 headerbar spinbutton:not(.vertical),
 headerbar entry {
-    min-height: 20px;
-    padding: 6px 8px;
+    min-height: 24px;
     border: 1px solid;
     border-radius: 3px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -354,6 +354,7 @@ headerbar entry {
     background-image: linear-gradient(to bottom, @titleentry_bg_a, @titleentry_bg_b 40%, @titleentry_bg_c);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
+
 headerbar spinbutton:not(.vertical) image,
 headerbar entry image,
 .header-bar .entry.image,
@@ -366,14 +367,16 @@ headerbar entry image,
 .entry.image.right {
     padding-right: 0;
 }
-entry .entry-tag {
+.entry-tag {
     margin: 6px;
+    padding: 6px 8px;
     background-image: linear-gradient(to bottom, @entry_tag_a, @entry_tag_b 40%, @entry_tag_c);
     border: 1px solid @entry_tag_border;
     border-radius: 4px;
 }
 .entry-tag.button {
   border: none;
+  box-shadow: none;
 }
 
 .linked > .entry {
@@ -1055,6 +1058,7 @@ popover.background.magnifier button:backdrop,
     text-shadow: none;
     -gtk-icon-shadow: none; 
 }
+
 .app-notification button.flat, 
 popover.background.touch-selection button.flat, 
 popover.background.magnifier button.flat, 
@@ -2360,6 +2364,7 @@ headerbar.selection-mode button {
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.70353);
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
 }
+
 .selection-mode button.titlebutton, 
 .selection-mode .titlebar:not(headerbar) button.flat, 
 .selection-mode.titlebar:not(headerbar) button.flat, 
@@ -3830,6 +3835,7 @@ scrollbar.horizontal slider {
 scrollbar.vertical slider {
     min-height: 40px;
 }
+
 scrollbar button,
 scrollbar button:hover,
 scrollbar button:backdrop,
@@ -6667,6 +6673,7 @@ button.sidebar-button {
     border-radius: 100%;
     -gtk-outline-radius: 100%; 
 }
+/***********************+*/
 button.sidebar-button:not(:hover):not(:active) > image, 
 button.sidebar-button:backdrop > image {
     opacity: 0.7; 
@@ -7934,7 +7941,7 @@ button * {
 }
 
 button > image {
-    padding: 4px; 
+    padding: 0px 4px; 
 }
 
 button.titlebutton:not(.appmenu) {
@@ -7942,6 +7949,7 @@ button.titlebutton:not(.appmenu) {
     min-width: 24px;
     padding: 2px; 
 }
+
 headerbar button.titlebutton.maximize:not(.appmenu):hover, 
 headerbar button.titlebutton.maximize:not(.appmenu):backdrop:hover, 
 headerbar button.titlebutton.minimize:not(.appmenu):hover, 
@@ -8574,6 +8582,7 @@ headerbar .path-bar button.flat,
     text-shadow: none;
     -gtk-icon-shadow: none; 
 }
+
 headerbar button:hover,
 headerbar button.toggle:hover,
 headerbar button.popup.toggle:hover,
@@ -10079,6 +10088,7 @@ headerbar .path-bar button.suggested-action.flat:backdrop:disabled,
     text-shadow: none;
     -gtk-icon-shadow: none;
 }
+
 headerbar button.suggested-action:disabled,
 headerbar button.toggle.suggested-action:disabled,
 headerbar button.popup.toggle.suggested-action:disabled,
@@ -13256,6 +13266,8 @@ headerbar hdyviewswitcher > button:last-child:checked:backdrop > stack {
    box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.2);
 }
 
+
+
 /* ******************************************************************************************** */
 /* ****                          C I N N A M O N   S P E C I F I C S                       **** */
 /* ******************************************************************************************** */
@@ -13656,5 +13668,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     box-shadow: none;
     border: none; 
 } 
+
+
 
 
