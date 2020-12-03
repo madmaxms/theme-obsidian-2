@@ -11,8 +11,8 @@
 <!-- meaningfull constants -->
 
 <constant name="C_title_focused" value="#f7f7f7" />
-<constant name="C_title_a" value="#384248" />
-<constant name="C_title_b" value="#384248" />
+<constant name="C_title_a" value="#36434a" />
+<constant name="C_title_b" value="#36434a" />
 <constant name="C_title_unfocused" value="#999999" />
 <constant name="D_icons_unfocused_offset" value="0" /> <!-- offset of the unfocused icons -->
 
@@ -98,7 +98,7 @@
 <!-- normal state -->
 <draw_ops name="entire_background_focused">
   <gradient type="vertical" x="0" y="25" width="width" height="height/5">
-    <color value="#384248" />
+    <color value="#36434a" />
     <color value="#2d373d" />
   </gradient>
   <rectangle color="#2d373d" filled="true" x="0" y="height/5" width="width" height="height"/>
@@ -106,7 +106,7 @@
 
 <draw_ops name="entire_background_unfocused">
   <gradient type="vertical" x="0" y="25" width="width" height="height/5">
-    <color value="#384248" />
+    <color value="#36434a" />
     <color value="#2d373d" />
   </gradient>
   <rectangle color="#2d373d" filled="true" x="0" y="height/5" width="width" height="height"/>
@@ -115,15 +115,15 @@
 <draw_ops name="titlebar_fill_focused">
   <include name="entire_background_focused" />
   <gradient type="vertical" x="0" y="0" width="width" height="height">
-    <color value="#4b5252" />
-    <color value="#384248" />
+    <color value="#3f4c53" />
+    <color value="#36434a" />
   </gradient>
   <line color="#546060" x1="1" y1="1" x2="width-2" y2="1" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
   <include name="entire_background_unfocused" />
-  <rectangle color="#384248" filled="true" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#36434a" filled="true" x="0" y="0" width="width" height="height"/>
   <line color="#546060" x1="1" y1="1" x2="width-2" y2="1" />
 </draw_ops>
 
@@ -149,7 +149,7 @@
 
 <!-- maximized state -->
 <draw_ops name="max_entire_background_focused">
-	<rectangle color="#384248" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#36434a" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="max_entire_background_unfocused">
@@ -174,7 +174,7 @@
 
 <!-- tiled state -->
 <draw_ops name="tiled_left_entire_background_focused">
-	<rectangle color="#384248" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#36434a" x="0" y="0" width="width" height="height" filled="true" />
 	<line color="#212121" x1="width-1" y1="0" x2="width-1" y2="height" />
 </draw_ops>
 
@@ -191,7 +191,7 @@
 </draw_ops>
 
 <draw_ops name="tiled_right_entire_background_focused">
-	<rectangle color="#384248" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#36434a" x="0" y="0" width="width" height="height" filled="true" />
 	<line color="#212121" x1="0" y1="0" x2="0" y2="height" />
 </draw_ops>
 
