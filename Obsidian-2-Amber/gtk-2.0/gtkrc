@@ -16,7 +16,7 @@
 # *************************************************************************
 gtk-color-scheme = "base_color: #202a2f"
 gtk-color-scheme = "text_color: #FFFFFF"
-gtk-color-scheme = "bg_color: #2f393f"
+gtk-color-scheme = "bg_color: #2c383f"
 gtk-color-scheme = "fg_color: #eeeeec"
 gtk-color-scheme = "tooltip_bg_color: #000000"
 gtk-color-scheme = "tooltip_fg_color: #FFFFFF"
@@ -24,11 +24,11 @@ gtk-color-scheme = "selected_bg_color: #b56400"
 gtk-color-scheme = "selected_fg_color: #FFFFFF"
 gtk-color-scheme = "insensitive_bg_color: #2b353a"
 gtk-color-scheme = "insensitive_fg_color: #a9acb2"
-gtk-color-scheme = "notebook_bg: #30393f"
+gtk-color-scheme = "notebook_bg: #2c383f"
 gtk-color-scheme = "dark_sidebar_bg: #704100"
 gtk-color-scheme = "link_color: #e29452"
 gtk-color-scheme = "menu_fg: #f7f7f7"
-gtk-color-scheme = "menu_bg: #384248"
+gtk-color-scheme = "menu_bg: #36434a"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1

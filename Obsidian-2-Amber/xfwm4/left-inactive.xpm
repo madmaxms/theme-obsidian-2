@@ -1,7 +1,1 @@
-/* XPM */
-static char * left_active_xpm[] = {
-"3 1 3 1",
-" 	c None",
-".	c #323A3F",
-"+	c #384248",
-".++"};
+left-active.xpm
