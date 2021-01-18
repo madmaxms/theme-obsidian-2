@@ -1,1 +1,9 @@
-bottom-left-active.xpm
+/* XPM */
+static char * bottom_left_active_xpm[] = {
+"3 3 3 1",
+" 	c None",
+".	c #323A3F",
+"+	c #384248",
+".++",
+".++",
+"..."};
