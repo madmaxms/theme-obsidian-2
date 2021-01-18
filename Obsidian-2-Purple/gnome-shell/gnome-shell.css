@@ -1156,7 +1156,7 @@ StScrollBar StButton#hhandle:active {
 #panel { 
     min-height: 32px;
     height: 32px; 
-    background-color: #414747;
+    background-color: #384248;
     color: #ffffff;
     background-image:url("assets/traybg.png");
     background-repeat:repeat; 
