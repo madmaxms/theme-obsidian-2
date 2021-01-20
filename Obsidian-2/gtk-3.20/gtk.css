@@ -2230,6 +2230,7 @@ searchbar,
 
 toolbar {
     padding: 4px 3px 3px 4px; 
+    background-color: @theme_base_color;
 }
 .osd toolbar {
     background-color: transparent; 
