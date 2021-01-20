@@ -2230,6 +2230,7 @@ searchbar,
 
 toolbar {
     padding: 4px 3px 3px 4px; 
+    background-color: @theme_base_color;
 }
 .osd toolbar {
     background-color: transparent; 
@@ -6743,25 +6744,25 @@ paned > separator {
     -GtkPaned-handle-size: 1;
     border-style: none;
     background-color: transparent;
-    background-image: image(@header_separator);
+    background-image: image(@theme_bg_color);
     background-size: 1px 1px;
 }
 paned > separator:selected {
-    background-image: image(@header_separator);
+    background-image: image(@theme_bg_color);
 }
 paned > separator:backdrop {
-    background-image: image(@header_separator);
+    background-image: image(@theme_bg_color);
 }
 paned > separator.wide {
     min-width: 1px;
     min-height: 1px;
-    background-color: @header_separator;
-    background-image: image(@header_separator);
+    background-color: @theme_bg_color;
+    background-image: image(@theme_bg_color);
     background-size: 1px 1px, 1px 1px;
 }
 paned > separator.wide:backdrop {
-    background-color: @header_separator;
-    background-image: image(@header_separator);
+    background-color: @theme_bg_color;
+    background-image: image(@theme_bg_color);
 }
 
 paned.horizontal > separator {
