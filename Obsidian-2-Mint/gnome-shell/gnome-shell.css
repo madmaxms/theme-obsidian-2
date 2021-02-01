@@ -25,7 +25,6 @@
 }
 
 stage { 
-    font-family:Free Sans, Sans-Serif;
     font-size:11pt;
     color:#fff 
 }
@@ -1344,6 +1343,8 @@ StScrollBar StButton#hhandle:active {
     border: 1px solid transparent; 
 }
 
+.datemenu-today-button:hover,
+.datemenu-today-button:focus,
 .world-clocks-button:hover, 
 .world-clocks-button:focus, 
 .weather-button:hover, 
@@ -1522,15 +1523,15 @@ StScrollBar StButton#hhandle:active {
 
 .calendar-day-base:hover, 
 .calendar-day-base:focus { 
-    background-color:rgba(80,160,0,0.6); /* coloraccent */
+    background-color:rgba(70,160,30,0.6); /* coloraccent */
 }
 
 .calendar-day-base:active, 
 .calendar-day-base:active:hover, 
 .calendar-day-base:selected, 
 .calendar-day-base:selected:hover { 
-    color:#a0b9d2;
-    background-color:rgba(80,160,0,0.6); /* coloraccent */
+    color:#ffffff;
+    background-color:rgba(70,160,30,0.6); /* coloraccent */
     border-color:transparent;
 }
 
@@ -1575,18 +1576,18 @@ StScrollBar StButton#hhandle:active {
 
 .calendar-day-with-events { 
     background-image: none; 
-    color: #64b800; /* coloraccent */
+    color: #5fa24a; /* coloraccent */
 }
 
 .calendar-day-with-events:hover { 
-    background-color:rgba(80,160,0,0.6); 
+    background-color:rgba(70,160,30,0.6); /* coloraccent */
 }
 
 .calendar-day-with-events:active, 
 .calendar-day-with-events:active:hover, 
 .calendar-day-with-events:selected, 
 .calendar-day-with-events:selected:hover { 
-    background-color:rgba(80,160,0,0.6); /* coloraccent */
+    background-color: #5fa24a; /* coloraccent */
     border-color: transparent; 
 }
 
@@ -2294,7 +2295,6 @@ notification-close {
     color:#909090; 
     border: 1px solid #909090;
     background-color: rgba(0, 0, 0, 0.3);
-    font-family:Free Sans, Sans-Serif;
     font-size:14pt;
     transition-duration: 0.15s; 
     selection-background-color: rgba(0, 0, 0, 0.3);
@@ -3703,7 +3703,6 @@ notification-close {
     color: #CCDDEE; 
     selection-background-color: #CCDDEE; 
     selected-color: #FFFFFF; 
-    font-family: Noto Mono, Monospace; 
     transition-duration: 0s; 
 }
 
@@ -4044,7 +4043,6 @@ notification-close {
 
 .screen-shield-clock-time { 
     font-size: 84pt; 
-    font-family: Free Sans, Sans-Serif; 
     font-weight: 300; 
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22); 
 }
@@ -4142,7 +4140,6 @@ notification-close {
     min-height: 32px; 
     padding: 0 16px; 
     color: rgba(207, 216, 220, 0.87); 
-    font-family: Free Sans, Sans-Serif; 
     font-weight: 700; 
     transition-duration: 0.15s; 
 }
