@@ -14,17 +14,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************** */
-stage {
-    font-family: Noto Sans, sans-serif;
-}
 
 .cinnamon-link {
-    color: #0088dd;
+    color: #0088dd; /* coloraccent */
     text-decoration: underline;
 }
 
 .cinnamon-link:hover {
-    color: #0088dd;
+    color: #0088dd; /* coloraccent */
 }
 
 .label-shadow {
@@ -43,35 +40,35 @@ StScrollView.vfade
 
 StScrollView StScrollBar
 {
-  min-width: 8px;
+  min-width: 5px;
   min-height: 16px;
 }
 
 
 StScrollBar StBin#trough {
-    background-color: rgba(0,0,0,0);
-    border: 1px solid #555555;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
     border-radius: 4px;
 }
 
 StScrollBar StButton#vhandle
 {
-    background-color: rgba(90,90,90,1);
-    border: 1px solid rgba(90,90,90,1);
+    background-color: #888;
+    border: none;
     border-radius: 4px;
 }
 
 StScrollBar StButton#hhandle
 {
-    background-color: rgba(90,90,90,1);
-    border: 1px solid rgba(90,90,90,1);
+    background-color: #888;
+    border: 1px solid #888;
     border-radius: 4px;
 }
 
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover
 {
-    background-color: rgba(100,100,100,1);
+    background-color: #999;
 }
 
 #Tooltip {
@@ -260,8 +257,8 @@ StScrollBar StButton#vhandle:hover
     -slider-height: 0.3em;
     -slider-background-color: rgba(35,35,35,1);
     -slider-border-color: rgba(0,0,0,1);
-    -slider-active-background-color: #0088ff; /*+*/
-    -slider-active-border-color: #002666; /*+*/
+    -slider-active-background-color: #0088ff; /* coloraccent */
+    -slider-active-border-color: #002666; /* coloraccent */
     -slider-border-width: 1px;
     -slider-handle-radius: 0.5em;
 }
@@ -744,7 +741,6 @@ StScrollBar StButton#vhandle:hover
 /* ===================================================================
  * Date applet
  * ===================================================================*/
-
 .calendar {
     padding: .4em 1.75em;
     spacing-rows: 0px;
@@ -753,7 +749,7 @@ StScrollBar StButton#vhandle:hover
 
 .calendar-month-label {
     color: #cccccc;
-    font-size: 7.5pt;
+    font-size: 9pt;
     padding-bottom: 8px;
     padding-top: 8px;
     font-weight: bold;
@@ -808,67 +804,129 @@ StScrollBar StButton#vhandle:hover
 }
 
 .calendar-day-base {
-    font-size: 7.5pt;
-    text-align: center;
-    width: 2.4em;
-    height: 2.4em;
+    font-size:9pt;
+    text-align:center;
+    width:30px;
+    height:24px;
+    border: 1px solid #5F6267;
+    background-color: #484B4E;
+    padding:3px;
+    margin:1px 1px 1px 1px;
+    border-radius:0px;
+    color:#a0b9d2;
+    text-decoration:none;
 }
 
 .calendar-day-base:hover {
-    background-color: #555555;
-    color: #fff;
+    background-color:rgba(0,80,160,0.6); /* coloraccent */
 }
 
 .calendar-day-base:active {
+    color:#ffffff;
+    background-color: #0066cc; /* coloraccent */ 
+    border-color:transparent;
 }
 
 .calendar-day-heading {
-    color: #cccccc;
-    padding-top: 1em;
+    width:30px; 
+    height: 12px; 
+    margin-top: 0.8em; 
+    padding: 3px; 
+    border: 1px solid #5F6267;
+    background-color: #484B4E;
+    color: #a0b9d2; 
+    font-weight: normal; 
+    text-align: center;
 }
 
 .calendar-week-number {
-    color: #cccccc;
+    width:24px;
+    height: 24px; 
+    margin: 1px; 
+    padding: 0.5em 0 0; 
+    border: 1px solid #5F6267;
+    background-color: #484B4E;
+    color: #a0b9d2;
+    font-weight: normal; 
+    text-align: center; 
+}
+
+
+.calendar-day { 
+    border-width: 0px;
+    background-color: rgba(0,0,0,0.6);
     font-weight: bold;
 }
 
-/* Hack used in lieu of border-collapse - see calendar.js */
-.calendar-day {
-    border: 1px solid rgba(90,90,90,1);
-    color: #cccccc;
-    border-top-width: 0;
-    border-left-width: 0;
-}
-.calendar-day-top {
-    border-top-width: 1px;
-}
-.calendar-day-left {
-    border-left-width: 1px;
+.calendar-day-top { 
+    border-top-width: 0px; 
 }
 
-.calendar-work-day {
-    background-color: rgba(30, 30, 30, 1);
+.calendar-day-left { 
+    border-left-width: 0px; 
+}
+
+.calendar-day-with-events { 
+    background-image: none; 
+    color: #0099FF; /* coloraccent */
+}
+
+.calendar-day-with-events:hover { 
+    background-color:rgba(0,80,160,0.6); /* coloraccent */
+}
+
+.calendar-day-with-events:active, 
+.calendar-day-with-events:active:hover, 
+.calendar-day-with-events:selected, 
+.calendar-day-with-events:selected:hover { 
+    background-color: #0066cc; /* coloraccent */ 
+    border-color: transparent; 
+}
+
+.calendar-today, 
+.calendar-today.calendar-day-with-events { 
+    border: none; 
+    background-color: #0066cc; /* coloraccent */ 
+    color: #FFFFFF; 
+}
+
+.calendar-today:hover, 
+.calendar-today:focus, 
+.calendar-today.calendar-day-with-events:hover, 
+.calendar-today.calendar-day-with-events:focus { 
+    background-color: #0066cc; /* coloraccent */ 
+    color: #FFFFFF;
+}
+
+.calendar-today:selected, 
+.calendar-today:selected:hover, 
+.calendar-today.calendar-day-with-events:selected, 
+.calendar-today.calendar-day-with-events:selected:hover { 
+    background-color: #0066cc; /* coloraccent */ 
+    color: #FFFFFF;
 }
 
 .calendar-nonwork-day {
-    background-color: rgba(60, 60, 60, 0.5);
+    background-color: #404244;
 }
 
-.calendar-today {
-    text-shadow: black 0px 2px 2px;
-    color: #ffffff;
-    font-weight: bold;
-    background-color: #0088ff; /*+*/
-    box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,1);
+.calendar-other-month-day { 
+    background-color: rgba(11,15,18,0.6); 
+    color: #333333; 
 }
 
-.calendar-other-month-day {
-    color: #888888;
+.calendar-other-month-day:hover, 
+.calendar-other-month-day:focus { 
+    background-color: rgba(11,15,18,0.6); 
 }
 
-.calendar-day-with-events {
-    font-weight: bold;
-    color: #cccccc;
+.calendar-other-month-day.calendar-day-with-events { 
+    color: #003366;  /* coloraccent */
+}
+
+.calendar-other-month-day.calendar-day-with-events:hover, 
+.calendar-other-month-day.calendar-day-with-events:focus { 
+
 }
 
 /* ===================================================================
@@ -1454,7 +1512,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .polkit-dialog-password-entry:focus {
-    border: 2px solid #006eff; /*+*/
+    border: 2px solid #006eff; /* coloraccent */
 }
 
 .polkit-dialog-password-entry .capslock-warning {
@@ -1741,13 +1799,15 @@ StScrollBar StButton#vhandle:hover
     border-radius: 4px;
     color: rgb(228, 228, 228);
     border: 1px solid rgba(100,100,100,1);
-    background-gradient-start: rgba(0,0,0,0.5);
-    background-gradient-end: rgba(40,40,40,0.5);
+    background-gradient-start: rgba(20,20,20,0.5);
+    background-gradient-end: rgba(20,20,20,0.5);
     background-gradient-direction: vertical;
     selected-color: black;
     caret-color: rgb(228, 228, 228);
     caret-size: 1px;
-    width: 400px;
+    height: 20px;
+    font-size: 10pt;
+    margin-bottom: 10px;
     transition-duration: 300;
 }
 
@@ -1965,7 +2025,7 @@ StScrollBar StButton#vhandle:hover
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
     padding: 8px;
-    border: 1px solid #0088ff; /*+*/ 
+    border: 1px solid #0088ff; /* coloraccent */ 
 }
 .grouped-window-list-thumbnail-menu .item-box:selected {
     color: #ffffff;
@@ -2028,14 +2088,18 @@ StScrollBar StButton#vhandle:hover
 }
 
 .sound-player .slider {
-    height: 0.5em;
-    -slider-height: 0.5em;
-    -slider-background-color: #000000;
-    -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: #0088ff; /*+*/
-    -slider-active-border-color: #0088ff; /*+*/
-    -slider-border-width: 0px;
-    -slider-handle-radius: 0px;
+    height: 1em;
+    min-width: 15em;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    color: #0088ff;  /* coloraccent */
+    -slider-height: 0.3em;
+    -slider-background-color:#000000;
+    -slider-border-color:#000000;
+    -slider-active-background-color: #0088ff; /* coloraccent */
+    -slider-active-border-color:transparent;
+    -slider-border-width: 1px;
+    -slider-handle-radius:6px;
 }
 
 .sound-player StBoxLayout {
@@ -2252,7 +2316,7 @@ StScrollBar StButton#vhandle:hover
 .applet-box:checked,
 .applet-box:hover {
     color: #fff;
-    background-color: #0088ff; /*+*/
+    background-color: #0088ff; /* coloraccent */
 }
 
 .applet-box:highlight {
