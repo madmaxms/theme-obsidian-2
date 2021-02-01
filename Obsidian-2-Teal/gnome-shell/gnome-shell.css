@@ -25,7 +25,6 @@
 }
 
 stage { 
-    font-family:Free Sans, Sans-Serif;
     font-size:11pt;
     color:#fff 
 }
@@ -132,7 +131,7 @@ StEntry {
     border-radius: 6px; 
     border-width: 0; 
     color: #CCDDEE; 
-    selection-background-color: #008170; /* coloraccent */
+    selection-background-color: #207c6f; /* coloraccent */
     selected-color: #FFFFFF; 
     transition-duration: 0s; 
 }
@@ -745,7 +744,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-menu-item:checked:hover { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */    
+    background-color: #207c6f; /* coloraccent */    
     color:#88FFEE; /* coloraccent */
 }
 
@@ -759,19 +758,19 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-menu-item.selected { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #88FFEE; /* coloraccent */
     transition-duration: 0s; 
 }
 
 .popup-menu .popup-menu-item:active { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #88FFEE; /* coloraccent */
     transition-duration: 0.15s; 
 }
 
 .popup-menu .popup-menu-item.selected:active { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #88FFEE; /* coloraccent */
 }
 
@@ -857,13 +856,13 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StScrollBar StButton#vhandle:hover, 
 .popup-menu StScrollBar StButton#hhandle:hover { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color:#FFF;
 }
 
 .popup-menu StScrollBar StButton#vhandle:active, 
 .popup-menu StScrollBar StButton#hhandle:active { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
 }
 
 .popup-menu-arrow { 
@@ -1207,7 +1206,7 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button:focus,
 #panel .panel-button:checked { 
     color:#ffffff;
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     box-shadow: inset 0 -1px #004f42; /* coloraccent */
 }
 
@@ -1347,6 +1346,8 @@ StScrollBar StButton#hhandle:active {
     border: 1px solid transparent; 
 }
 
+.datemenu-today-button:hover,
+.datemenu-today-button:focus,
 .world-clocks-button:hover, 
 .world-clocks-button:focus, 
 .weather-button:hover, 
@@ -1355,7 +1356,7 @@ StScrollBar StButton#hhandle:active {
 .events-button:hover,
 .events-button:hover { 
     color: #CCDDEE; 
-    border:1px solid #008170; /* coloraccent */
+    border:1px solid #207c6f; /* coloraccent */
     background-color:rgba(5,73,65,0.5); /* coloraccent */
 }
 
@@ -1532,7 +1533,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-base:active:hover, 
 .calendar-day-base:selected, 
 .calendar-day-base:selected:hover { 
-    color:#a0b9d2;
+    color:#ffffff;
     background-color:rgba(0,132,110,0.6); /* coloraccent */
     border-color:transparent;
 }
@@ -1582,7 +1583,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day-with-events:hover { 
-    background-color:rgba(0,132,110,0.6); 
+    background-color:rgba(0,132,110,0.6);  /* coloraccent */
 }
 
 .calendar-day-with-events:active, 
@@ -1596,7 +1597,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-today, 
 .calendar-today.calendar-day-with-events { 
     border: none; 
-    background-color: #008170; /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #FFFFFF; 
 }
 
@@ -1604,14 +1605,14 @@ StScrollBar StButton#hhandle:active {
 .calendar-today:focus, 
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
-    background-color: #008170; /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
 }
 
 .calendar-today:selected, 
 .calendar-today:selected:hover, 
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
-    background-color: #008170; /* coloraccent */ 
+    background-color: #207c6f; /* coloraccent */ 
 }
 
 .calendar-nonwork-day{
@@ -1662,18 +1663,18 @@ StScrollBar StButton#hhandle:active {
     padding-top: 0.45em; 
     border-radius: 4px; 
     icon-size: 16px; 
-    color: #008170;  /* coloraccent */
+    color: #207c6f;  /* coloraccent */
     background-color: transparent; 
 }
 
 .message-list-section-close:hover > StIcon, 
 .message-list-section-close:focus > StIcon { 
-    color: #008170;  /* coloraccent */
+    color: #207c6f;  /* coloraccent */
     background-color: rgba(38, 50, 56, 0.12); 
 }
 
 .message-list-section-close:active > StIcon { 
-    color: #008170;   /* coloraccent */
+    color: #207c6f;   /* coloraccent */
     background-color: rgba(38, 50, 56, 0.25); 
 }
 
@@ -1696,7 +1697,7 @@ StScrollBar StButton#hhandle:active {
 }
 .message:hover,
 .message:focus{
-    border:1px solid #008170; /* coloraccent */
+    border:1px solid #207c6f; /* coloraccent */
 }
 .message-icon-bin{
     padding:10px 0px 10px 10px
@@ -1756,21 +1757,21 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu .message:hover, 
 .popup-menu .message:focus { 
-    border:1px solid #008170; /* coloraccent */
+    border:1px solid #207c6f; /* coloraccent */
     background-color:rgba(5,73,65,0.5); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:ltr, 
 .popup-menu .message:focus:ltr { 
-    border:1px solid #008170; /* coloraccent */
+    border:1px solid #207c6f; /* coloraccent */
     background-color:rgba(5,73,65,0.5); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:rtl, 
 .popup-menu .message:focus:rtl { 
-    border:1px solid #008170; /* coloraccent */
+    border:1px solid #207c6f; /* coloraccent */
     background-color:rgba(10,142,118,0.5); /* coloraccent */
     color: #BBCCDD; 
 }
@@ -1989,14 +1990,14 @@ StScrollBar StButton#hhandle:active {
 
 .system-menu-action:hover, 
 .system-menu-action:focus { 
-    background-color: #008170; /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #eeeeec;
     border-color:#18ca9e; /* coloraccent */
     padding: 13px; 
 }
 
 .system-menu-action:active { 
-    background-color: #008170; /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color: #ffffff; 
 }
 
@@ -2227,7 +2228,7 @@ notification-close {
 }
 
 .nm-dialog-item:selected { 
-    background-color: rgba(0, 113, 102, 0.91); /* coloraccent */
+    background-color: #207c6f; /* coloraccent */
     color:#88FFEE; /* coloraccent */
 }
 
@@ -2297,7 +2298,6 @@ notification-close {
     color:#909090; 
     border: 1px solid #909090;
     background-color: rgba(0, 0, 0, 0.3);
-    font-family:Free Sans, Sans-Serif;
     font-size:14pt;
     transition-duration: 0.15s; 
     selection-background-color: rgba(0, 0, 0, 0.3);
@@ -3706,7 +3706,6 @@ notification-close {
     color: #CCDDEE; 
     selection-background-color: #CCDDEE; 
     selected-color: #FFFFFF; 
-    font-family: Noto Mono, Monospace; 
     transition-duration: 0s; 
 }
 
@@ -4047,7 +4046,6 @@ notification-close {
 
 .screen-shield-clock-time { 
     font-size: 84pt; 
-    font-family: Free Sans, Sans-Serif; 
     font-weight: 300; 
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22); 
 }
@@ -4145,7 +4143,6 @@ notification-close {
     min-height: 32px; 
     padding: 0 16px; 
     color: rgba(207, 216, 220, 0.87); 
-    font-family: Free Sans, Sans-Serif; 
     font-weight: 700; 
     transition-duration: 0.15s; 
 }
