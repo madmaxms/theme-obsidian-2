@@ -1344,6 +1344,8 @@ StScrollBar StButton#hhandle:active {
     border: 1px solid transparent; 
 }
 
+.datemenu-today-button:hover,
+.datemenu-today-button:focus,
 .world-clocks-button:hover, 
 .world-clocks-button:focus, 
 .weather-button:hover, 
@@ -1530,7 +1532,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-base:active:hover, 
 .calendar-day-base:selected, 
 .calendar-day-base:selected:hover { 
-    color:#a0b9d2;
+    color:#ffffff;
     background-color:rgba(28,113,168,0.6); /* coloraccent */
     border-color:transparent;
 }

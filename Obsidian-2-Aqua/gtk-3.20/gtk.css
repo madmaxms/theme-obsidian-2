@@ -3362,9 +3362,7 @@ menuitem radio:dir(rtl) {
 }
 
 menuitem separator,
-menu separator,
-.menuitem .separator,
-.menu .separator {
+.menuitem .separator {
     border-top: 1px solid @menuitem_separator;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 5px;
@@ -8447,7 +8445,7 @@ window.background.csd.unified decoration {
     border-radius: 7px; 
 }
 
-window.background.csd.unified headerbar button.radio {
+window.background.csd > * > headerbar button.radio {
     /*min-height: 26px;*/
     padding: 0;
     margin-top: 0;
@@ -8460,50 +8458,53 @@ window.background.csd.unified headerbar button.radio {
     border: 1px solid @hdyheadbutton_bdr;
     border-right-color: @hdyheadbutton_bdr_r; 
 }
-window.background.csd.unified headerbar button.radio:last-child {
+window.background.csd > * > headerbar button.radio:last-child,
+window.background.csd > * > headerbar button.radio:last-child:backdrop {
     border-right-color: @hdyheadbutton_bdr; 
 }
-window.background.csd.unified headerbar button.radio:hover {
+window.background.csd > * > headerbar button.radio:hover {
     background: linear-gradient(to bottom, @hdyheadbutton_bg_a, @hdyheadbutton_bg_b);
     border: 1px solid @hdyheadbutton_bdr;
     border-right-color: @hdyheadbutton_bdr_r; 
 }
-window.background.csd.unified headerbar button.radio:last-child:hover {
+window.background.csd > * > headerbar button.radio:last-child:hover {
     border-right-color: @hdyheadbutton_bdr; 
 }
-window.background.csd.unified headerbar button.radio:active {
+window.background.csd > * > headerbar button.radio:active {
     background: linear-gradient(to bottom, @hdyheadbutton_chk_bg_a, @hdyheadbutton_chk_bg_b);
     border: 1px solid @hdyheadbutton_chk_bdr;
     border-right-color: @hdyheadbutton_chk_bdr_r;
 }
-window.background.csd.unified headerbar button.radio:last-child:active {
+window.background.csd > * > headerbar button.radio:last-child:active,
+window.background.csd > * > headerbar button.radio:last-child:backdrop:active {
     border-right-color: @hdyheadbutton_bdr; 
 }
-window.background.csd.unified headerbar button.radio:checked {
+window.background.csd > * > headerbar button.radio:checked {
     background: linear-gradient(to bottom, @hdyheadbutton_chk_bg_a, @hdyheadbutton_chk_bg_b);
     border: 1px solid @hdyheadbutton_chk_bdr;
     border-right-color: @hdyheadbutton_chk_bdr_r;
 }
-window.background.csd.unified headerbar button.radio:last-child:checked {
+window.background.csd > * > headerbar button.radio:last-child:checked,
+window.background.csd > * > headerbar button.radio:last-child:backdrop:checked {
     border-right-color: @hdyheadbutton_bdr; 
 }
-window.background.csd.unified headerbar button.radio:backdrop {
+window.background.csd > * > headerbar button.radio:backdrop {
     background: linear-gradient(to bottom, @hdyheadbutton_bg_a, @hdyheadbutton_bg_b);
     border: 1px solid @hdyheadbutton_bdr;
     border-right-color: @hdyheadbutton_bdr_r; 
 }
-window.background.csd.unified headerbar button.radio:backdrop:checked {
+window.background.csd > * > headerbar button.radio:backdrop:checked {
     background: linear-gradient(to bottom, @hdyheadbutton_chk_bg_a, @hdyheadbutton_chk_bg_b);
     border: 1px solid @hdyheadbutton_chk_bdr;
     border-right-color: @hdyheadbutton_chk_bdr_r;
 }
 
-window.background.csd.unified headerbar button box.horizontal.wide {
+window.background.csd > * > headerbar button box.horizontal.wide {
     margin-right: 18.4px;
     margin-left: 18.4px; 
 }
 
-window.background.csd.unified headerbar button box.vertical.narrow label {
+window.background.csd > * > headerbar button box.vertical.narrow label {
     margin-left: 10px;
     margin-right: 10px; 
 }
