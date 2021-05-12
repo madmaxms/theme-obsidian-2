@@ -91,12 +91,12 @@ StScrollBar StButton#vhandle:hover
 .notification-button, .notification-icon-button,
 .hotplug-notification-item, .hotplug-resident-eject-button,
 .modal-dialog-button {
-    color: white;
+    color: #fff;
     border: 1px solid #8b8b8b;
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(255, 255, 255, 0.2);
-    background-gradient-end: rgba(255, 255, 255, 0);
-    font-size: 8.5pt;
+    background-gradient-start: rgba(255, 255, 255, 0.1);
+    background-gradient-end: rgba(255, 255, 255, 0.1);
+    font-size: 9pt;
     font-weight: normal;
     text-align: center;
 }
@@ -104,8 +104,8 @@ StScrollBar StButton#vhandle:hover
 .notification-button:hover,
 .notification-icon-button:hover, .hotplug-notification-item:hover,
 .hotplug-resident-eject-button:hover, .modal-dialog-button:hover {
-    background-gradient-start: rgba(255, 255, 255, 0.3);
-    background-gradient-end: rgba(255, 255, 255, 0.1);
+    background-gradient-start: rgba(255, 255, 255, 0.2);
+    background-gradient-end: rgba(255, 255, 255, 0.2);
 }
 
 .notification-button:focus,
@@ -989,7 +989,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .notification-button {
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 4px 8px 5px;
 }
 
@@ -998,7 +998,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .notification-icon-button {
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 5px;
 }
 
@@ -1218,18 +1218,19 @@ StScrollBar StButton#vhandle:hover
 }
 
 .osd-window {
-    border-radius: 24px;
-    background-color: rgba(55,55,55,0.9);
-    border: 2px solid rgba(90,90,90,1.0);
+    border-radius: 6px;
+    background-color: rgba(47, 53, 53, 0.9);
+    border: 1px solid rgba(114, 114, 114, 0.9);
     color: white;
     padding: 20px;
     spacing: 5px;
 }
 
 .osd-window .level {
-    height: 0.7em;
-    border-radius: 0.3em;
-    background-color: rgba(190,190,190,0.2);
+    height: 5px;
+    border-radius: 0px;
+    background-color: rgba(207,216,220,0.2);
+    color: #fff;
 }
 
 /* ===================================================================
