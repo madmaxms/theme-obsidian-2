@@ -83,7 +83,7 @@
 @define-color    box_shadow                            #cccccc;   
 
 /* widget background color */
-@define-color    theme_bg_color                        #2f393f;
+@define-color    theme_bg_color                        #30393f;
 @define-color    theme_bg_color_hov                    #50595c;
 @define-color    theme_bg_color_from                   #454c4c;
 @define-color    theme_bg_color_to                     #2d3232;
@@ -96,7 +96,7 @@
 @define-color    theme_fg_color_sub                    #666C6F;
 @define-color    theme_fg_color_dis                    #858786;
 
-@define-color    inline_bg                             #30393f;
+@define-color    inline_bg                             #384248;
 
 /* sidebar colours */
 @define-color    assistant_sidebar_bg                  #252a2c;
