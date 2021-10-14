@@ -105,7 +105,7 @@
 
 /* view */
 @define-color    view_bg                               #202a2f; /*2f3738*/
-@define-color    view_bg_hover                         #2d3538;
+@define-color    view_bg_hover                         #ffffff;
 @define-color    view_fg                               #bdbebf;
 @define-color    view_fg_dis                           #566164;
 @define-color    view_fg_hov                           #bccee1;
@@ -269,6 +269,8 @@
 @define-color    label_fg_dis                          #566164;
 
 /* row */
+@define-color    row_bg                                #202a2f;
+@define-color    row_bg_hover                          #232e33;
 @define-color    row_bg_active                         @theme_accent_color;
 @define-color    row_fg_dis                            #566164;
 
@@ -312,7 +314,7 @@
 @define-color    borders                               #1b1f20;
 
 /* widgets main borders color on backdrop windows */
-@define-color    border_normal                         #0a0a0a;
+@define-color    border_normal                         #3b4e5c;
 @define-color    unfocused_borders                     #202425;
 
 /* Cinnamon specific colours */

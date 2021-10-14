@@ -300,7 +300,21 @@ button.destructive-action spinner:backdrop {
  * Separator
  **************************************************************************************************/
 separator {
-    background: rgba(0, 0, 0, 0.2);
+    background: image(@separator);
+    min-width: 1px;
+    min-height: 1px;
+}
+
+headerbar separator,
+.titlebar separator {
+    background: image(@header_separator);
+    min-width: 1px;
+    min-height: 1px;
+}
+
+menu separator,
+.menuitem separator {
+    background: image(@menuitem_separator);
     min-width: 1px;
     min-height: 1px;
 }
@@ -2206,7 +2220,6 @@ combobox:drop(active) {
 /************
  * Toolbars *
  ************/
-.inline-toolbar,
 searchbar,
 .toolbar,
 .location-bar,
@@ -2214,13 +2227,13 @@ searchbar,
 .location-bar {
     -GtkWidget-window-dragging: true;
     padding: 4px;
-    border-top: 1px solid @border_box;
+    border-top: 1px solid @separator;
     background-color: @inline_bg;
 }
 
 .primary-toolbar {
-    border-bottom: 1px solid @border_box;
-    border-top: 1px solid @border_box;
+    border-bottom: 1px solid @separator;
+    border-top: 1px solid @separator;
     background-color: @theme_base_color;
 }
 
@@ -2280,7 +2293,7 @@ searchbar:backdrop,
 }
 
 .inline-toolbar {
-    border: 1px solid  @border_normal;
+    border: 1px solid @separator;
 }
 
 .inline-toolbar:backdrop {
@@ -3362,8 +3375,8 @@ menuitem separator,
     border-top: 1px solid @menuitem_separator;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 5px;
+    background: rgba(255, 255, 255, 0.2);
 }
-
 
 /***************
  * Popovers   *
@@ -3373,16 +3386,15 @@ popover.background {
     border-radius: 5px;
     background-color: @popover;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    border: 1px solid @border_box;
+    border: 1px solid @borders;
 }
 .csd popover.background, 
 popover.background {
-    border: 1px solid @border_box;
+    border: 1px solid @borders;
     border-radius: 6px; 
 }
 .csd popover.background {
     background-clip: padding-box;
-    border-color: rgba(0, 0, 0, 0.23); 
 }
 popover.background:backdrop {
     background-color: @popover;
@@ -3444,12 +3456,12 @@ popover button.flat:backdrop:checked:hover {
  *************/
 notebook > header {
     padding: 1px;
-    border-color: @border_normal;
+    border-color: @separator;
     border-width: 1px;
     background-color: @notebook_bar;
 }
 notebook > header:backdrop {
-    border-color: @border_normal;
+    border-color: @separator;
     background-color: @notebook_bar;
 }
 notebook > header tabs {
@@ -3748,16 +3760,16 @@ scrollbar {
 }
 
 scrollbar.top {
-    border-bottom: 1px solid @separator;
+    border-bottom: 1px solid @borders;
 }
 scrollbar.bottom {
-    border-top: 1px solid @separator;
+    border-top: 1px solid @borders;
 }
 scrollbar.left {
-    border-right: 1px solid @separator;
+    border-right: 1px solid @borders;
 }
 scrollbar.right {
-    border-left: 1px solid @separator;
+    border-left: 1px solid @borders;
 }
 scrollbar:backdrop {
     background-color: @theme_bg_color;
@@ -3919,7 +3931,7 @@ scrollbar.horizontal button.up {
 }
 
 treeview ~ scrollbar.vertical {
-    border-top: 1px solid @separator;
+    border-top: 1px solid @borders;
     margin-top: -1px;
 }
 
@@ -4929,7 +4941,7 @@ scale trough {
 }
 scale fill:backdrop,
 scale fill {
-    background-color: @separator;
+    background-color: @borders;
 }
 scale fill:disabled:backdrop,
 scale fill:disabled {
@@ -5609,7 +5621,7 @@ scale.color {
     min-width: 0;
 }
 scale.color trough {
-    background-image: image(@separator);
+    background-image: image(@borders);
     background-repeat: no-repeat;
 }
 scale.color.horizontal {
@@ -5861,7 +5873,7 @@ levelbar trough {
     padding: 2px;
     border-radius: 3px;
     color: @theme_fg_color;
-    border-color: @border_normal;
+    border-color: @separator;
     background-color: @view_bg;
     box-shadow: inset 0 0 0 1px alpha(@theme_accent_color, 0);
 }
@@ -5959,20 +5971,16 @@ frame > border,
     margin: 0;
     padding: 0;
     border-radius: 0;
-    border: 1px solid @border_box;
+    border: 1px solid @border_normal;
 }
 frame > border.flat,
 .frame.flat {
     border-style: none; 
 }
-frame > border:backdrop,
-.frame:backdrop {
-    border-color: @unfocused_borders; 
-}
     
 actionbar > revealer > box {
     padding: 6px;
-    border-top: 1px solid @separator;
+    border-top: 1px solid @borders;
 }
 actionbar > revealer > box:backdrop {
     border-color: @unfocused_borders;
@@ -6104,7 +6112,7 @@ scrolledwindow:first-child undershoot.right {
 }
 scrolledwindow junction {
     border-color: transparent;
-    border-image: linear-gradient(to bottom, @border_box 1px, transparent 1px) 0 0 0 1/0 1px stretch;
+    border-image: linear-gradient(to bottom, @border_normal 1px, transparent 1px) 0 0 0 1/0 1px stretch;
     background-color: @scroll_bg;
 }
 scrolledwindow junction:dir(rtl) {
@@ -6123,7 +6131,13 @@ scrolledwindow junction:backdrop {
 .list,
 list {
     background-color: @view_bg;
-    border-color: @border_normal;
+    border-color: @separator;
+}
+
+list separator {
+    background: image(@border_normal);
+    min-width: 1px;
+    min-height: 1px;
 }
 
 .list:backdrop,
@@ -6242,21 +6256,29 @@ list.content,
 list.content list {
     background-color: transparent; 
 }
- 
+
 list.content > row:not(.expander):not(:active):not(:hover):not(:selected),
 list.content > row:not(.expander):not(:active):hover:not(.activatable):not(:selected),
 list.content > row.expander row.header:not(:active):not(:hover):not(:selected),
 list.content > row.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
-    background-color: @view_bg; 
+    background-color: @row_bg;
+    margin: 0px;
 }
  
 list.content > row,
 list.content > row list > row {
-    border-color: @border_box;
+    border-color: @border_normal;
     border-style: solid;
     transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); 
 }
  
+list.content > row:not(.expander):not(:active):not(:selected):hover,
+list.content > row:not(.expander):not(:active):not(.activatable):not(:selected):hover,
+list.content > row.expander row.header:not(:active):not(:selected):hover,
+list.content > row.expander row.header:not(:active):not(.activatable):not(:selected):hover {
+    background-color: @row_bg_hover;
+    margin: 0px;
+}
 
 list.content > row:not(:last-child) {
     border-width: 1px 1px 0px 1px; 
@@ -6300,6 +6322,7 @@ list.content > row.expander list.nested > row:last-child {
 list.content > row.expander:checked:not(:first-child),
 list.content > row.expander:checked + row {
     margin-top: 6px; 
+    
 }
 
 
@@ -6308,7 +6331,7 @@ row.expander {
 }
 row.expander list.nested > row {
     background-color: alpha(@view_bg, 0.5);
-    border-color: alpha(@border_box, 0.7);
+    border-color: alpha(@border_normal, 0.7);
     border-style: solid;
     border-width: 1px 0px 0px 0px; 
     box-shadow: inset 0 0 0 9999px alpha(#000, 0.2);
@@ -6367,7 +6390,7 @@ expander title > arrow:checked {
  ***********/
 calendar {
     color: @theme_fg_color;
-    border: 1px solid @border_box;
+    border: 1px solid @borders;
 }
 calendar:selected {
     border-radius: 3px; 
@@ -6452,7 +6475,7 @@ messagedialog.csd .dialog-action-area button:last-child {
 }
 
 filechooser .dialog-action-box {
-    border-top: 1px solid @border_box;
+    border-top: 1px solid @borders;
 }
 filechooser .dialog-action-box:backdrop {
     border-top-color: @unfocused_borders;
@@ -6473,7 +6496,7 @@ filechooserbutton:drop(active) {
  **************************************************************************************************/
 .sidebar,
 .sidebar:backdrop {
-    border-color: @border_box;
+    border-color: @border_normal;
     color: @sidebar_fg;
     background-color: @sidebar_bg;
 }
@@ -6483,22 +6506,22 @@ stacksidebar.sidebar.left list,
 stacksidebar.sidebar.left:dir(rtl) list, 
 .sidebar:not(separator):dir(ltr), 
 .sidebar.left:not(separator) {
-    border-right: 1px solid @border_box;
+    border-right: 1px solid @border_normal;
     border-left-style: none; 
 }
 stacksidebar.sidebar:dir(rtl) list, 
 stacksidebar.sidebar.right list, 
 .sidebar:not(separator):dir(rtl), 
 .sidebar.right:not(separator) {
-    border-left: 1px solid @border_box;
+    border-left: 1px solid @border_normal;
     border-right-style: none; 
 }
 
 separator.sidebar {
-    background-color: @border_box; 
+    background-color: @border_normal; 
 }
 separator.sidebar:backdrop {
-    background-color: @border_box; 
+    background-color: @border_normal; 
 }
 
 .sidebar .frame {
@@ -6510,7 +6533,7 @@ separator.sidebar:backdrop {
 }
 
 row.activatable:not(:selected):hover {
-    box-shadow: inset 0 0 0 9999px alpha(@view_bg_hover, 1.0);
+    box-shadow: inset 0 0 0 9999px alpha(@view_bg_hover, 0.04);
     background-color: transparent;
     background-image: none;
 }
@@ -6566,7 +6589,7 @@ row.activatable:not(:selected):hover {
 assistant .sidebar,
 GtkAssistant .sidebar {
     background-color: @assistant_sidebar_bg;
-    border-top: 1px solid @separator;
+    border-top: 1px solid @borders;
 }
 assistant .sidebar:backdrop {
     background-color: @assistant_sidebar_bg;
@@ -6583,14 +6606,14 @@ assistant .sidebar label.highlight {
 }
 
 GtkAssistant .sidebar:dir(ltr) {
-    border-right: 1px solid @separator;
+    border-right: 1px solid @borders;
 }
 GtkAssistant .sidebar:dir(rtl) {
-    border-left: 1px solid @separator;
+    border-left: 1px solid @borders;
 }
 GtkAssistant .sidebar:backdrop {
     background-color: @assistant_sidebar_bg;
-    border-color: @separator;
+    border-color: @borders;
 }
 GtkAssistant.csd .sidebar {
     border-top-style: none;
@@ -7158,7 +7181,7 @@ colorswatch.light overlay {
     color: @theme_fg_color;
 }
 colorswatch.light overlay:hover {
-    border-color: @border_normal;
+    border-color: @separator;
 }
 colorswatch.light overlay:backdrop {
     color: @theme_fg_color;
@@ -7169,11 +7192,11 @@ colorswatch:drop(active) {
 }
 colorswatch.light:drop(active) overlay {
     border-color: @theme_accent_color;
-    box-shadow: inset 0 0 0 2px @border_box, inset 0 0 0 1px @theme_accent_color; 
+    box-shadow: inset 0 0 0 2px @border_normal, inset 0 0 0 1px @theme_accent_color; 
 }
 colorswatch.dark:drop(active) overlay {
     border-color: @theme_accent_color;
-    box-shadow: inset 0 0 0 2px @border_box, inset 0 0 0 1px @theme_accent_color; 
+    box-shadow: inset 0 0 0 2px @border_normal, inset 0 0 0 1px @theme_accent_color; 
 }
 
 colorswatch overlay {
@@ -7197,7 +7220,7 @@ colorswatch#add-color-button:only-child {
 colorswatch#add-color-button overlay {
     color: @theme_fg_color;
     outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @border_normal;
+    border-color: @separator;
     background-image: linear-gradient(to bottom, @button_bgcirc_a, @button_bgcirc_b, @button_bgcirc_c);
     text-shadow: 0 -1px rgba(0, 0, 0, 0.82745);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.82745);
@@ -7206,7 +7229,7 @@ colorswatch#add-color-button overlay {
 colorswatch#add-color-button overlay:hover {
     color: @theme_fg_color;
     outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @border_normal;
+    border-color: @separator;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.77945);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.77945);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
@@ -7309,8 +7332,8 @@ messagedialog.csd decoration {
 .solid-csd decoration {
     margin: 0;
     padding: 4px; 
-    background-color: @border_box;
-    border: solid 1px @border_box;
+    background-color: @border_normal;
+    border: solid 1px @border_normal;
     border-radius: 0;
     box-shadow: inset 0 0 0 3px @theme_bg_color, inset 0 1px rgba(238, 238, 236, 0.07);
 }
@@ -7537,7 +7560,7 @@ cursor-handle.insertion-cursor:active:dir(rtl) {
     color: @theme_fg_color;
     background-color: @view_bg;
     border: 1px solid;
-    border-color: @border_normal;
+    border-color: @separator;
     border-radius: 5px;
     box-shadow: inset 0 -3px #1e2224;
     font-size: smaller;
@@ -7604,7 +7627,7 @@ button.emoji-section:backdrop:not(:checked) {
     border-color: transparent; 
 }
 button.emoji-section:hover {
-    border-color: @border_box; 
+    border-color: @border_normal; 
 }
 button.emoji-section:checked {
     border-color: @theme_accent_color;
@@ -7829,15 +7852,12 @@ terminal-window notebook scrollbar.hovering {
 
 .list-box-app-row {
     border-radius: 0;
-    border-color: @border_box;
-    border-style: none solid solid solid;
-    border-width: 0 1px 1px 1px;
-    margin: -1px 0 0 0; 
+    border-width: 1px 1px 1px 1px;
 }
 .list-box-app-row ~ separator {
     background-color: @separator;
     border: none;
-    min-height: 0px; 
+    min-height: 1px; 
 }
 
 box > list row.list-box-app-row {
@@ -7985,7 +8005,7 @@ box > list row.list-box-app-row {
 .org-gnome-Todo taskrow.activatable.new-task-row button.popup.toggle {
     border-radius: 0px;
     border: none;
-    border-left: 1px solid @separator;
+    border-left: 1px solid @borders;
     padding-left: 10px;
     padding-right: 10px;
     -gtk-outline-radius: 0px; 
@@ -8042,7 +8062,7 @@ box > list row.list-box-app-row {
 normal-button {
     color: #3D3D3D;
     outline-color: rgba(239, 134, 97, 0.7);
-    border-color: @border_box;
+    border-color: @border_normal;
     background-image: image(#fcfcfc);
     text-shadow: 0 1px rgba(255, 255, 255, 0.769231);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231);
@@ -8051,7 +8071,7 @@ normal-button {
 normal-button:hover {
     color: #3D3D3D;
     outline-color: rgba(239, 134, 97, 0.7);
-    border-color: @border_box;
+    border-color: @border_normal;
     border-bottom-color: #bababa;
     text-shadow: 0 1px rgba(255, 255, 255, 0.769231);
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.769231);
@@ -8062,7 +8082,7 @@ normal-button:hover {
 normal-button:active {
     color: #3D3D3D;
     outline-color: rgba(239, 134, 97, 0.7);
-    border-color: @border_box;
+    border-color: @border_normal;
     background-image: image(lightgray);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
@@ -8070,7 +8090,7 @@ normal-button:active {
 }
 normal-button:disabled {
     color: #9a9a9a;
-    border-color: @border_box;
+    border-color: @border_normal;
     background-image: image(#fafafa);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -12615,7 +12635,7 @@ NemoWindow .toolbar,
 NemoWindow .primary-toolbar,
 .nemo-window .primary-toolbar {
     padding: 6px;
-    border-top-color: @separator;
+    border-top-color: @borders;
 }
 
 /* small buttons on the nemo status bar */
