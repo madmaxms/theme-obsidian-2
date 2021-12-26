@@ -132,7 +132,7 @@ StEntry {
     border-radius: 6px; 
     border-width: 0; 
     color: #ccddee; 
-    selection-background-color: #8f32b2; /* coloraccent */ 
+    selection-background-color: #7535bc; /* coloraccent */ 
     selected-color: #FFFFFF; 
     transition-duration: 0s; 
 }
@@ -741,17 +741,17 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu .popup-menu-item:checked, 
 .popup-menu .popup-menu-item:checked.selected { 
-    background-color:rgba(61,0,71,0.91); /* coloraccent */
+    background-color:rgba(55, 5, 80,0.91); /* coloraccent */
     color:#c066ff; /* coloraccent */
 }
 
 .popup-menu .popup-menu-item:checked:hover { 
-    background-color: rgba(122, 0, 147, 0.91); /* coloraccent */
+    background-color: rgba(110, 5, 167, 0.91); /* coloraccent */
     color:#ce88ff; /* coloraccent */
 }
 
 .popup-menu .popup-menu-item:checked:active { 
-    background-color:rgba(61,0,71,0.91); /* coloraccent */
+    background-color:rgba(55, 5, 80,0.91); /* coloraccent */
     color:#c066ff; /* coloraccent */
 }
 
@@ -760,19 +760,19 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-menu-item.selected { 
-    background-color: rgba(122, 0, 147, 0.91); /* coloraccent */
+    background-color: rgba(110, 5, 167, 0.91); /* coloraccent */
     color: #ce88ff; /* coloraccent */
     transition-duration: 0s; 
 }
 
 .popup-menu .popup-menu-item:active { 
-    background-color: rgba(122, 0, 147, 0.91); /* coloraccent */
+    background-color: rgba(110, 5, 167, 0.91); /* coloraccent */
     color: #ce88ff; /* coloraccent */
     transition-duration: 0.15s; 
 }
 
 .popup-menu .popup-menu-item.selected:active { 
-    background-color: rgba(122, 0, 147, 0.91); /* coloraccent */
+    background-color: rgba(110, 5, 167, 0.91); /* coloraccent */
     color: #ce88ff; /* coloraccent */
 }
 
@@ -833,7 +833,7 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StEntry, 
 .popup-menu StEntry:insensitive { 
-    selection-background-color: #8f32b2; /* coloraccent */
+    selection-background-color: #7535bc; /* coloraccent */
     selected-color: #FFFFFF; 
     border: 2px solid;
     border-radius: 3px;
@@ -858,13 +858,13 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StScrollBar StButton#vhandle:hover, 
 .popup-menu StScrollBar StButton#hhandle:hover { 
-    background-color:#8f32b2; /* coloraccent */
+    background-color:#7535bc; /* coloraccent */
     color:#FFF;
 }
 
 .popup-menu StScrollBar StButton#vhandle:active, 
 .popup-menu StScrollBar StButton#hhandle:active { 
-    background-color: #8f32b2; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
 }
 
 .popup-menu-arrow { 
@@ -1246,7 +1246,7 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button:focus,
 #panel .panel-button:checked { 
     color:#ffffff;
-    background-color:#8f32b2; /* coloraccent */
+    background-color:#7535bc; /* coloraccent */
     box-shadow: none;
     border-radius: 0px;
     padding: 0px;
@@ -1521,7 +1521,7 @@ StScrollBar StButton#hhandle:active {
 
 .calendar-day-base:hover, 
 .calendar-day-base:focus { 
-    background-color:rgba(115,0,160,0.6); /* coloraccent */
+    background-color:rgba(100,10,170,0.6); /* coloraccent */
 }
 
 .calendar-day-base:active, 
@@ -1529,7 +1529,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-base:selected, 
 .calendar-day-base:selected:hover { 
     color:#ffffff;
-    background-color:rgba(115,0,160,0.6); /* coloraccent */
+    background-color:rgba(100,10,170,0.6); /* coloraccent */
     border-color:transparent;
 }
 
@@ -1574,25 +1574,25 @@ StScrollBar StButton#hhandle:active {
 
 .calendar-day-with-events { 
     background-image: none; 
-    color: #c000ff; /* coloraccent */
+    color: #9033ff; /* coloraccent */
 }
 
 .calendar-day-with-events:hover { 
-    background-color:rgba(115,0,160,0.6); /* coloraccent */
+    background-color:rgba(100,10,170,0.6); /* coloraccent */
 }
 
 .calendar-day-with-events:active, 
 .calendar-day-with-events:active:hover, 
 .calendar-day-with-events:selected, 
 .calendar-day-with-events:selected:hover { 
-    background-color: #9700bb; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
     border-color: transparent; 
 }
 
 .calendar-today, 
 .calendar-today.calendar-day-with-events { 
     border: none; 
-    background-color: #9700bb; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
     color: #FFFFFF; 
 }
 
@@ -1600,14 +1600,14 @@ StScrollBar StButton#hhandle:active {
 .calendar-today:focus, 
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
-    background-color: #9700bb; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
 }
 
 .calendar-today:selected, 
 .calendar-today:selected:hover, 
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
-    background-color: #9700bb; /* coloraccent */ 
+    background-color: #7535bc; /* coloraccent */ 
 }
 
 .calendar-nonwork-day{
@@ -1625,7 +1625,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .calendar-other-month-day.calendar-day-with-events { 
-    color: #5b0066;  /* coloraccent */
+    color: #4c0090;  /* coloraccent */
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, 
@@ -1985,14 +1985,14 @@ StScrollBar StButton#hhandle:active {
 
 .system-menu-action:hover, 
 .system-menu-action:focus { 
-    background-color: #9700bb; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
     color: #eeeeec;
     border-color:#bd00dd; /* coloraccent */
     padding: 13px; 
 }
 
 .system-menu-action:active { 
-    background-color: #9700bb; /* coloraccent */
+    background-color: #7535bc; /* coloraccent */
     color: #ffffff; 
 }
 
@@ -2223,7 +2223,7 @@ notification-close {
 }
 
 .nm-dialog-item:selected { 
-    background-color:#9700bb; /* coloraccent */
+    background-color:#7535bc; /* coloraccent */
     color: #ce88ff; /* coloraccent */
 }
 
@@ -4217,7 +4217,7 @@ notification-close {
 }
 
 .lg-dialog StEntry { 
-    selection-background-color: #8f32b2; /* coloraccent */
+    selection-background-color: #7535bc; /* coloraccent */
     selected-color: #FFFFFF; 
     border: 2px solid;
     border-radius: 3px;
