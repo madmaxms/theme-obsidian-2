@@ -105,7 +105,7 @@
 
 /* view */
 @define-color    view_bg                               #202a2f; /*2f3738*/
-@define-color    view_bg_hover                         #2d3538;
+@define-color    view_bg_hover                         #ffffff;
 @define-color    view_fg                               #bdbebf;
 @define-color    view_fg_dis                           #566164;
 @define-color    view_fg_hov                           #bccee1;
@@ -222,6 +222,9 @@
 @define-color    button_bgcirc_b_hov                   #30363c;
 @define-color    button_bgcirc_c_hov                   #191f23;
 
+@define-color    selected_bg_color                     #646e73;
+@define-color    selected_border_color                 #96a0aa;
+
 /* menus and menubars */
 @define-color    menu_bg                               @popover;
 @define-color    menu_bg_hover                         #4b5254;
@@ -269,6 +272,8 @@
 @define-color    label_fg_dis                          #566164;
 
 /* row */
+@define-color    row_bg                                #202a2f;
+@define-color    row_bg_hover                          #232e33;
 @define-color    row_bg_active                         @theme_accent_color;
 @define-color    row_fg_dis                            #566164;
 
@@ -283,9 +288,6 @@
 @define-color    hdyheadbutton_chk_bg_b                #4c5054;
 @define-color    hdyheadbutton_chk_bdr                 #6a7073;
 @define-color    hdyheadbutton_chk_bdr_r               #42494c;
-
-/* text/foreground color of selections */
-@define-color    theme_selected_fg_color               #ffffff;
 
 /* base background color of insensitive widgets */
 @define-color    insensitive_bg_color                  #2d343a;
@@ -315,7 +317,7 @@
 @define-color    borders                               #1b1f20;
 
 /* widgets main borders color on backdrop windows */
-@define-color    border_normal                         #0a0a0a;
+@define-color    border_normal                         #3b4e5c;
 @define-color    unfocused_borders                     #202425;
 
 /* Cinnamon specific colours */
