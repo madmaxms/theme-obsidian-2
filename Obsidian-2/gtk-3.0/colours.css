@@ -222,6 +222,9 @@
 @define-color    button_bgcirc_b_hov                   #30363c;
 @define-color    button_bgcirc_c_hov                   #191f23;
 
+@define-color    selected_bg_color                     #646e73;
+@define-color    selected_border_color                 #96a0aa;
+
 /* menus and menubars */
 @define-color    menu_bg                               @popover;
 @define-color    menu_bg_hover                         #4b5254;

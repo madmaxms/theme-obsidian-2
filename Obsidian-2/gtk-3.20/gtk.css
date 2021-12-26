@@ -767,13 +767,13 @@ button.flat {
     text-shadow: none;
     -gtk-icon-shadow: none;
     transition: none; 
-}
+}/*
 button label {
     color: @button_fg_color;
 }
 button:backdrop label {
     color: @button_fg_dis;
-}
+}*/
 button.titlebutton:hover, 
 button.sidebar-button:hover, 
 button.flat:hover {
@@ -1622,7 +1622,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
     -gtk-icon-shadow: none;
     box-shadow: 0 1px 1px alpha(@box_shadow, 0.2);
  }
- .inline-toolbar toolbutton > button:disabled label,
+.inline-toolbar toolbutton > button:disabled label,
 .inline-toolbar toolbutton > button:disabled,
 .inline-toolbar GtkToolbutton > .button:disabled > .label {
     color: @button_fg_dis;
@@ -2330,22 +2330,6 @@ headerbar .subtitle {
     padding-right: 12px; 
     color: @header_fg_color_sub;
 }
-/*.titlebar:not(headerbar) stackswitcher button:checked,
-.titlebar:not(headerbar) button.toggle:checked,
-headerbar stackswitcher button:checked,
-headerbar button.toggle:checked {
-    background: image(#cccccc);
-    border-color: #b5b5b5; 
-}
-.titlebar:not(headerbar) stackswitcher button:checked:backdrop,
-.titlebar:not(headerbar) button.toggle:checked:backdrop,
-headerbar stackswitcher button:checked:backdrop,
-headerbar button.toggle:checked:backdrop {
-      color: #626262;
-      border-color: #cecece;
-      background-image: image(#e4e4e4);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0); 
-}*/
 .selection-mode .titlebar:not(headerbar), 
 .selection-mode.titlebar:not(headerbar), 
 .selection-mode headerbar,
@@ -3454,6 +3438,61 @@ popover button.flat:backdrop:checked:hover {
 /*************
  * Notebooks *
  *************/
+tabbox {
+    margin: 2px;
+    padding: 1px;
+    border-color: @separator;
+    border-width: 1px;
+    background-color: @notebook_bar;
+}
+
+tabbox > tab {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: inset 0 -3px transparent;
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 4px;
+}
+
+tabbox > tab:checked,
+tabbox > tab:checked:hover {
+    border-left: 1px solid @notebook_separator;
+    border-right: 1px solid @notebook_separator;
+    box-shadow: inset 0 -3px @notebook_border_sel;
+    background-color: @notebook_bg;
+    font-weight: bold;
+}
+
+tabbox > tab:hover {
+    border-left: 1px solid alpha(@notebook_border_hov, 0.05);
+    border-right: 1px solid alpha(@notebook_border_hov, 0.05);
+    box-shadow: inset 0 -3px transparent;
+    background-color: alpha(@notebook_bg, 0.7);
+}
+
+tabbox > tab button.tab-close-button {
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    min-width: 20px;
+    min-height: 20px; 
+    background: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+tabbox > tab button.tab-close-button:hover {
+    background-color: @titlebutton_flat_bg;
+}
+
+tabbox > tab button.tab-close-button:active, 
+tabbox > tab button.tab-close-button:active:hover {
+
+} 
+ 
 notebook > header {
     padding: 1px;
     border-color: @separator;
@@ -3464,7 +3503,8 @@ notebook > header:backdrop {
     border-color: @separator;
     background-color: @notebook_bar;
 }
-notebook > header tabs {
+notebook > header tabs,
+tabbox {
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -7728,26 +7768,23 @@ list.tweak-categories separator {
     background-image: image(@separator); 
 }
 
-.nautilus-canvas-item.dim-label,
-label.nautilus-canvas-item.separator,
-.nautilus-list-dim-label,
-.nemo-canvas-item.dim-label,
-label.nemo-canvas-item.separator,
-.nemo-list-dim-label {
-    color: @theme_fg_color_sub;
-}
-
 .nautilus-window .nautilus-canvas-item {
     outline-width: 0;
+    color: @theme_fg_color;
     background-color: rgba(255, 255, 255, 0.1); 
 }
-.nautilus-window .nautilus-canvas-item:selected:not(:backdrop):dir(ltr) {
+.nautilus-window .nautilus-canvas-item:selected:dir(ltr),
+.nautilus-window:backdrop .nautilus-canvas-item:selected:dir(ltr) {
     border-radius: 3px;
-    background-color: @theme_accent_color;
+    color: @theme_fg_color;
+    background-color: alpha(@selected_bg_color, 0.6);
+    border: 1px solid alpha(@selected_border_color, 0.6); 
 }
-.nautilus-window .nautilus-canvas-item:selected:not(:backdrop):not(:dir(ltr)) {
+.nautilus-window .nautilus-canvas-item:selected:not(:dir(ltr)),
+.nautilus-window:backdrop .nautilus-canvas-item:selected:not(:dir(ltr)) {
     border-radius: 3px;
-    background-color: rgba(196, 196, 196, 0.1); 
+    color: @theme_fg_color;
+    background-color: rgba(200, 200, 200, 0.1); 
 }
 
 /*
@@ -8132,7 +8169,7 @@ normal-button:disabled {
     padding-bottom: 5px;
     padding-right: 5px; 
 }
-
+*/
 /***********
    * Geary *
    ***********/
@@ -8581,7 +8618,7 @@ window.background.csd.unified decoration {
     border-right-width: 0;
     border-bottom-width: 0;
     background-image: none;
-    background-color: none;
+    background-color: transparent;
     background: linear-gradient(to bottom, @hdyheadbutton_bg_a, @hdyheadbutton_bg_b);
     border: 1px solid @hdyheadbutton_bdr;
     border-right-color: @hdyheadbutton_bdr_r; 
@@ -12593,9 +12630,20 @@ NemoWindow > GtkGrid > .pane-separator {
     text-shadow: 1px 1px @desktop_item_text_shadow;
 }
 
-.nemo-desktop.nemo-canvas-item:selected {
+.nemo-canvas-item:selected {
     background-color: rgba(196, 196, 196, 0.1); 
     color: @theme_selected_fg_color;
+}
+.nemo-canvas-item:selected:dir(ltr) {
+    border-radius: 3px;
+    color: @theme_fg_color;
+    background-color: alpha(@selected_bg_color, 0.6);
+    border: 1px solid @selected_border_color; 
+}
+.nemo-canvas-item:selected:not(:dir(ltr)) {
+    border-radius: 3px;
+    color: @theme_selected_fg_color;
+    background-color: rgba(200, 200, 200, 0.1); 
 }
 
 /* notebook */
@@ -12836,6 +12884,14 @@ PanelApplet.wnck-applet .wnck-pager:hover {
     border: none; 
 } 
 
+.nautilus-canvas-item.dim-label,
+label.nautilus-canvas-item.separator,
+.nautilus-list-dim-label,
+.nemo-canvas-item.dim-label,
+label.nemo-canvas-item.separator,
+.nemo-list-dim-label {
+    color: @theme_fg_color_sub;
+}
 
 
 
