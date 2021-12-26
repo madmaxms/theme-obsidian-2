@@ -597,7 +597,7 @@ button.flat
     text-shadow: none;
     -gtk-icon-shadow: none;
     transition: none; 
-}
+}/*
 button label 
 {
     color: @button_fg_color;
@@ -605,7 +605,7 @@ button label
 button:backdrop label 
 {
     color: @button_fg_dis;
-}
+}*/
 button.titlebutton:hover, 
 button.sidebar-button:hover, 
 button.flat:hover 
@@ -2827,6 +2827,61 @@ border-radius: 8px;
 /*************
  * Notebooks *
  *************/
+tabbox {
+    margin: 2px;
+    padding: 1px;
+    border-color: @separator;
+    border-width: 1px;
+    background-color: @notebook_bar;
+}
+
+tabbox > tab {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: inset 0 -3px transparent;
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 4px;
+}
+
+tabbox > tab:checked,
+tabbox > tab:checked:hover {
+    border-left: 1px solid @notebook_separator;
+    border-right: 1px solid @notebook_separator;
+    box-shadow: inset 0 -3px @notebook_border_sel;
+    background-color: @notebook_bg;
+    font-weight: bold;
+}
+
+tabbox > tab:hover {
+    border-left: 1px solid alpha(@notebook_border_hov, 0.05);
+    border-right: 1px solid alpha(@notebook_border_hov, 0.05);
+    box-shadow: inset 0 -3px transparent;
+    background-color: alpha(@notebook_bg, 0.7);
+}
+
+tabbox > tab button.tab-close-button {
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    min-width: 20px;
+    min-height: 20px; 
+    background: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+tabbox > tab button.tab-close-button:hover {
+    background-color: @titlebutton_flat_bg;
+}
+
+tabbox > tab button.tab-close-button:active, 
+tabbox > tab button.tab-close-button:active:hover {
+
+} 
+
 notebook > header {
     padding: 1px;
     border-color: @border_normal;
@@ -2837,7 +2892,8 @@ notebook > header:backdrop {
     border-color: @border_normal;
     background-color: @notebook_bar;
 }
-notebook > header tabs {
+notebook > header tabs,
+tabbox {
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -9651,7 +9707,9 @@ window.csd.popup {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(13, 14, 17, 0.65);
     border-width: 0; 
 }
-
+window.csd.maximized {
+    border-radius: 0px 0px 0px 0px;
+}
 window.maximized, 
 window.fullscreen, 
 window.tiled, 
@@ -10007,8 +10065,85 @@ background-color:#4a90d9;
 border-color:#4a90d9;
 border-style:solid;
 border-width:0px;
-border-radius:4px 4px 4px 4px;
+border-radius: 4px 4px 4px 4px;
 
+}
+
+
+.tiled headerbar, 
+.tiled headerbar:first-child, 
+.tiled headerbar:last-child, 
+.tiled headerbar:only-child, 
+.tiled headerbar:backdrop, 
+.tiled headerbar:backdrop:first-child, 
+.tiled headerbar:backdrop:last-child, 
+.tiled headerbar:backdrop:only-child, 
+.tiled-top headerbar, 
+.tiled-top headerbar:first-child, 
+.tiled-top headerbar:last-child, 
+.tiled-top headerbar:only-child, 
+.tiled-top headerbar:backdrop, 
+.tiled-top headerbar:backdrop:first-child, 
+.tiled-top headerbar:backdrop:last-child, 
+.tiled-top headerbar:backdrop:only-child, 
+.tiled-right headerbar, 
+.tiled-right headerbar:first-child, 
+.tiled-right headerbar:last-child, 
+.tiled-right headerbar:only-child, 
+.tiled-right headerbar:backdrop, 
+.tiled-right headerbar:backdrop:first-child, 
+.tiled-right headerbar:backdrop:last-child, 
+.tiled-right headerbar:backdrop:only-child, 
+.tiled-bottom headerbar, 
+.tiled-bottom headerbar:first-child, 
+.tiled-bottom headerbar:last-child, 
+.tiled-bottom headerbar:only-child, 
+.tiled-bottom headerbar:backdrop, 
+.tiled-bottom headerbar:backdrop:first-child, 
+.tiled-bottom headerbar:backdrop:last-child, 
+.tiled-bottom headerbar:backdrop:only-child, 
+.tiled-left headerbar, 
+.tiled-left headerbar:first-child, 
+.tiled-left headerbar:last-child, 
+.tiled-left headerbar:only-child, 
+.tiled-left headerbar:backdrop, 
+.tiled-left headerbar:backdrop:first-child, 
+.tiled-left headerbar:backdrop:last-child, 
+.tiled-left headerbar:backdrop:only-child, 
+.maximized headerbar, 
+.maximized headerbar:first-child, 
+.maximized headerbar:last-child, 
+.maximized headerbar:only-child, 
+.maximized headerbar:backdrop, 
+.maximized headerbar:backdrop:first-child, 
+.maximized headerbar:backdrop:last-child, 
+.maximized headerbar:backdrop:only-child, 
+.fullscreen headerbar, 
+.fullscreen headerbar:first-child, 
+.fullscreen headerbar:last-child, 
+.fullscreen headerbar:only-child, 
+.fullscreen headerbar:backdrop, 
+.fullscreen headerbar:backdrop:first-child, 
+.fullscreen headerbar:backdrop:last-child, 
+.fullscreen headerbar:backdrop:only-child, 
+.fullscreen .titlebar:not(headerbar),
+.fullscreen .titlebar:not(headerbar):first-child,
+.fullscreen .titlebar:not(headerbar):last-child,
+.fullscreen .titlebar:not(headerbar):only-child,
+.fullscreen .titlebar:not(headerbar):backdrop,
+.fullscreen .titlebar:not(headerbar):backdrop:first-child,
+.fullscreen .titlebar:not(headerbar):backdrop:last-child,
+.fullscreen .titlebar:not(headerbar):backdrop:only-child,
+.solid-csd headerbar, 
+.solid-csd headerbar:first-child, 
+.solid-csd headerbar:last-child, 
+.solid-csd headerbar:only-child, 
+.solid-csd headerbar:backdrop, 
+.solid-csd headerbar:backdrop:first-child, 
+.solid-csd headerbar:backdrop:last-child, 
+.solid-csd headerbar:backdrop:only-child {
+    border-radius: 0;
+    background: linear-gradient(to bottom, @header_bg_b, @header_bg_b);
 }
 
 
