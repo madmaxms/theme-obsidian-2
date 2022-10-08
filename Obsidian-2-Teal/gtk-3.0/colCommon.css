@@ -5,76 +5,6 @@
 ************************************************************************************************* */
 
 
-/* ****************************** A C C E N T   C O L O U R S *********************************** */
-
-@define-color    theme_accent_color                    #207c6f;
-
-@define-color    theme_selected_bg_color               @theme_accent_color;
-@define-color    theme_selected_fg_color               #ffffff;
-@define-color    theme_unfocused_selected_bg_color     @theme_accent_color;
-
-/* sidebar colours */
-@define-color    sidebar_bg                            #034444;
-@define-color    sidebar_hovering                      #5c6369;
-@define-color    sidebar_fg                            #ffffff;
-
-@define-color    theme_fg_color_sel                    #0a7676;
-
-/* view */
-@define-color    view_fg_sel                           #00541e;
-@define-color    view_border_sel                       #209b5d;
-@define-color    view_bg_acceleditor                   #006e62;
-
-/* entry */
-@define-color    entry_border_act                      #00615f;
-@define-color    entry_border_act_shad                 #009886;
-@define-color    entry_tag_a                           #00b09b;
-@define-color    entry_tag_b                           #00ac96;
-@define-color    entry_tag_c                           #00a488;
-@define-color    entry_tag_border                      #005249;
-
-/* buttons */
-@define-color    button_fg_sugg_color                  #f7f7f7;
-@define-color    button_bg_sugg_a                      #008374;
-@define-color    button_bg_sugg_b                      #006e62;
-@define-color    button_bg_sugg_c                      #005a51;
-@define-color    button_bg_sugg_a_hov                  #139d81;
-@define-color    button_bg_sugg_b_hov                  #078877;
-@define-color    button_bg_sugg_c_hov                  #006e62;
-@define-color    button_bg_sugg_a_act                  #005342;
-@define-color    button_bg_sugg_b_act                  #006352;
-@define-color    button_bg_sugg_c_act                  #008374;
-@define-color    button_bg_sugg_flt                    #209b8b;
-@define-color    button_border_sugg                    #00462f;
-
-/* progress bar */
-@define-color    prgbar_bg_a                           #1a8c7c;
-@define-color    prgbar_bg_b                           #1d7361;
-
-/* scale slider */
-@define-color    slider_bg_a                           @theme_accent_color;
-@define-color    slider_bg_b                           @theme_accent_color;
-@define-color    slider_bdr                            @theme_accent_color;
-@define-color    slider_fg_shadow                      @shadow_color;
-@define-color    slider_bg_a_hov                       #119988;
-@define-color    slider_bg_b_hov                       #119988;
-@define-color    slider_bdr_hov                        #119988;
-@define-color    slider_bg_act                         #119988;
-
-/* infobar */
-@define-color    infobar_bg_a                          #008375;
-@define-color    infobar_bg_b                          #005a51;
-@define-color    infobar_border                        #00462f;
-@define-color    infobar_button_fg                     #f7f7f7;
-@define-color    infobar_button_fg_dis                 #00b8aa;
-@define-color    infobar_button_bg_a                   #008374;
-@define-color    infobar_button_bg_b                   #005a51;
-@define-color    infobar_button_bg_act_a               #005a51;
-@define-color    infobar_button_bg_act_b               #008374;
-@define-color    infobar_button_border                 #00462f;
-
-@define-color    terminal_fg                           #3cb5b3;
-
 /* ****************************** C O M M O N   C O L O U R S *********************************** */
 
 /* text widgets and the like base background color */
@@ -128,9 +58,9 @@
 /* entry */
 @define-color    entry_fg_color                        #ffffff;
 @define-color    entry_fg_dis                          #858786;
-@define-color    entry_bg_a                            #445053;
-@define-color    entry_bg_b                            #475157;
-@define-color    entry_bg_c                            #495259;
+@define-color    entry_bg_a                            #505860;
+@define-color    entry_bg_b                            #505860;
+@define-color    entry_bg_c                            #505860;
 @define-color    entry_bg_under_a                      #FFFFFF;
 @define-color    entry_bg_under_b                      #000000;
 @define-color    entry_bg_shadow                       @shadow_color;
@@ -139,9 +69,9 @@
 
 @define-color    titleentry_fg_color                   #ffffff;
 @define-color    titleentry_fg_dis                     #858786;
-@define-color    titleentry_bg_a                       #555758;
+@define-color    titleentry_bg_a                       #575a5b;
 @define-color    titleentry_bg_b                       #575a5b;
-@define-color    titleentry_bg_c                       #606566;
+@define-color    titleentry_bg_c                       #575a5b;
 @define-color    titleentry_bg_under_a                 #FFFFFF;
 @define-color    titleentry_bg_under_b                 #000000;
 @define-color    titleentry_bg_shadow                  @shadow_color;
@@ -273,7 +203,7 @@
 
 /* row */
 @define-color    row_bg                                #202a2f;
-@define-color    row_bg_hover                          #232e33;
+@define-color    row_bg_hover                          #273237;
 @define-color    row_bg_active                         @theme_accent_color;
 @define-color    row_fg_dis                            #566164;
 
@@ -327,6 +257,13 @@
 
 /* ************************** N O T I F I C A T I O N   C O L O U R S *************************** */
 
+@define-color    errorbar_bg_a                         #af261a;
+@define-color    errorbar_bg_b                         #af261a;
+@define-color    errorbar_button_fg_dis                #c0a080;
+@define-color    warnbar_bg_a                          #9e5800;
+@define-color    warnbar_bg_b                          #9e5800;
+@define-color    warnbar_button_fg_dis                 #c0a080;
+
 @define-color    error_text_color                      #cc0000;
 @define-color    error_border_color                    #cc0000;
 @define-color    error_background_color                #cc0000;
@@ -362,4 +299,3 @@ read if you used those and something break with a version upgrade you're on your
 @define-color    success_color                         #00cc66;
 @define-color    warning_color                         #F27835;
 @define-color    error_color                           #FC4138;
-

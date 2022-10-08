@@ -14,7 +14,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************************************* */
-@import url("colours.css");
+@import url("colCommon.css");
+@import url("colAccents.css");
 
 * {
     padding: 0;
@@ -8257,12 +8258,28 @@ infobar.error {
 infobar.info:backdrop,
 infobar.info,
 infobar.question:backdrop,
-infobar.question,
+infobar.question {
+    background-image: linear-gradient(to bottom, @infobar_bg_a, @infobar_bg_b);
+    border-color: @infobar_border;
+}
+.warning,
+infobar.warning {
+    background-image: linear-gradient(to bottom, @warnbar_bg_a, @warnbar_bg_b);
+    text-shadow: 0 1px #1b1f20;
+}
 infobar.warning:backdrop,
-infobar.warning,
+infobar.warning {
+    background-image: linear-gradient(to bottom, @warnbar_bg_a, @warnbar_bg_b);
+    border-color: @infobar_border;
+}
+.error,
+infobar.error {
+    background-image: linear-gradient(to bottom, @errorbar_bg_a, @errorbar_bg_b);
+    text-shadow: 0 1px #1b1f20;
+}
 infobar.error:backdrop,
 infobar.error {
-    background-image: linear-gradient(to bottom, @infobar_bg_a, @infobar_bg_b);
+    background-image: linear-gradient(to bottom, @errorbar_bg_a, @errorbar_bg_b);
     border-color: @infobar_border;
 }
 infobar.info:backdrop label,

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="20"
-   height="20"
-   viewBox="0 0 5.2916667 5.2916667"
-   version="1.1"
    id="svg8"
+   version="1.1"
+   viewBox="0 0 5.2916667 5.2916667"
+   height="20"
+   width="20"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -24,13 +24,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
-     transform="translate(0,-291.70834)">
+     transform="translate(0,-291.70834)"
+     id="layer1">
     <circle
-       style="opacity:1;fill:#16a691;fill-opacity:1;stroke:#3bddc4;stroke-width:0.26458334;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path815"
-       cx="2.6458333"
+       r="2.5065789"
        cy="294.35416"
-       r="2.5065789" />
+       cx="2.6458333"
+       id="path815"
+       style="opacity:1;fill:#5a6978;fill-opacity:1;stroke:#7d8c9b;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>
