@@ -153,6 +153,7 @@
 @define-color    button_bgcirc_c_hov                   #191f23;
 
 @define-color    selected_bg_color                     #646e73;
+@define-color    selected_fg_color                     #ffffff;
 @define-color    selected_border_color                 #96a0aa;
 
 /* menus and menubars */
@@ -174,8 +175,6 @@
 
 /* scale */
 @define-color    scale_trough_b                        @theme_bg_color;
-@define-color    scale_fill_a                          shade(@theme_selected_bg_color, 1.1);
-@define-color    scale_fill_b                          shade(@theme_selected_bg_color, 0.94);
 
 /* notebook */
 @define-color    notebook_bg                           #3c464c;
