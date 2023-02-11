@@ -447,7 +447,8 @@ entry undershoot.right {
 }
 .entry.flat,
 .entry.flat:focus,
-spinbutton.flat:focus:not(.vertical), spinbutton.flat:not(.vertical),
+spinbutton.flat:focus:not(.vertical), 
+spinbutton.flat:not(.vertical),
 entry.flat:focus,
 entry.flat {
     min-height: 0;
@@ -1001,7 +1002,8 @@ button.osd:backdrop {
 .csd popover.background.touch-selection button, 
 .csd popover.background.magnifier button, 
 popover.background.touch-selection button, 
-popover.background.magnifier button, .osd button {
+popover.background.magnifier button, 
+.osd button {
     color: @button_fg_osd;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
@@ -1682,7 +1684,8 @@ filechooser .path-bar.linked > button,
 .linked:not(.vertical) > spinbutton:not(.vertical), 
 .linked:not(.vertical) > entry, 
 .inline-toolbar button, 
-.linked > button, toolbar.inline-toolbar toolbutton > button.flat {
+.linked > button, 
+toolbar.inline-toolbar toolbutton > button.flat {
     border-right-style: none;
     border-radius: 0;
     -gtk-outline-radius: 0; 
@@ -1804,9 +1807,8 @@ modelbutton.flat,
 /* menu buttons */
 modelbutton.flat,
 .menuitem.button.flat {
-    min-height: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
+    min-height: 28px;
+    padding: 2px 5px;
     border-radius: 4px;
     outline-offset: -2px; 
 }
@@ -3164,7 +3166,7 @@ treeview.view.expander:backdrop {
     color: @theme_fg_color_dis;
 }
 treeview.view.progressbar {
-    color: #fff;
+    color: @theme_fg_color;
     border: 1px solid @prgbar_border;
     border-radius: 4px;
     background-image: linear-gradient(to bottom, @prgbar_bg_a, @prgbar_bg_b);
@@ -3290,6 +3292,8 @@ menubar menuitem,
     min-height: 16px;
     padding: 4px 8px;
     background-color: @menu_bg;
+    margin-top: 2px;
+    margin-bottom: 2px; 
 }
 .menu .menuitem:hover,
 .menu > .menuitem:hover,
@@ -3312,6 +3316,8 @@ menubar menuitem:hover,
 .menubar > menuitem:hover {
    border-top-left-radius: 4px;
    border-top-right-radius: 4px;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
 }
 .menu .menuitem:disabled {
   color: @menuitem_fg_dis;
@@ -3334,7 +3340,7 @@ menu,
     padding: 6px 1px;
     background-color: @menu_bg;
     border: 1px solid @borders;
-    border-radius: 7px;
+    border-radius: 4px;
 }
 .csd menu,
 .csd .menu,
@@ -3354,6 +3360,8 @@ menu menuitem,
     min-width: 40px;
     padding: 4px 6px;
     text-shadow: none;
+    margin: 2px;
+    border-radius: 4px;
 }
 menu menuitem label,
 .menu menuitem label {
@@ -3369,8 +3377,8 @@ menu menuitem:hover,
     color: @menuitem_fg_hover; 
     background-color: @menuitem_bg_hover;
     background-image: none;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    /*border-top-left-radius: 0px;
+    border-top-right-radius: 0px;*/
 }
 menu menuitem:disabled,
 .menu menuitem:disabled,
@@ -3426,7 +3434,7 @@ menu > arrow,
 .menu > arrow,
 .context-menu > arrow {
     border-color: transparent;
-    background-color: transparent;
+    background-color: @menu_bdr;
     background-image: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
@@ -3434,7 +3442,6 @@ menu > arrow,
     min-height: 16px;
     min-width: 16px;
     padding: 4px; 
-    background-color: @menu_bdr;
     border-radius: 0;
 }
 menu > arrow.top,
@@ -3531,6 +3538,9 @@ popover.background.magnifier {
 }
 popover.background separator {
     margin: 3px; 
+    border-top: 1px solid @menuitem_separator;
+    background-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 popover.background list separator {
     margin: 0px; 
@@ -6691,10 +6701,10 @@ stacksidebar.sidebar.right list,
 }
 
 separator.sidebar {
-    background-color: @border_normal; 
+    background-color: rgba(100, 128, 138, 0.4);
 }
 separator.sidebar:backdrop {
-    background-color: @border_normal; 
+    background-color: rgba(100, 128, 138, 0.4);
 }
 
 .sidebar .frame {
@@ -12726,7 +12736,7 @@ NemoWindow .sidebar .view {
     color: @sidebar_fg;
 }
 .nemo-window .sidebar separator {
-    background-color: transparent;
+    background-color: rgba(100, 128, 138, 0.4);
 }
 
 .nemo-window .nemo-places-sidebar.frame {
