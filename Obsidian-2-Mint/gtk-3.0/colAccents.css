@@ -7,7 +7,7 @@
 
 /* ****************************** A C C E N T   C O L O U R S *********************************** */
 
-@define-color    theme_accent_color                    #6c954a;
+@define-color    theme_accent_color                    #6aa44e;
 
 @define-color    theme_selected_bg_color               @theme_accent_color;
 @define-color    theme_selected_fg_color               #ffffff;
@@ -18,7 +18,7 @@
 @define-color    sidebar_hovering                      #889977;
 @define-color    sidebar_fg                            #ffffff;
 
-@define-color    theme_fg_color_sel                    #66c580;
+@define-color    theme_fg_color_sel                    #60b010;
 
 /* view */
 @define-color    view_fg_sel                           #4c9900;
@@ -62,8 +62,8 @@
 @define-color    slider_bg_act                         #65cc00;
 
 /* infobar */
-@define-color    infobar_bg_a                          #587f4a;
-@define-color    infobar_bg_b                          #587f4a;
+@define-color    infobar_bg_a                          #5B8D43;
+@define-color    infobar_bg_b                          #5B8D43;
 @define-color    infobar_border                        #3b7014;
 @define-color    infobar_button_fg                     #f7f7f7;
 @define-color    infobar_button_fg_dis                 #7fa66f;
