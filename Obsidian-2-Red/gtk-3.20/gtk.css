@@ -306,8 +306,8 @@ separator {
     min-height: 1px;
 }
 
-headerbar separator,
-.titlebar separator {
+headerbar > separator,
+.titlebar > separator {
     background: image(@header_separator);
     min-width: 1px;
     min-height: 1px;
@@ -315,9 +315,9 @@ headerbar separator,
 
 menu separator,
 .menuitem separator {
-    border-top: 1px solid @menuitem_separator;
-    background-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid @menuitem_separator_a;
+    background-color: @menuitem_separator_b;
+    background: @menuitem_separator_b;
 }
 
 /****************
@@ -2908,14 +2908,12 @@ headerbar .path-bar {
 .path-bar-box label,
 box.nautilus-path-bar > scrolledwindow label {
     opacity: 0.0;
-    width: 0px;
     margin: 0px;
     padding: 0px;
 }
 .path-bar-box button label,
 box.nautilus-path-bar > scrolledwindow button label {
     opacity: 1.0;
-    width: unset;
     margin: unset;
     padding: unset;
 }
@@ -3084,7 +3082,8 @@ box.nautilus-path-bar > scrolledwindow > button {
 /**************
  * Tree Views *
  **************/
-treeview.view {
+treeview.view,
+treeview.view:backdrop {
     border-left-color: @theme_bg_color;
     border-top-color: @theme_bg_color;
     color: @theme_fg_color;
@@ -3360,7 +3359,7 @@ menu menuitem,
     min-width: 40px;
     padding: 4px 6px;
     text-shadow: none;
-    margin: 2px;
+    margin: 0px;
     border-radius: 4px;
 }
 menu menuitem label,
@@ -3494,10 +3493,10 @@ menuitem radio:dir(rtl) {
 
 menuitem separator,
 .menuitem .separator {
-    border-top: 1px solid @menuitem_separator;
-    background-color: rgba(255, 255, 255, 0.2);
     margin: 5px;
-    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid @menuitem_separator_a;
+    background-color: @menuitem_separator_b;
+    background: @menuitem_separator_b;
 }
 
 
@@ -3538,9 +3537,9 @@ popover.background.magnifier {
 }
 popover.background separator {
     margin: 3px; 
-    border-top: 1px solid @menuitem_separator;
-    background-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid @popover_separator_a;
+    background-color: @popover_separator_b;
+    background: @popover_separator_b;
 }
 popover.background list separator {
     margin: 0px; 
@@ -6711,7 +6710,10 @@ separator.sidebar:backdrop {
     background-color: @sidebar_bg;
 }
 
+
+
 .sidebar row {
+    color: @sidebar_fg;
     background-color: transparent;
 }
 
@@ -6726,12 +6728,18 @@ row.activatable:not(:selected):hover {
 
 .sidebar label,
 .sidebar:backdrop label,
-.sidebar row.activatable:not(:selected):backdrop label {
+.sidebar row.activatable:not(:selected) label,
+.sidebar row.activatable:not(:selected):backdrop label,
+.sidebar treeview.view,
+.sidebar treeview.view:backdrop,
+.sidebar treeview.view:hover,
+.sidebar treeview.view:hover:backdrop {
     color: @sidebar_fg;
 }
 .sidebar list,
 .sidebar .list,
 .sidebar .list-row,
+.sidebar row.activatable:not(:selected),
 .sidebar list:backdrop,
 .sidebar .list:backdrop,
 .sidebar .list-row:backdrop,
@@ -6753,6 +6761,7 @@ row.activatable:not(:selected):hover {
 .sidebar-item {
     background-color: @sidebar_bg;
     padding: 0px 0px;
+    color: @sidebar_fg;
 }
 
 .sidebar-item > .label {
@@ -6974,6 +6983,7 @@ placessidebar > viewport.frame {
 }
 
 placessidebar row {
+    color: @sidebar_fg;
     min-height: 36px;
     padding: 0px; 
 }
@@ -7723,11 +7733,6 @@ list.tweak-categories separator {
 }
 .nautilus-window:backdrop {
     background-color: @view_bg;
-}
-.nemo-window .view:backdrop, 
-.nemo-window iconview:backdrop, 
-.nautilus-window *scrolledwindow:backdrop {
-    opacity: 0.9; 
 }
 /*.nautilus-window infobar {
     background-color: #e6e6e6; 
@@ -8742,12 +8747,12 @@ row.activatable:not(:selected):backdrop label {
     color: @theme_fg_color;
 }
 
-/*headerbar,
+headerbar,
 .titlebar {
     color: @header_fg_color;
-    border-color: @separator;
+    border-color: @header_separator;
     background-image: linear-gradient(to bottom, @header_bg_a, @header_bg_b)
-}*/
+}
 headerbar .title, 
 headerbar label.title,
 .titlebar .title,
@@ -12679,6 +12684,8 @@ NemoWindow .sidebar .cell {
   padding: 0px; 
 }
 
+.nemo-window {
+}
 NemoWindow .sidebar treeview .view,
 NemoWindow .sidebar GtkTreeView.view,
 .nemo-window .sidebar treeview .view,
@@ -13084,7 +13091,5 @@ label.nemo-canvas-item.separator,
 .nemo-list-dim-label {
     color: @theme_fg_color_sub;
 }
-
-
 
 
