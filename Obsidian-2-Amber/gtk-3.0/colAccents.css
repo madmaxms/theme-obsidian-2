@@ -33,6 +33,10 @@
 @define-color    entry_tag_c                           #b35500;
 @define-color    entry_tag_border                      #683307;
 
+/* scale */
+@define-color    scale_fill_a                          shade(@theme_selected_bg_color, 1.1);
+@define-color    scale_fill_b                          shade(@theme_selected_bg_color, 0.94);
+
 /* buttons */
 @define-color    button_fg_sugg_color                  #f7f7f7;
 @define-color    button_bg_sugg_a                      #d46922;
@@ -50,10 +54,6 @@
 /* progress bar */
 @define-color    prgbar_bg_a                           #b46d16;
 @define-color    prgbar_bg_b                           #ae6019;
-@define-color    prgbar_trough                         #101010;
-@define-color    prgbar_trough_a                       #202020;
-@define-color    prgbar_trough_b                       #303030;
-@define-color    prgbar_border                         #303030;
 
 /* scale slider */
 @define-color    slider_bg_a                           @theme_accent_color;
@@ -78,4 +78,5 @@
 @define-color    infobar_button_border                 #683307;
 
 @define-color    terminal_fg                           #729FCF;
+
 
