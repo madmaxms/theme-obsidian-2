@@ -4717,8 +4717,8 @@ menu separator,
 .menuitem .separator,
 .menu .separator {
     -GtkMenuItem-horizontal-padding: 0;
-    border-top: 1px solid @menuitem_separator;
-    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid @menuitem_separator_a;
+    background-color: @menuitem_separator_b;
     margin: 5px;
 }
 
