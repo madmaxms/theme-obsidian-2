@@ -33,6 +33,10 @@
 @define-color    entry_tag_c                           #3548a9;
 @define-color    entry_tag_border                      #26306e;
 
+/* scale */
+@define-color    scale_fill_a                          shade(@theme_selected_bg_color, 1.1);
+@define-color    scale_fill_b                          shade(@theme_selected_bg_color, 0.94);
+
 /* buttons */
 @define-color    button_fg_sugg_color                  #f7f7f7;
 @define-color    button_bg_sugg_a                      #4b61dd;
@@ -74,4 +78,5 @@
 @define-color    infobar_button_border                 #26306e;
 
 @define-color    terminal_fg                           #729FCF;
+
 
