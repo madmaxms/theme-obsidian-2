@@ -2016,20 +2016,23 @@ StScrollBar StButton#vhandle:hover
 
 .grouped-window-list-item-label {
     font-weight: bold;
-   width: 15em;
+    width: 15em;
     min-width: 5px; 
 }
 
 .grouped-window-list-item-box {
     font-weight: bold;
     background-image: none;
-    padding-top: 0;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0px 8px 0px 8px;
     transition-duration: 100;
     color: rgba(255, 255, 255, 0.3);
     border-radius: 3px; 
     border: 1px solid transparent;
+}
+
+.grouped-window-list-item-box StIcon {
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .grouped-window-list-item-box.top StLabel, 
@@ -2052,7 +2055,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .grouped-window-list-item-box.left StBin {
-    padding-left: 1px; 
+    padding-left: 0; 
 }
 
 .grouped-window-list-item-box:active, 
@@ -2145,9 +2148,6 @@ StScrollBar StButton#vhandle:hover
     width: 1px;
     background: rgba(255, 255, 255, 0.2); 
 }
-
-
-
 
 
 /* ===================================================================

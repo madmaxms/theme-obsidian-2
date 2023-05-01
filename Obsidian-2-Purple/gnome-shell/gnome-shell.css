@@ -4705,14 +4705,17 @@ notification-close:active {
     background-color: rgba(92,26,154, 0.8); /* coloraccent */
     border: 1px solid #821DA1; /* coloraccent */
 }
-.quick-menu-toggle .quick-toggle-arrow {
+.quick-menu-toggle .quick-toggle-arrow,
+.quick-menu .quick-toggle-arrow {
     background-color: rgba(216, 222, 233, 0.1);
     padding: 6px 10.5px; 
 }
-.quick-menu-toggle .quick-toggle-arrow:ltr {
+.quick-menu-toggle .quick-toggle-arrow:ltr,
+.quick-menu .quick-toggle-arrow:ltr {
     border-radius: 0 5px 5px 0; 
 }
-.quick-menu-toggle .quick-toggle-arrow:rtl {
+.quick-menu-toggle .quick-toggle-arrow:rtl,
+.quick-menu .quick-toggle-arrow:rtl {
     border-radius: 5px 0 0 5px; 
 }
 
@@ -4746,6 +4749,7 @@ notification-close:active {
 
 .quick-toggle-menu {
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0 9999px alpha(#000, 0.5);
     border: 1px solid rgba(100,120,130, 0.3);
     border-radius: 8px;
     padding: 12px;
@@ -4763,9 +4767,11 @@ notification-close:active {
     border-radius: 6px;
     padding: 9px;
     background-color: rgba(200,225,255, 0.2);
+    box-shadow: inset 0 0 0 9999px rgba(200,225,255, 0.2);
 }
 .quick-toggle-menu .header .icon.active {
     background-color: #7535BC; /* coloraccent */ 
+    box-shadow: inset 0 0 0 9999px #7535BC; /* coloraccent */ 
 }
 
 .openweather-current-summarybox,
@@ -5038,6 +5044,137 @@ notification-close:active {
     transition-duration: 0s; 
 }
 
-
+/* GNOME 44 */
+.quick-toggle:checked{
+    transition-duration:100ms;
+    color:#ffffff
+}
+.quick-toggle:checked:focus{
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,0.6)!important
+}
+.quick-toggle:checked:hover,
+.quick-toggle:checked:focus,
+.quick-toggle:checked:active {
+    background-color: rgba(92,26,154, 0.8); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+    color:#ffffff;
+}
+.quick-toggle:checked:insensitive{
+    transition-duration:100ms;
+    color:rgba(255,255,255,0.5);
+    background-color: rgba(92,26,154, 0.6); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+}
+.quick-toggle > StBoxLayout { 
+    spacing: 9px;
+}
+.quick-toggle.button,
+.quick-toggle.icon-button,
+.quick-toggle.login-dialog-button.cancel-button,
+.quick-toggle.login-dialog-button.switch-user-button,
+.quick-toggle.login-dialog-button.login-dialog-session-list-button,
+.background-app-item .quick-toggle.close-button{
+    padding:0
+}/*
+.quick-toggle > StBoxLayout{
+    padding:0 12px
+}
+.quick-toggle:ltr > StBoxLayout{
+    padding-left: 15px
+}
+.quick-toggle:rtl > StBoxLayout {
+    padding-right: 15px
+}*/
+.quick-toggle .quick-toggle-title{
+    font-weight:bold
+}
+.quick-toggle StBoxLayout > .quick-toggle-subtitle{
+    font-weight:normal;
+    font-size:12px
+}
+.quick-toggle .quick-toggle-icon{
+    icon-size:1.09em
+}
+.quick-menu-toggle .quick-toggle{
+    min-width:auto;
+    max-width:auto
+}
+.quick-menu-toggle .quick-toggle:ltr{
+    border-radius:5px 0 0 5px;
+}/*
+.quick-menu-toggle .quick-toggle:ltr > StBoxLayout{
+    padding-right:9px
+}*/
+.quick-menu-toggle .quick-toggle:rtl{
+    border-radius:0 5px 5px 0;
+}
+.quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
+    padding-left:9px
+}
+.quick-menu-toggle .quick-toggle:ltr:last-child{
+    border-radius:5px
+}
+.quick-menu-toggle .quick-toggle:rtl:last-child{
+    border-radius:5px
+}
+.quick-menu-toggle .quick-toggle-arrow{
+    padding:6px 10.5px;
+    border-width:0px;
+    background-color: rgba(200,225,255, 0.11);
+    border: 1px solid rgba(200,225,255, 0.15);
+}
+.quick-menu-toggle .quick-toggle-arrow:hover,
+.quick-menu-toggle .quick-toggle-arrow:focus {
+    background-color: rgba(200,225,255, 0.15);
+}
+.quick-menu-toggle .quick-toggle-arrow:checked{
+    transition-duration:100ms;
+    background: none;
+    background-color: rgba(92,26,154, 0.6); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+    color:#ffffff;
+}
+.quick-menu-toggle .quick-toggle-arrow:checked:focus {
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,0.6)!important
+}
+.quick-menu-toggle .quick-toggle-arrow:checked:hover,
+.quick-menu-toggle .quick-toggle-arrow:checked:focus {
+    background-color: rgba(92,26,154, 0.8); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+    color:#ffffff;
+}
+.quick-menu-toggle .quick-toggle-arrow:checked:insensitive {
+    transition-duration:100ms;
+    color:rgba(255,255,255,0.5);
+    background-color: rgba(92,26,154, 0.8); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+}
+.quick-menu-toggle .quick-toggle-arrow:ltr{ 
+    border-radius:0 5px 5px 0; 
+    border-left-width:1px
+}
+.quick-menu-toggle .quick-toggle-arrow:rtl { 
+    border-radius:5px 0 0 5px; 
+    border-right-width:1px
+}
+.quick-toggle-menu .popup-menu-item>StIcon { 
+    -st-icon-style:symbolic;
+}
+.quick-toggle-menu .header { 
+    spacing-rows:3px;
+    spacing-columns:12px;
+    padding-bottom:12px
+}
+.quick-toggle-menu .header .icon { 
+    icon-size:1.635em;
+    border-radius:5px;
+    padding:9px;
+    background-color:rgba(255,255,255,0.2)
+}
+.quick-toggle-menu .header .icon.active { 
+    background-color: rgba(92,26,154, 0.6); /* coloraccent */
+    border: 1px solid #821DA1; /* coloraccent */
+    color:#ffffff;
+}
 
 
