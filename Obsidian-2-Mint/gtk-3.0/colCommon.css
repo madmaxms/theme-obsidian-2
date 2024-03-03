@@ -157,7 +157,6 @@
 
 /* menus and menubars */
 @define-color    menu_bg                               @popover;
-@define-color    menu_bg_hover                         #565E63;
 @define-color    menu_bdr                              #000000;
 @define-color    menu_arr                              #373b3d;
 @define-color    menu_arr_dis                          #282d2f;
@@ -169,6 +168,8 @@
 @define-color    menuitem_separator_b                  #60686D;
 @define-color    headermenu_bg_hover                   @menu_bg_hover;
 @define-color    popover                               #384248;
+@define-color    popover_fg                            #eeeeec;
+@define-color    popover_bg_hover                      #565E63;
 @define-color    popover_separator_a                   #1b1f20;
 @define-color    popover_separator_b                   #60686D;
 
@@ -205,7 +206,7 @@
 
 /* row */
 @define-color    row_bg                                #202a2f;
-@define-color    row_bg_hover                          #273237;
+@define-color    row_bg_hover                          #232f34;
 @define-color    row_bg_active                         @theme_accent_color;
 @define-color    row_fg                                @theme_fg_color;
 @define-color    row_fg_dis                            #566164;
