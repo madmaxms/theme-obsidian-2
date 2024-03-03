@@ -253,11 +253,11 @@ StScrollBar StButton#vhandle:hover
     min-width: 15em;
     border-right-width: 5px;
     border-left-width: 5px;
-    color: #0066CC;  /* coloraccent */
+    color: #0070C0;  /* coloraccent */
     -slider-height: 0.3em;
     -slider-background-color:#000000;
     -slider-border-color:#000000;
-    -slider-active-background-color: #0066CC; /* coloraccent */
+    -slider-active-background-color: #0070C0; /* coloraccent */
     -slider-active-border-color:transparent;
     -slider-border-width: 1px;
     -slider-handle-radius:6px;
@@ -824,7 +824,7 @@ StScrollBar StButton#vhandle:hover
 .calendar-day-base:selected, 
 .calendar-day-base:selected:hover {
     color:#ffffff;
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     border-color:transparent;
 }
 
@@ -877,21 +877,21 @@ StScrollBar StButton#vhandle:hover
 }
 
 .calendar-day-with-events:hover { 
-    background-color:#0066CC; /* coloraccent */
+    background-color:#0070C0; /* coloraccent */
 }
 
 .calendar-day-with-events:active, 
 .calendar-day-with-events:active:hover, 
 .calendar-day-with-events:selected, 
 .calendar-day-with-events:selected:hover { 
-    background-color:#0066CC; /* coloraccent */
+    background-color:#0070C0; /* coloraccent */
     border-color: transparent; 
 }
 
 .calendar-today, 
 .calendar-today.calendar-day-with-events { 
     border: none; 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: #FFFFFF; 
 }
 
@@ -899,7 +899,7 @@ StScrollBar StButton#vhandle:hover
 .calendar-today:focus, 
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: #FFFFFF;
 }
 
@@ -907,7 +907,7 @@ StScrollBar StButton#vhandle:hover
 .calendar-today:selected:hover, 
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
-    background-color: #0066CC; /* coloraccent */ 
+    background-color: #0070C0; /* coloraccent */ 
     color: #FFFFFF;
 }
 
@@ -997,7 +997,7 @@ StScrollBar StButton#vhandle:hover
   color: #92b372; 
 }
 .calendar-event-button:hover {
-  background-color: #0066CC;  /* coloraccent */
+  background-color: #0070C0;  /* coloraccent */
 }
 .calendar-event-button:hover .calendar-event-time-past,
 .calendar-event-button:hover .calendar-event-time-present,
@@ -1755,7 +1755,7 @@ StScrollBar StButton#vhandle:hover
     padding-bottom: 10px;
     border-radius: 4px;
     border:0px;
-    margin: 0px 2px 0px 2px;
+    margin: 1px 2px 1px 2px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
@@ -1773,10 +1773,61 @@ StScrollBar StButton#vhandle:hover
     
 }
 
+.menu-favorites-box StScrollBar StBin,
+.menu-favorites-box StScrollBar  {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+}
+.menu-favorites-box StScrollBar StButton#vhandle, 
+.menu-favorites-box StScrollBar StButton#hhandle {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 0px;
+}
+.menu-favorites-box StScrollBar StButton#vhandle:hover, 
+.menu-favorites-box StScrollBar StButton#hhandle:hover {
+      background-color: transparent; 
+}
+.menu-favorites-box StScrollBar StButton#vhandle:active,
+.menu-favorites-box StScrollBar StButton#hhandle:active {
+      background-color: transparent; 
+}
+
+
 .menu-places-box {
   margin: auto;
   padding: 10px;
   border: 0px solid #666;
+}
+
+.menu-places-box StScrollBar StBin,
+.menu-places-box StScrollBar  {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+}
+.menu-places-box StScrollBar StButton#vhandle, 
+.menu-places-box StScrollBar StButton#hhandle {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 0px;
+}
+.menu-places-box StScrollBar StButton#vhandle:hover, 
+.menu-places-box StScrollBar StButton#hhandle:hover {
+      background-color: transparent; 
+}
+.menu-places-box StScrollBar StButton#vhandle:active,
+.menu-places-box StScrollBar StButton#hhandle:active {
+      background-color: transparent; 
 }
 
 .menu-places-button {
@@ -1790,6 +1841,38 @@ StScrollBar StButton#vhandle:hover
   padding: 10px 30px 10px 30px; 
 }
 
+.menu-categories-box StScrollBar StBin,
+.menu-categories-box StScrollBar  {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 0px;
+}
+.menu-categories-box StScrollBar StButton#vhandle, 
+.menu-categories-box StScrollBar StButton#hhandle {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 0px;
+}
+.menu-categories-box StScrollBar StButton#vhandle:hover, 
+.menu-categories-box StScrollBar StButton#hhandle:hover {
+      background-color: transparent; 
+}
+.menu-categories-box StScrollBar StButton#vhandle:active,
+.menu-categories-box StScrollBar StButton#hhandle:active {
+      background-color: transparent; 
+}
+
+.menu-categories-button {
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+}
+
 .menu-applications-inner-box, 
 .menu-applications-outer-box {
   padding: 10px 10px 0 10px; 
@@ -1797,10 +1880,10 @@ StScrollBar StButton#vhandle:hover
 
 
 .menu-application-button {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     max-width: 10px;
     border: 1px solid transparent;
 }
@@ -1811,10 +1894,10 @@ StScrollBar StButton#vhandle:hover
 }
 
 .menu-application-button-selected {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     color: white;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(100,120,130,0.5);
@@ -1837,27 +1920,27 @@ StScrollBar StButton#vhandle:hover
 }
 
 .menu-category-button {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     border: 1px solid transparent;
 }
 
 .menu-category-button-greyed {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     color: rgba(150,180,205, 0.4);
     font-style: italic;
 }
 
 .menu-category-button-selected {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     color: white;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(100,120,130,0.5);
@@ -2131,7 +2214,7 @@ StScrollBar StButton#vhandle:hover
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
     padding: 8px;
-    border: 1px solid #0066CC; /* coloraccent */ 
+    border: 1px solid #0070C0; /* coloraccent */ 
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
@@ -2196,8 +2279,8 @@ StScrollBar StButton#vhandle:hover
     -slider-height: 0.5em;
     -slider-background-color: #000000;
     -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: #0066CC; /* coloraccent */
-    -slider-active-border-color: #0066CC; /* coloraccent */
+    -slider-active-background-color: #0070C0; /* coloraccent */
+    -slider-active-border-color: #0070C0; /* coloraccent */
     -slider-border-width: 0px;
     -slider-handle-radius: 0px;
 }
@@ -2416,7 +2499,7 @@ StScrollBar StButton#vhandle:hover
 .applet-box:checked,
 .applet-box:hover {
     color: #fff;
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
 }
 
 .applet-box:highlight {

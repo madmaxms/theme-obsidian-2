@@ -139,7 +139,7 @@ StEntry {
     border-radius: 6px; 
     border-width: 0; 
     color: #ccddee; 
-    selection-background-color: #0066CC; /* coloraccent */ 
+    selection-background-color: #0070C0; /* coloraccent */ 
     selected-color: #FFFFFF; 
     transition-duration: 0s; 
 }
@@ -892,7 +892,7 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StEntry, 
 .popup-menu StEntry:insensitive { 
-    selection-background-color: #0066CC; /* coloraccent */
+    selection-background-color: #0070C0; /* coloraccent */
     selected-color: #FFFFFF; 
     border: 2px solid;
     border-radius: 3px;
@@ -917,13 +917,13 @@ StScrollBar StButton#hhandle:active {
 
 .popup-menu StScrollBar StButton#vhandle:hover, 
 .popup-menu StScrollBar StButton#hhandle:hover { 
-    background-color:#0066CC; /* coloraccent */
+    background-color:#0070C0; /* coloraccent */
     color:#FFF;
 }
 
 .popup-menu StScrollBar StButton#vhandle:active, 
 .popup-menu StScrollBar StButton#hhandle:active { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
 }
 
 .popup-menu-arrow { 
@@ -1305,7 +1305,7 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button:focus,
 #panel .panel-button:checked { 
     color:#ffffff;
-    background-color:#0066CC; /* coloraccent */
+    background-color:#0070C0; /* coloraccent */
     box-shadow: none;
     border-radius: 0px;
     padding: 0px;
@@ -1568,7 +1568,7 @@ StScrollBar StButton#hhandle:active {
     font-size:9pt;
     text-align:center;
     width:30px;
-    height:24px;
+    min-height:20px;
     border: 1px solid #41596e;
     background-color: #394453;
     padding:3px;
@@ -1576,6 +1576,7 @@ StScrollBar StButton#hhandle:active {
     border-radius:0px;
     color:#a0b9d2;
     text-decoration:none;
+    border-radius: 0px;
 }
 
 .calendar-day-base:hover, 
@@ -1593,10 +1594,11 @@ StScrollBar StButton#hhandle:active {
     box-shadow: none;
 }
 
-.calendar-day-base.calendar-day-heading { 
-    font-size: 9pt; 
-    width:30px; 
-    height: 12px; 
+.calendar-day-base.calendar-day-heading,
+.calendar-day.calendar-day-heading { 
+    font-size: 8pt; 
+    width: 30px; 
+    min-height:20px;
     margin-top: 0.8em; 
     padding: 3px; 
     border: 1px solid #41596e;
@@ -1604,6 +1606,7 @@ StScrollBar StButton#hhandle:active {
     color: #a0b9d2; 
     font-weight: normal; 
     text-align: center; 
+    border-radius: 0px;
 }
 
 .calendar-week-number { 
@@ -1621,9 +1624,12 @@ StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day { 
-    border-width: 0px;
+    border: 1px solid rgba(0,0,0,0.6);
     background-color: rgba(0,0,0,0.6);
     font-weight: bold;
+    border-radius: 0px;
+    height: 12px;
+    margin: 1px;
 }
 
 .calendar-day-top { 
@@ -1647,14 +1653,14 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-with-events:active:hover, 
 .calendar-day-with-events:selected, 
 .calendar-day-with-events:selected:hover { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     border-color: transparent; 
 }
 
 .calendar-today, 
 .calendar-today.calendar-day-with-events { 
-    border: none; 
-    background-color: #0066CC; /* coloraccent */
+    border: 1px solid #0070C0; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: #FFFFFF; 
 }
 
@@ -1662,18 +1668,23 @@ StScrollBar StButton#hhandle:active {
 .calendar-today:focus, 
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
 }
 
 .calendar-today:selected, 
 .calendar-today:selected:hover, 
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
-    background-color: #0066CC; /* coloraccent */ 
+    background-color: #0070C0; /* coloraccent */ 
 }
-
-.calendar-nonwork-day{
+.calendar-day.calendar-weekend,
+.calendar-nonwork-day {
     background-color: rgba(41,51,59,1.0);
+    border: 1px solid rgba(41,51,59,1.0);
+}
+.calendar-day.calendar-weekend:hover,
+.calendar-nonwork-day:hover { 
+    background-color:rgba(0,80,160,0.6); /* coloraccent */
 }
 
 .calendar-other-month-day { 
@@ -1740,7 +1751,7 @@ StScrollBar StButton#hhandle:active {
 }
 .message:hover,
 .message:focus{
-    border:1px solid #0066CC; /* coloraccent */
+    border:1px solid #0070C0; /* coloraccent */
 }
 .message-icon-bin{
     padding:10px 0px 10px 10px
@@ -2019,14 +2030,14 @@ StScrollBar StButton#hhandle:active {
 
 .system-menu-action:hover, 
 .system-menu-action:focus { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: #eeeeec;
-    border-color:#0066CC; /* coloraccent */
+    border-color:#0070C0; /* coloraccent */
     padding: 13px; 
 }
 
 .system-menu-action:active { 
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: #ffffff; 
 }
 
@@ -2306,7 +2317,7 @@ notification-close:active {
 }
 
 .nm-dialog-item:selected { 
-    background-color:#0066CC; /* coloraccent */
+    background-color:#0070C0; /* coloraccent */
     color: #88EEFF; /* coloraccent */
 }
 
@@ -4323,7 +4334,7 @@ notification-close:active {
 }
 
 .lg-dialog StEntry { 
-    selection-background-color: #0066CC; /* coloraccent */
+    selection-background-color: #0070C0; /* coloraccent */
     selected-color: #FFFFFF; 
     border: 2px solid;
     border-radius: 3px;
@@ -4770,8 +4781,8 @@ notification-close:active {
     box-shadow: inset 0 0 0 9999px rgba(200,225,255, 0.2);
 }
 .quick-toggle-menu .header .icon.active {
-    background-color: #0066CC; /* coloraccent */ 
-    box-shadow: inset 0 0 0 9999px #0066CC; /* coloraccent */ 
+    background-color: #0070C0; /* coloraccent */ 
+    box-shadow: inset 0 0 0 9999px #0070C0; /* coloraccent */ 
 }
 
 .openweather-current-summarybox,
@@ -4911,7 +4922,7 @@ notification-close:active {
 }
 .screenshot-ui-shot-cast-button:active,
 .screenshot-ui-shot-cast-button:checked {
-    background-color: #0066CC; /* coloraccent */
+    background-color: #0070C0; /* coloraccent */
     color: white; 
 }
 .screenshot-ui-shot-cast-button:insensitive {
@@ -4986,7 +4997,7 @@ notification-close:active {
 }
 
 .screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
-    border-color: #0066CC; /* coloraccent */ 
+    border-color: #0070C0; /* coloraccent */ 
 }
 
 .screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {

@@ -1814,7 +1814,7 @@ modelbutton.flat,
 }
 modelbutton.flat:hover,
 .menuitem.button.flat:hover {
-    background-color: @menu_bg_hover;
+    background-color: @popover_bg_hover;
     box-shadow: none;
 }
 
@@ -3289,10 +3289,9 @@ menubar menuitem,
 .menubar > menuitem {
     color: @menuitem_fg_normal;
     min-height: 16px;
-    padding: 4px 8px;
+    padding: 4px 6px;
     background-color: @menu_bg;
-    margin-top: 2px;
-    margin-bottom: 2px; 
+    margin: 2px;
 }
 .menu .menuitem:hover,
 .menu > .menuitem:hover,
@@ -3357,9 +3356,9 @@ menu menuitem,
     color: @menuitem_fg_normal;
     min-height: 16px;
     min-width: 40px;
-    padding: 4px 6px;
+    padding: 4px 4px;
     text-shadow: none;
-    margin: 0px;
+    margin: 2px 4px;
     border-radius: 4px;
 }
 menu menuitem label,
@@ -3506,6 +3505,7 @@ menuitem separator,
 popover.background {
     padding: 2px;
     border-radius: 5px;
+    background: none;
     background-color: @popover;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid @borders;
@@ -3560,7 +3560,7 @@ popover button.flat:active:hover,
 popover button.flat:checked:hover {
     border: 1px solid transparent;
     color: @theme_fg_color;
-    background-color: @theme_bg_color_hov;
+    background-color: @popover_bg_hover;
     background-image: none;
     color: @theme_fg_color;
     box-shadow: none;
@@ -3570,7 +3570,7 @@ popover button.flat:backdrop:active,
 popover button.flat:backdrop:active:hover,
 popover button.flat:backdrop:checked:hover {
     border: 1px solid transparent;
-    background-color: @theme_bg_color_hov;
+    background-color: @popover_bg_hover;
     background-image: none;
     color: @theme_fg_color;;
     box-shadow: none;
@@ -4884,12 +4884,12 @@ radio {
 /***************************************************************************************************
  * GtkScale *
  **************************************************************************************************/
-
+/*
 .scale {
     -GtkRange-slider-width: 16;
     -GtkScale-slider-length: 16;
     -GtkRange-trough-border: 2;
-}
+}*/
 /*
 .scale.slider {
     border: 1px solid transparent;
@@ -12684,8 +12684,6 @@ NemoWindow .sidebar .cell {
   padding: 0px; 
 }
 
-.nemo-window {
-}
 NemoWindow .sidebar treeview .view,
 NemoWindow .sidebar GtkTreeView.view,
 .nemo-window .sidebar treeview .view,
