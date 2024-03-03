@@ -15,7 +15,7 @@
 
 /* sidebar colours */
 @define-color    sidebar_bg                            #704100;
-@define-color    sidebar_hovering                      #808080;
+@define-color    sidebar_hovering                      #a08060;
 @define-color    sidebar_fg                            #ffffff;
 
 @define-color    theme_fg_color_sel                    #dc6800;
