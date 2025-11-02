@@ -77,6 +77,12 @@
 @define-color    infobar_button_bg_act_b               #c06500;
 @define-color    infobar_button_border                 #683307;
 
+
+@define-color    menuitem_bg_hover                     @theme_accent_color;
+@define-color    notebook_border_sel                   @theme_accent_color;
+@define-color    label_bg_active                       @theme_accent_color;
+@define-color    row_bg_active                         @theme_accent_color;
+
 @define-color    terminal_fg                           #729FCF;
 
 
