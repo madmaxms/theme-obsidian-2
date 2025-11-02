@@ -40,6 +40,7 @@ stage {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A);
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -52,6 +53,7 @@ stage {
     background-gradient-direction:vertical;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .button:focus { 
@@ -59,6 +61,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */ 
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .button:active { 
@@ -66,6 +69,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .button:insensitive { 
@@ -73,6 +77,7 @@ stage {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #283032);
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -87,6 +92,7 @@ stage {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #283032);
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -98,6 +104,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .modal-dialog-linked-button:focus { 
@@ -105,6 +112,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */ 
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .modal-dialog-linked-button:focus:hover { 
@@ -112,6 +120,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */ 
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .modal-dialog-linked-button:active { 
@@ -119,6 +128,7 @@ stage {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .modal-dialog-linked-button:insensitive { 
@@ -126,6 +136,7 @@ stage {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #283032); 
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -239,7 +250,11 @@ StScrollBar StButton#hhandle:active {
 .check-box StBoxLayout { 
     spacing: 0.8em; 
 }
-
+.check-box StIcon {
+    background: none;
+    background-color: transparent;
+    color: transparent;
+}
 .check-box StBin { 
     width: 20px; 
     height: 20px; 
@@ -262,49 +277,29 @@ StScrollBar StButton#hhandle:active {
     color: #ccddee; 
 }
 
-.toggle-switch { 
-   /* *** deactivated since GOME 3.36 
-    width: 50px; 
-    height: 20px; 
-    background-size: contain;*/ 
-    background-image: url("assets/switch-off.svg"); 
+.toggle-switch * { 
+    background: none;
+    border-radius: 0px;
 }
-
-.toggle-switch-us { 
-    background-image: url("assets/switch-off.svg");  
+.toggle-switch {
+    width: 50px;
+    height: 20px;
+    background: none;
+    background-size: contain;
+    border-radius: 0px;
 }
-
-.toggle-switch-us:checked { 
-    background-image: url("assets/switch-on.svg");  
-}
-
-.toggle-switch-intl { 
-    background-image: url("assets/switch-off.svg");  
-}
-
-.toggle-switch-intl:checked { 
-    background-image: url("assets/switch-on.svg");  
-}
-.toggle-switch:checked {
-  background-image: url("assets/switch-on.svg");
-}
-
-.popup-menu-item.selected .toggle-switch {
-  background-image: url("assets/switch-off.svg");
-}
-
+.toggle-switch:checked,
+.toggle-switch-us:checked,
+.toggle-switch-intl:checked,
 .popup-menu-item.selected .toggle-switch:checked {
   background-image: url("assets/switch-on.svg");
 }
-
-.toggle-switch-us {
+.toggle-switch,
+.toggle-switch-us,
+.toggle-switch-intl,
+.popup-menu-item.selected .toggle-switch {
   background-image: url("assets/switch-off.svg");
 }
-
-.toggle-switch-us:checked {
-  background-image: url("assets/switch-on.svg");
-}
-
 
 .shell-link { 
     border-radius: 2px; 
@@ -384,8 +379,13 @@ StScrollBar StButton#hhandle:active {
     border-radius: 6px;
     border: 1px solid #667788; 
 }
-
-.end-session-dialog .modal-dialog-linked-button {
+.modal-dialog-button * {
+    color:#ff0;
+    outline-color: rgba(255, 0, 255, 0.8);
+    border-color: #f00;
+}
+.end-session-dialog .modal-dialog-linked-button,
+.end-session-dialog .modal-dialog-button {
     border-radius: 5px;
     border:1px solid #080808;
     padding:10px 40px;
@@ -395,25 +395,32 @@ StScrollBar StButton#hhandle:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
     transition-duration:200ms;
+    outline-color: rgba(255, 0, 255, 0.8);
 }
-.end-session-dialog .modal-dialog-linked-button:active {
+.end-session-dialog .modal-dialog-linked-button:active,
+.end-session-dialog .modal-dialog-button:active { 
     border:1px solid #080808;
     border-radius: 5px;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
 }
-.end-session-dialog .modal-dialog-linked-button:hover {
+.end-session-dialog .modal-dialog-linked-button:hover,
+.end-session-dialog .modal-dialog-button:hover {
     border:1px solid #080808;
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
-.end-session-dialog .modal-dialog-linked-button:last-child {
+.end-session-dialog .modal-dialog-linked-button:last-child,
+.end-session-dialog .modal-dialog-button:last-child  {
     border-radius:4px;
     border:1px solid #5f0808;
     padding:10px 40px;
@@ -421,25 +428,32 @@ StScrollBar StButton#hhandle:active {
     background:none;
     background-color:none;
     background-gradient-direction:vertical;
-    background-gradient-start:#Fa2222;
-    background-gradient-end:#be0e0e;
+    background-gradient-start:#d43724;
+    background-gradient-end:#b60a0a;
+    background-image: linear-gradient(to bottom, #d43724, #b60a0a);
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
     transition-duration:200ms;
 }
 .end-session-dialog .modal-dialog-linked-button:last-child:hover, 
-.end-session-dialog .modal-dialog-linked-button:last-child:active {
-    background-gradient-start:#ee2727;
-    background-gradient-end:#d61010;
+.end-session-dialog .modal-dialog-linked-button:last-child:active,
+.end-session-dialog .modal-dialog-button:last-child:hover,
+.end-session-dialog .modal-dialog-button:last-child:active {
+    background-gradient-start:#ed422c;
+    background-gradient-end:#b60a0a;
+    background-image: linear-gradient(to bottom, #ed422c, #b60a0a);
 }
 .end-session-dialog .modal-dialog-linked-button:last-child:insensitive,
-.end-session-dialog .modal-dialog-linked-button:last-child:grayed {
+.end-session-dialog .modal-dialog-linked-button:last-child:grayed,
+.end-session-dialog .modal-dialog-button:last-child:insensitive,
+.end-session-dialog .modal-dialog-button:last-child:grayed {
     color:gray;
     background-gradient-start:#8f0a0a;
     background-gradient-end:#8f0a0a;
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.05);
     border:1px solid #6d0909;
+    background-image: linear-gradient(to bottom, #8f0a0a, #8f0a0a);
 }
 
 .shell-mount-operation-icon { 
@@ -743,6 +757,7 @@ StScrollBar StButton#hhandle:active {
     padding:20px;
     background: transparent;
     border-color: transparent;
+    box-shadow: none;
 }
 
 .popup-menu .popup-menu-item { 
@@ -1089,6 +1104,7 @@ StScrollBar StButton#hhandle:active {
 .switcher-list .item-box { 
     padding: 8px; 
     border-radius: 4px; 
+    background-color: transparent
 }
 
 .switcher-list .item-box:outlined { 
@@ -1220,16 +1236,30 @@ StScrollBar StButton#hhandle:active {
     border-radius: 0px 2px 0px 0px; 
 }
 
-#panel { 
+/* Top Bar */
+#panel {
     min-height: 32px;
     height: 32px; 
-    background-color: #384248;
     color: #ffffff;
     box-shadow: inset 0 -1px #000; 
-    background-repeat:repeat; 
+    background-repeat:repeat-x; 
     font-weight: bold; 
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1); 
-    transition-duration: 0.4s; 
+    background-color: #384248;
+    color: #ffffff;
+    font-feature-settings: 'tnum';
+    transition-duration: 250ms;
+    font-size: 10pt;
+    margin: 0px 0px;
+    border-radius: 1px;
+}
+
+#panel .panel-corner {
+  -panel-corner-radius: 0;
+  -panel-corner-background-color: rgba(26, 27, 38, 0.95);
+  -panel-corner-border-width: 2px;
+  -panel-corner-border-color: transparent;
+  -panel-corner-opacity: 1;
+  transition-duration: 250ms;
 }
 
 #panel #panelLeft, 
@@ -1237,13 +1267,6 @@ StScrollBar StButton#hhandle:active {
     spacing: 0; 
 }
 
-#panel .panel-corner { 
-    -panel-corner-radius: 0; 
-    -panel-corner-background-color: rgba(19, 25, 28, 0.01); 
-    -panel-corner-border-width: 0; 
-    -panel-corner-border-color: transparent; 
-    transition-duration: 0s; 
-}
 
 #panel .panel-corner:hover, 
 #panel .panel-corner:focus { 
@@ -1298,7 +1321,11 @@ StScrollBar StButton#hhandle:active {
 #panel .panel-button .app-menu-icon { 
     -st-icon-style: symbolic; padding: 0 5px; 
 }
-
+#panel .panel-button:hover .clock, 
+#panel .panel-button:active .clock, 
+#panel .panel-button:focus .clock, 
+#panel .panel-button:checked .clock, 
+#panel .panel-button:overview .clock,
 #panel .panel-button:hover,
 #panel .panel-button:active,
 #panel .panel-button:overview,
@@ -1573,10 +1600,9 @@ StScrollBar StButton#hhandle:active {
     background-color: #394453;
     padding:3px;
     margin:1px 1px 1px 1px;
-    border-radius:0px;
     color:#a0b9d2;
     text-decoration:none;
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 .calendar-day-base:hover, 
@@ -1606,7 +1632,7 @@ StScrollBar StButton#hhandle:active {
     color: #a0b9d2; 
     font-weight: normal; 
     text-align: center; 
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 .calendar-week-number { 
@@ -1620,14 +1646,14 @@ StScrollBar StButton#hhandle:active {
     font-weight: normal;
     font-size: 10px; 
     text-align: center; 
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 .calendar-day { 
     border: 1px solid rgba(0,0,0,0.6);
     background-color: rgba(0,0,0,0.6);
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 3px;
     height: 12px;
     margin: 1px;
 }
@@ -1643,10 +1669,14 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-with-events { 
     background-image: none; 
     color: #0099FF; /* coloraccent */
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 .calendar-day-with-events:hover { 
     background-color:rgba(0,80,160,0.6); /* coloraccent */
+    border-radius: 3px;
+    box-shadow: none;
 }
 
 .calendar-day-with-events:active, 
@@ -1654,7 +1684,8 @@ StScrollBar StButton#hhandle:active {
 .calendar-day-with-events:selected, 
 .calendar-day-with-events:selected:hover { 
     background-color: #0070C0; /* coloraccent */
-    border-color: transparent; 
+    border-color: #0070C0; 
+    border-radius: 3px;
 }
 
 .calendar-today, 
@@ -1662,6 +1693,7 @@ StScrollBar StButton#hhandle:active {
     border: 1px solid #0070C0; /* coloraccent */
     background-color: #0070C0; /* coloraccent */
     color: #FFFFFF; 
+    border-radius: 3px;
 }
 
 .calendar-today:hover, 
@@ -1669,6 +1701,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-today.calendar-day-with-events:hover, 
 .calendar-today.calendar-day-with-events:focus { 
     background-color: #0070C0; /* coloraccent */
+    border-radius: 3px;
 }
 
 .calendar-today:selected, 
@@ -1676,6 +1709,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-today.calendar-day-with-events:selected, 
 .calendar-today.calendar-day-with-events:selected:hover { 
     background-color: #0070C0; /* coloraccent */ 
+    border-radius: 3px;
 }
 .calendar-day.calendar-weekend,
 .calendar-nonwork-day {
@@ -1690,6 +1724,7 @@ StScrollBar StButton#hhandle:active {
 .calendar-other-month-day { 
     background-color: rgba(11,15,18,0.6); 
     color: #333333; 
+    border-radius: 3px;
 }
 
 .calendar-other-month-day:hover, 
@@ -1699,6 +1734,7 @@ StScrollBar StButton#hhandle:active {
 
 .calendar-other-month-day.calendar-day-with-events { 
     color: #003366;  /* coloraccent */
+    border-radius: 3px;
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, 
@@ -1742,7 +1778,7 @@ StScrollBar StButton#hhandle:active {
 }*/
 
 .message { 
-    background-color:rgba(0,0,0,0.4);
+    background-color: #202a2f;
     padding: 6px; 
     border-radius:5px; 
     color: #BBCCDD; 
@@ -1788,7 +1824,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .message { 
-    background-color:rgba(27,39,45,0.9); 
+    background-color:#202a2f; 
     border:1px solid #506070;
     color: #BBCCDD;  
 }
@@ -1812,21 +1848,21 @@ StScrollBar StButton#hhandle:active {
 .popup-menu .message:hover, 
 .popup-menu .message:focus { 
     border:1px solid #0066FF; /* coloraccent */
-    background-color:rgba(0,61,128,0.8); /* coloraccent */
+    background-color:rgba(0,61,128,1.0); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:ltr, 
 .popup-menu .message:focus:ltr { 
     border:1px solid #0066FF; /* coloraccent */
-    background-color:rgba(0,61,128,0.8); /* coloraccent */
+    background-color:rgba(0,61,128,1.0); /* coloraccent */
     color: #BBCCDD; 
 }
 
 .popup-menu .message:hover:rtl, 
 .popup-menu .message:focus:rtl { 
     border:1px solid #0066FF; /* coloraccent */
-    background-color:rgba(0,61,128,0.8); /* coloraccent */
+    background-color:rgba(0,61,128,1.0); /* coloraccent */
     color: #BBCCDD; 
 }
 
@@ -1951,13 +1987,13 @@ StScrollBar StButton#hhandle:active {
 
 .message-media-control:hover { 
     color: #ccddee;  
-    background-color: rgba(90,140,230, 0.3); /* coloraccent */
+    background-color: rgba(20,120,230, 0.3); /* coloraccent */
     background-size: 32px 32px; 
 }
 
 .message-media-control:active { 
     color: #ccddee;
-    background-color: rgba(90,140,230, 0.3); /* coloraccent */ 
+    background-color: rgba(20,120,230, 0.3); /* coloraccent */ 
     background-size: 32px 32px; 
 }
 
@@ -2180,8 +2216,12 @@ notification-close:active {
     background-image: url("assets/close-window.svg"); 
 }
 
+.message * {
+  border-radius: 3px;
+}
 
-.message .message-close-button {
+.message .message-close-button,
+.message .message-expand-button {
   color: rgba(255, 255, 255, 0.7);
   padding: 0;
   height: 24px;
@@ -2191,7 +2231,9 @@ notification-close:active {
 }
 
 .message .message-close-button:hover, 
-.message .message-close-button:focus {
+.message .message-close-button:focus,
+.message .message-expand-button:hover,
+.message .message-expand-button:focus {
   color: rgba(255, 255, 255, 0.7);
   padding: 0;
   height: 24px;
@@ -2200,7 +2242,8 @@ notification-close:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.message .message-close-button:active {
+.message .message-close-button:active,
+.message .message-expand-button:active {
   color: rgba(255, 255, 255, 0.7);
   padding: 0;
   height: 24px;
@@ -2209,7 +2252,8 @@ notification-close:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.message .message-close-button:insensitive {
+.message .message-close-button:insensitive,
+.message .message-expand-button:insensitive {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -2258,6 +2302,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A);
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -2269,6 +2314,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .nm-dialog-airplane-box .button:active { 
@@ -2276,6 +2322,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .nm-dialog-airplane-box .button:focus { 
@@ -2283,6 +2330,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .nm-dialog-airplane-box .button:insensitive { 
@@ -2290,6 +2338,7 @@ notification-close:active {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #283032);
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -2405,6 +2454,12 @@ notification-close:active {
     color: #FFFFFF; 
 }
 
+StEntry:hover,
+StEntry:focus,
+StEntry:active {
+	box-shadow: none !important;
+}
+
 .list-search-results { 
     spacing: 3px; 
 }
@@ -2413,6 +2468,8 @@ notification-close:active {
     transition-duration: 100ms;
     border-radius: 6px; 
     padding: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #cccccc;
 }
 
 .list-search-result:focus, 
@@ -2420,6 +2477,7 @@ notification-close:active {
 .list-search-result:hover { 
     background-color: rgba(207, 216, 220, 0.12); 
     transition-duration: 0s; 
+    color: #ffffff;
 }
 
 .list-search-result:focus 
@@ -2431,10 +2489,14 @@ notification-close:active {
     color: #ffffff; 
 }
 
+.list-search-result .list-search-result-description { 
+    color: #aaaaaa;
+}
+
 .list-search-result:focus .list-search-result-description, 
 .list-search-result:selected .list-search-result-description, 
 .list-search-result:hover .list-search-result-description { 
-    color: rgba(207, 216, 220, 0.87); 
+    color: #aaaaaa; 
 }
 
 .list-search-result:active { 
@@ -2472,13 +2534,13 @@ notification-close:active {
 
 .list-search-result-title { 
     font-size: 12pt; 
-    color: #FFFFFF; 
+    color: #cccccc; 
     font-weight: 700; 
 }
 
 .list-search-result-description { 
     font-size: 10pt; 
-    color: #CCCCCC; 
+    color: #999999; 
 }
 
 .search-provider-icon { 
@@ -2487,6 +2549,7 @@ notification-close:active {
     border-radius: 6px; 
     color: rgba(207, 216, 220, 0.87); 
     transition-duration: 200ms; 
+    background: transparent;
 }
 
 .search-provider-icon:focus, 
@@ -3440,6 +3503,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -3454,6 +3518,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .notification-banner .notification-button:focus { 
@@ -3461,6 +3526,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .notification-banner .notification-button:active { 
@@ -3468,6 +3534,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .summary-source-counter { 
@@ -3678,8 +3745,17 @@ notification-close:active {
     border-width: 0; 
 }
 
-#keyboard { 
-    background-color: rgba(19, 25, 28, 0.87); 
+
+.keyboard-key:grayed { 
+    color: rgba(207, 216, 220, 0.54); 
+    background-color: #222d32; 
+}
+
+/* On-screen keyboard */
+
+/* keyboard background */
+#keyboard {
+    background-color: #384248; 
 }
 
 .keyboard-layout { 
@@ -3691,15 +3767,17 @@ notification-close:active {
     spacing: 15px; 
 }
 
-.keyboard-key { 
+
+/* keyboard keys */
+.keyboard-key {
     font-size: 20pt; 
     min-height: 2em; 
     min-width: 2em; 
-    border-radius: 2px; 
+    border-radius: 5px; 
     border-width: 1px; 
-    background-color: #1f2527; 
-    color: rgba(207, 216, 220, 0.87); 
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.24); 
+    background-color: #202a2f; 
+    color: #eeeeee; 
+    box-shadow: none; 
     text-shadow: none; 
     icon-shadow: none; 
     font-weight: 700; 
@@ -3707,27 +3785,95 @@ notification-close:active {
 
 .keyboard-key:focus { 
     color: #FFFFFF; 
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.24); 
+    background-color: #0070C0; 
 }
 
 .keyboard-key:hover, 
 .keyboard-key:checked { 
     color: #FFFFFF; 
-    background-color: #1f2527; 
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.36); 
+    background-color: #0070C0; 
 }
 
 .keyboard-key:active { 
     font-size: 18pt; 
     color: rgba(207, 216, 220, 0.54); 
-    background-color: #13191c; 
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.24); 
+    background-color: #0070C0; 
 }
 
-.keyboard-key:grayed { 
-    border-top-color: rgba(207, 216, 220, 0.2); 
-    color: rgba(207, 216, 220, 0.54); 
-    background-color: #222d32; 
+
+/* non-character keys */ 
+.keyboard-key.default-key {
+    color: #FFFFFF; 
+    background-color: #4f5c66; 
+}
+
+.keyboard-key.default-key:hover { 
+    background-color: #0070C0; 
+}
+
+.keyboard-key.default-key:active,
+.keyboard-key.default-key:checked {
+    background-color: #0070C0; 
+}
+
+/* ctrl / alt / shift */
+.keyboard-key.default-key:latched,
+.keyboard-key.shift-key-uppercase {
+    border-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(13, 46, 79, 1);
+}
+
+
+/* long press on key popup */
+.keyboard-subkeys {
+    -arrow-border-radius: 18px;
+    -arrow-background-color: rgba(17, 18, 19, 0.95);
+    -arrow-border-width: 1px;
+    -arrow-border-color: rgba(255, 255, 255, 0.07);
+    color: rgba(234, 242, 251, 1);
+    padding: 6px;
+}
+
+
+/* emojis */
+.emoji-page .keyboard-key {
+    background-color: transparent;
+    border: none;
+}
+
+.emoji-page .keyboard-key:hover,
+.emoji-page .keyboard-key:active {
+    background-color: rgba(201, 217, 232, 0.13);
+}
+
+.emoji-panel .keyboard-key:latched {
+    border-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(13, 46, 79, 1);
+}
+
+
+/* word suggestions list */
+.word-suggestions {
+    spacing: 12px;
+    min-height: 22pt;
+    padding: 5px;
+    padding-top: 6px; /* same as keyboard buttons padding */
+    color: rgba(234, 242, 251, 1);
+}
+
+/* suggestion button */
+.word-suggestions StButton {
+    border-radius: 5px;
+    padding: 0px 15px;
+    color: rgba(234, 242, 251, 1);
+    transition-duration: 100ms;
+}
+
+.word-suggestions StButton:hover,
+.word-suggestions StButton:active,
+.word-suggestions StButton:checked {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    background-color: rgba(180, 217, 253, 0.3);
 }
 
 .keyboard-subkeys { 
@@ -3792,6 +3938,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -3803,6 +3950,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .candidate-page-button:active { 
@@ -3810,6 +3958,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */ 
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .candidate-page-button-previous { 
@@ -3891,6 +4040,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -3904,6 +4054,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog .modal-dialog-button:active { 
@@ -3911,6 +4062,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog .modal-dialog-button:insensitive { 
@@ -3918,6 +4070,7 @@ notification-close:active {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #283032); 
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -3932,6 +4085,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -3944,6 +4098,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog .modal-dialog-button:default:active { 
@@ -3951,6 +4106,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog .modal-dialog-button:default:insensitive { 
@@ -3958,6 +4114,7 @@ notification-close:active {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -4157,6 +4314,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -4169,6 +4327,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog-session-list-button:active { 
@@ -4176,6 +4335,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .login-dialog-session-list-button StIcon { 
@@ -4380,6 +4540,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A);
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
@@ -4392,6 +4553,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .lg-obj-inspector-button:active { 
@@ -4399,6 +4561,7 @@ notification-close:active {
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 .lg-obj-inspector-button:insensitive { 
@@ -4406,6 +4569,7 @@ notification-close:active {
     border:1px solid #080808;
     background-gradient-start:#283032;
     background-gradient-end:#283032;
+    background-image: linear-gradient(to bottom, #283032, #22282A);
     text-shadow: none; 
     icon-shadow: none; 
 }
@@ -4464,6 +4628,7 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
 /* GNOME 3.34 */
@@ -4515,8 +4680,10 @@ notification-close:active {
 }
 .app-folder-dialog .folder-name-container .folder-name-label {
       padding: 5px 7px;
-      color: #eeeeec; }
-.app-folder-dialog .folder-name-container .edit-folder-button {
+      color: #eeeeec; 
+}
+.app-folder-dialog .folder-name-container .edit-folder-button,
+.app-folder-dialog .icon-button {
     padding: 5px;
     width: 36px;
     height: 36px;
@@ -4529,25 +4696,31 @@ notification-close:active {
     background-gradient-direction:vertical;
     background-gradient-start:#283032;
     background-gradient-end:#22282A;
+    background-image: linear-gradient(to bottom, #283032, #22282A); 
     box-shadow:inset 0 1px 1px rgba(255,255,255,0.2);
     text-shadow:1px 1px rgba(0,0,0,0.15);
     icon-shadow:1px 1px rgba(0,0,0,0.15);
 }
-.app-folder-dialog .folder-name-container .edit-folder-button:hover {
+.app-folder-dialog .folder-name-container .edit-folder-button:hover,
+.app-folder-dialog .icon-button:hover {
     border:1px solid #080808;
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
-.app-folder-dialog .folder-name-container .edit-folder-button:active { 
+.app-folder-dialog .folder-name-container .edit-folder-button:active,
+.app-folder-dialog .icon-button:active { 
     border:1px solid #080808;
     border-radius: 5px;
     background-gradient-start:#0056CB; /* coloraccent */
     background-gradient-end:#0045B4; /* coloraccent */
+    background-image: linear-gradient(to bottom, #0056CB, #0045B4); /* coloraccent */
 }
 
-.app-folder-dialog .folder-name-container .edit-folder-button > StIcon {
+.app-folder-dialog .folder-name-container .edit-folder-button > StIcon,
+.app-folder-dialog .icon-button > StIcon {
     icon-size: 16px; 
 }
 .app-folder-dialog StButton#vhandle, 
@@ -4619,10 +4792,10 @@ notification-close:active {
 }
 
 .search-section-content {
-    background-color: rgba(17, 29, 35, 0.6); 
+    background-color: rgba(17, 29, 35, 0.4); 
     border-radius: 8px;
     border: 1px solid #405060;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     text-shadow: 0 1px rgba(0, 0, 0, 0.2);
     color: #eeeeec;
     padding: 18px;
@@ -4701,19 +4874,47 @@ notification-close:active {
     transition-duration:200ms;
     min-height: 40px;
 }
+.quick-toggle-menu-button {
+    color: #fff; 
+    background-color: rgba(200,225,255, 0.2);
+    border: 1px solid rgba(200,225,255, 0.3);
+    border-left: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px; 
+}
+.quick-toggle-menu-button:hover { 
+    background-color: rgba(200,225,255, 0.3);
+    border: 1px solid rgba(200,225,255, 0.4);
+}
+.quick-toggle-has-menu .quick-toggle {
+    border-radius: 5px 0px 0px 5px; 
+}
 .quick-toggle:hover {
     background-gradient-direction:none;
     background-color: rgba(200,225,255, 0.15);
     border: 1px solid rgba(200,225,255, 0.30);
 }
-.quick-toggle:checked {
+.quick-toggle:checked  {
     background-gradient-direction:none;
     background-color: rgba(0,80,160, 0.6); /* coloraccent */
     border: 1px solid #0066FF; /* coloraccent */
 }
+.quick-toggle-menu-button:checked {
+    background-gradient-direction:none;
+    background-color: rgba(20,120,230, 0.7); /* coloraccent */
+    border: 1px solid #0066FF; /* coloraccent */
+}
+.quick-toggle-separator {
+    background-color: transparent;
+    width: 0px;
+}
 .quick-toggle:checked:hover {
     background-gradient-direction:none;
     background-color: rgba(0,80,160, 0.8); /* coloraccent */
+    border: 1px solid #0066FF; /* coloraccent */
+}
+.quick-toggle-menu-button:checked:hover {
+    background-gradient-direction:none;
+    background-color: rgba(20,120,230, 0.9); /* coloraccent */
     border: 1px solid #0066FF; /* coloraccent */
 }
 .quick-menu-toggle .quick-toggle-arrow,
@@ -5186,6 +5387,95 @@ notification-close:active {
     background-color: rgba(0,80,160, 0.6); /* coloraccent */
     border: 1px solid #0066FF; /* coloraccent */
     color:#ffffff;
+}
+
+/* GNOME 46 */
+#dash .dash-item-container .show-apps .overview-icon,
+#dash .dash-item-container .overview-tile .overview-icon {
+    background: transparent;
+    border-radius: 6px;
+    padding: 9px;
+}
+#dash .dash-item-container .show-apps:hover .overview-icon,
+#dash .dash-item-container .overview-tile:hover .overview-icon {
+    background-color: rgba(107, 116, 120, 0.25); 
+    transition-duration: 10ms; 
+}
+
+.overview-tile {
+    border-radius: 6px;
+    background: transparent;
+    border-image: none;
+    background-image: none;
+}
+
+.overview-tile:hover,
+.overview-tile:focus,
+.overview-tile:selected {
+    background-color: rgba(207, 216, 220, 0.12); 
+    transition-duration: 10ms; 
+    color: FFFFFF;
+    border-image: none;
+    background-image: none;
+}
+
+#dash .dash-item-container .overview-tile:hover, 
+#dash .dash-item-container .overview-tile:focus, 
+#dash .dash-item-container .overview-tile:selected  {
+    background: transparent;
+}
+
+.app-folder {
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 0 transparent; 
+}
+
+.app-folder:hover,
+.app-folder:focus, {
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 transparent; 
+}
+
+.page-navigation-arrow {
+	border-radius: 6px;
+	padding: 16px;
+	transition-duration: 100ms;
+	background-color: rgba(180, 216, 253, 0.12);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.page-navigation-arrow > StIcon {
+	margin: 0;
+	color: rgba(233, 242, 250, 1);
+}
+
+.page-navigation-arrow:hover,
+.page-navigation-arrow:active {
+	background-color: rgba(180, 216, 253, 0.24);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.page-navigation-arrow:hover > StIcon {
+	color: rgba(233, 242, 250, 1);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+
+.calendar .calendar-day-heading { 
+    font-size: 8pt; 
+    margin: 1px;
+    border: 1px solid #41596e;
+    background-color: #394453;
+    color: #a0b9d2; 
+    font-weight: normal; 
+    text-align: center; 
+    border-radius: 3px;
+}
+
+.message .message-header .message-source-icon,
+.message .message-header .message-header-content .message-source-title,
+.message .message-header .message-header-content .event-time {
+	color: rgba(233, 242, 250, 0.67);
 }
 
 
