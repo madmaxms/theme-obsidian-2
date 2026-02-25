@@ -12433,7 +12433,6 @@ button.titlebutton.maximize:not(.appmenu) {
     background-position: center;
     background-repeat: no-repeat;
     background-image: -gtk-scaled(url("../gtk-3.0/assets/max.svg"));
-    padding: 2px;
 }
 
 headerbar button.titlebutton.maximize:not(.appmenu):backdrop, 
