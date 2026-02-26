@@ -1,0 +1,87 @@
+/* *************************************************************************************************
+   GTK NAMED COLORS
+   ----------------
+   use responsibly! 
+************************************************************************************************* */
+
+
+/* ****************************** A C C E N T   C O L O U R S *********************************** */
+
+@define-color    theme_accent_color                    #3a57c9;
+
+@define-color    theme_selected_bg_color               @theme_accent_color;
+@define-color    theme_selected_fg_color               #ffffff;
+@define-color    theme_unfocused_selected_bg_color     @theme_accent_color;
+
+/* sidebar colours */
+@define-color    sidebar_bg                            #2e3261;
+@define-color    sidebar_hovering                      #75808c;
+@define-color    sidebar_fg                            #ffffff;
+
+@define-color    theme_fg_color_sel                    #6a77da;
+
+/* view */
+@define-color    view_fg_sel                           #595fc2;
+@define-color    view_border_sel                       #4451bc;
+@define-color    view_bg_acceleditor                   #3f51a7;
+
+/* entry */
+@define-color    entry_border_act                      #3e4ab8;
+@define-color    entry_border_act_shad                 #5467ff;
+@define-color    entry_tag_a                           #4b61dd;
+@define-color    entry_tag_b                           #445ecd;
+@define-color    entry_tag_c                           #3548a9;
+@define-color    entry_tag_border                      #26306e;
+
+/* scale */
+@define-color    scale_fill_a                          shade(@theme_selected_bg_color, 1.1);
+@define-color    scale_fill_b                          shade(@theme_selected_bg_color, 0.94);
+
+/* buttons */
+@define-color    button_fg_sugg_color                  #f7f7f7;
+@define-color    button_bg_sugg_a                      #4b61dd;
+@define-color    button_bg_sugg_b                      #445ecd;
+@define-color    button_bg_sugg_c                      #3548a9;
+@define-color    button_bg_sugg_a_hov                  #6f80ff;
+@define-color    button_bg_sugg_b_hov                  #5770ff;
+@define-color    button_bg_sugg_c_hov                  #3548a9;
+@define-color    button_bg_sugg_a_act                  #3548a9;
+@define-color    button_bg_sugg_b_act                  #445ecd;
+@define-color    button_bg_sugg_c_act                  #4b61dd;
+@define-color    button_bg_sugg_flt                    #4760ef;
+@define-color    button_border_sugg                    #26306e;
+
+/* progress bar */
+@define-color    prgbar_bg_a                           #4c69df;
+@define-color    prgbar_bg_b                           #2f4cbc;
+
+/* scale slider */
+@define-color    slider_bg_a                           @theme_accent_color;
+@define-color    slider_bg_b                           @theme_accent_color;
+@define-color    slider_bdr                            @theme_accent_color;
+@define-color    slider_fg_shadow                      @shadow_color;
+@define-color    slider_bg_a_hov                       #616cff;
+@define-color    slider_bg_b_hov                       @slider_bg_a_hov;
+@define-color    slider_bdr_hov                        @slider_bg_a_hov;
+@define-color    slider_bg_act                         @slider_bg_a_hov;
+
+/* infobar */
+@define-color    infobar_bg_a                          #3e4fb1;
+@define-color    infobar_bg_b                          #3e4fb1;
+@define-color    infobar_border                        #26306e;
+@define-color    infobar_button_fg                     #f7f7f7;
+@define-color    infobar_button_fg_dis                 #6a73dc;
+@define-color    infobar_button_bg_a                   #4b61dd;
+@define-color    infobar_button_bg_b                   #3548a9;
+@define-color    infobar_button_bg_act_a               #3548a9;
+@define-color    infobar_button_bg_act_b               #4b61dd;
+@define-color    infobar_button_border                 #26306e;
+
+@define-color    menuitem_bg_hover                     @theme_accent_color;
+@define-color    notebook_border_sel                   @theme_accent_color;
+@define-color    label_bg_active                       @theme_accent_color;
+@define-color    row_bg_active                         @theme_accent_color;
+
+@define-color    terminal_fg                           #729FCF;
+
+

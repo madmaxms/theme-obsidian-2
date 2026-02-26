@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Obsidian-2-Indigo
+Comment=A Gnome theme, based upon Adwaita-Maia dark skin, modified by madmaxms
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Obsidian-2-Indigo
+MetacityTheme=Obsidian-2-Indigo
+IconTheme=Obsidian-Purple
+CursorTheme=Obsidian
