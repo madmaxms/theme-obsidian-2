@@ -2280,6 +2280,236 @@ StScrollBar StButton#vhandle:hover
 
 }
 
+
+/* Context menu (at the moment only for favorites) */
+.appmenu-category-button-greyed, 
+.appmenu-category-button-selected, 
+.appmenu-category-button, 
+.appmenu-application-button-selected, 
+.appmenu-application-button, 
+.appmenu-sidebar-button {
+  padding: 7px;
+  spacing: 5px;
+  border-radius: 4px; 
+}
+
+.appmenu-background .popup-menu-content {
+  padding: 0; 
+}
+
+.appmenu-main-box {
+  spacing: 10px; 
+}
+
+.appmenu-right-box {
+  spacing: 5px;
+  padding: 10px 10px; 
+}
+
+.appmenu-categories-applications-box {
+  spacing: 15px; 
+}
+.appmenu-categories-applications-box:top {
+    padding-top: 5px; 
+}
+
+.appmenu-applications-box {
+  padding-right: 5px; 
+}
+
+.appmenu-search-box {
+  spacing: 10px; 
+}
+
+.appmenu-sidebar {
+    padding: 15px 0px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(20,25,30,0.5);
+    background-gradient-end: rgba(20,25,30,0.5);
+    border-radius: 5px 0 0 5px;
+    border-right-width: 1px;
+    border-color: #1b1f20;
+    spacing: 5px; 
+}
+.appmenu-sidebar .appmenu-system-button,
+.appmenu-search-box .appmenu-system-button {
+    background-color: rgba(100,120,130,0.5);
+}
+.appmenu-system-button-lock:hover {
+    background-color: rgba(100,120,130,0.7);
+}
+.appmenu-sidebar .appmenu-system-button-logout:hover {
+    background-color: rgba(100,120,130,0.7);
+}
+.appmenu-sidebar .appmenu-system-button-shutdown,
+.appmenu-search-box .appmenu-system-button-shutdown {
+    color: white;
+    background-color: #F04A50; 
+}
+.appmenu-sidebar .appmenu-system-button-shutdown:hover {
+    color: white;
+    background-color: #f26267; 
+}
+
+.appmenu-system-box {
+    spacing: 10px; 
+}
+
+.appmenu-sidebar-button {
+    padding: 4px 7px;
+    margin: 0 10px; 
+    border-radius: 4px;
+    border: 1px solid transparent; 
+}
+.appmenu-sidebar-button:hover {
+    color: white;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(100,120,130,0.5);
+    background-gradient-end: rgba(100,120,130,0.5);
+    border: 1px solid #90959A; 
+}
+
+.appmenu-system-button {
+    padding: 8.4px;
+    border-radius: 5px;
+    border:1px solid #080808;
+    color:#fff;
+    background:none;
+    background-color:none;
+    text-shadow:1px 1px rgba(0,0,0,0.15);
+    icon-shadow:1px 1px rgba(0,0,0,0.15);
+    transition-duration:200ms;
+    outline-color: rgba(255, 0, 255, 0.8);
+}
+.appmenu-system-button-shutdown {
+    color: white;
+    background-color: #F04A50; }
+.appmenu-system-button-lock:hover {
+    background-color: rgba(100,120,130,0.7);
+}
+.appmenu-system-button-logout:hover {
+    background-color: rgba(100,120,130,0.7);
+}
+.appmenu-system-button-shutdown:hover {
+    color: white;
+    background-color: #f26267; 
+}
+
+.appmenu-application-button,
+.appmenu-category-button {
+    border: 1px solid transparent;
+} 
+
+.appmenu-application-button-label {
+    padding: 0; 
+}
+
+.appmenu-application-button-description {
+    color: #999999;
+    font-weight: 400;
+    font-size: 0.818em; 
+}
+
+.appmenu-application-button:highlighted {
+    font-weight: bold; 
+}
+
+.appmenu-application-button-selected {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(100,120,130,0.5);
+    background-gradient-end: rgba(100,120,130,0.5);
+    border: 1px solid #90959A; 
+}
+.appmenu-application-button-selected:highlighted {
+    font-weight: bold; 
+}
+
+.appmenu-category-button-label {
+    padding: 0; 
+}
+
+.appmenu-category-button:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(100,120,130,0.5);
+    background-gradient-end: rgba(100,120,130,0.5);
+    border: 1px solid #90959A; 
+}
+
+.appmenu-category-button-selected {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(100,120,130,0.5);
+    background-gradient-end: rgba(100,120,130,0.5);
+    border: 1px solid #90959A; 
+}
+
+.appmenu-category-button-greyed {
+  color: rgba(32, 32, 32, 0.55);
+  font-style: italic; 
+}
+.appmenu-category-button-greyed StIcon {
+    opacity: 0.5; 
+}
+
+.appmenu-search-entry-icon {
+  icon-size: 1em; 
+}
+
+
+#appmenu-search-entry, 
+#menu-search-entry, 
+.popup-menu #notification StEntry {
+    padding: 5px 12px;
+    border-radius: 4px;
+    color: rgb(228, 228, 228);
+    border: 1px solid rgba(150,180,205, 0.4);
+    background-gradient-start: rgba(20,20,20,0.5);
+    background-gradient-end: rgba(20,20,20,0.5);
+    background-gradient-direction: vertical;
+    selected-color: black;
+    caret-color: rgb(228, 228, 228);
+    caret-size: 1px;
+    height: 20px;
+    font-size: 10pt;
+    transition-duration: 300;
+}
+#appmenu-search-entry:focus, 
+#menu-search-entry:focus, 
+.popup-menu #notification StEntry:focus, 
+#appmenu-search-entry:hover, 
+#menu-search-entry:hover, 
+.popup-menu #notification StEntry:hover {
+    color: rgb(228, 228, 228);
+    border: 1px solid rgba(150,180,205, 0.4);
+    background-gradient-start: rgba(20,20,20,0.5);
+    background-gradient-end: rgba(20,20,20,0.5);
+    background-gradient-direction: vertical;
+    selected-color: black;
+    caret-color: rgb(228, 228, 228);
+    caret-size: 1px;
+}
+#appmenu-search-entry:insensitive, 
+#menu-search-entry:insensitive, 
+.popup-menu #notification StEntry:insensitive {
+    color: rgb(228, 228, 228);
+    border: 1px solid rgba(150,180,205, 0.4);
+    background-gradient-start: rgba(20,20,20,0.5);
+    background-gradient-end: rgba(20,20,20,0.5);
+    background-gradient-direction: vertical;
+    selected-color: black;
+    caret-color: rgb(228, 228, 228);
+    caret-size: 1px; 
+}
+#appmenu-search-entry StIcon.capslock-warning, 
+#menu-search-entry StIcon.capslock-warning, 
+.popup-menu #notification StEntry StIcon.capslock-warning {
+    icon-size: 16px;
+    warning-color: #F27835;
+    padding: 0 4px; 
+}
+
+
+
+
 /* ===================================================================
  * Window list (windowList.js)
  * ===================================================================*/

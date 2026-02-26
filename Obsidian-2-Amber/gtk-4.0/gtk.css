@@ -5320,7 +5320,7 @@ list:backdrop {
     background-color: @view_bg;
     color: @view_fg;
     box-shadow: inset 1px 1px 0px 0px @border_normal, inset 0px 0px 1px 1px @border_normal; 
-    border-radius: 5px; 
+    border-radius: 0px; 
     border: 1px solid @border_box;
 }
 listview, 
@@ -5640,16 +5640,14 @@ menuitem radio:dir(rtl) {
 /********
  * Misc *
  ********/
-.content-view {
+.content-view,
+.content-view:backdrop {
     background-color: @view_bg; 
     color: @view_fg;
+    border-radius: 0px;
 }
 .content-view:hover {
     -gtk-icon-filter: brightness(1.2); 
-}
-.content-view:backdrop {
-    background-color: @view_bg;
-    color: @view_fg;
 }
 
 .osd .scale-popup button.flat {
@@ -7296,7 +7294,8 @@ treeview ~ scrollbar.vertical {
     color: @sidebar_fg; 
     background-color: @sidebar_bg;
     box-shadow: inset 0 0 0 9999px @sidebar_bg;
-    padding-top: 5px
+    padding-top: 5px;
+    border-radius: 0px;
 }
 .navigation-sidebar,
 .navigation-sidebar:backdrop {
@@ -7305,7 +7304,8 @@ treeview ~ scrollbar.vertical {
     color: @sidebar_fg; 
     background-color: @sidebar_bg;
     box-shadow: inset 0 0 0 9999px @sidebar_bg;
-    padding-top: 5px
+    padding-top: 5px;
+    border-radius: 0px;
 }
 
 entry textview {
@@ -7361,16 +7361,19 @@ stacksidebar.sidebar.right list .navigation-sidebar:dir(rtl),
     background-color: @sidebar_bg;
     border-color: @border_box;
     transition: 200ms ease-out; 
+    border-radius: 0px;
 }
 .navigation-sidebar:backdrop {
-    background-color: @sidebar_bg;;
+    background-color: @sidebar_bg;
     border-color: @border_box;
     transition: 200ms ease-out; 
+    border-radius: 0px;
 }
 .sidebar.source-list, 
 .navigation-sidebar.source-list {
     background-color: @sidebar_bg;
     padding: 4px 0px; 
+    border-radius: 0px;
 }
 .sidebar.source-list.view, 
 iconview.sidebar.source-list, 
@@ -7491,6 +7494,7 @@ stacksidebar row.activatable:selected:active {
 
 placessidebar.sidebar {
     background-color: @sidebar_bg;
+    border-radius: 0px;
 }
 placessidebar list,
 placessidebar listview {
@@ -7541,11 +7545,12 @@ placessidebar row:drop(active):not(:disabled):selected image {
 .bottom-bar {
     background-color: @inline_bg;
 }
+/*
 .bottom-bar button {
     background-color: transparent;
     border-radius: 0px;
     border: none; 
-}
+}*/
 .bottom-bar button .view, 
 .bottom-bar button iconview {
     background-color: transparent; 
@@ -7875,7 +7880,7 @@ toggle-group > toggle:hover {
 }
 toggle-group > toggle:active,
 toggle-group > toggle:checked {
-    background: @toggler_bg;
+    background: @theme_accent_color;
 }
 
 /************
@@ -9612,6 +9617,7 @@ headerbar #NautilusPathBar button > .horizontal > image.subtitle {
 }
 .nautilus-window .content-pane .view scrolledwindow {
     background-color: @view_bg;
+    border-radius: 0px;
 }
 .nautilus-window .content-pane .top-bar splitbutton.image-button {
     border-radius: 4px; 
@@ -9619,11 +9625,13 @@ headerbar #NautilusPathBar button > .horizontal > image.subtitle {
 .nautilus-window .content-pane .view {
     background-color: @view_bg;
     padding: 0px; 
+    border-radius: 0px;
 }
 .nautilus-window .content-pane iconview,
 .nautilus-grid-view {
     background-color: @view_bg;
     padding: 5px; 
+    border-radius: 0px;
 }
 /*.nautilus-window headerbar entry button.image-button.circular,
 .nautilus-window .titlebar entry button.image-button.circular {
@@ -9635,7 +9643,7 @@ headerbar #NautilusPathBar button > .horizontal > image.subtitle {
     min-height: 10px;
 }*/
 
-.pill {
+.nautilus-window .pill {
     border-radius:0px;
     background-image: linear-gradient(to bottom, @entry_tag_a, @entry_tag_b 40%, @entry_tag_c);
 }
@@ -9666,6 +9674,10 @@ headerbar #NautilusPathBar button > .horizontal > image.subtitle {
 .nautilus-list-view.compact columnview > listview > row {
   margin-top: 2px;
   margin-bottom: 2px;
+}
+.nautilus-grid-view gridview > child {
+    border: 1px solid transparent; 
+    border-radius: 5px;
 }
 .nautilus-grid-view gridview > child:hover {
     color: @theme_fg_color;
@@ -10520,6 +10532,7 @@ NemoWindow .sidebar .view,
 .nemo-window .sidebar {
     background-color: @sidebar_bg;
     color: @sidebar_fg;
+    border-radius: 0px;
     text-shadow: none;
     -gtk-icon-shadow: none;
 }
