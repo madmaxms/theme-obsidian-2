@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Obsidian-2-Teal
+Comment=A Gnome theme, based upon Adwaita dark skin, modified by madmaxms
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Obsidian-2-Teal
+MetacityTheme=Obsidian-2-Teal
+IconTheme=Obsidian-Teal
+CursorTheme=Obsidian
