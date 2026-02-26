@@ -1,7 +1,7 @@
 # Obsidian 2
 Gnome theme (gtk 3.22), based upon Adwaita-Maia dark skin
 
-![alt tag](https://github.com/madmaxms/theme-obsidian-2/blob/master/screenshot.jpg)
+![alt tag](https://github.com/madmaxms/theme-obsidian-2/blob/amber/screenshot.jpg)
 
 # Compatibility
 Compatible with Gtk 3.22. 
